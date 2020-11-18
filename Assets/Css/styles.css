@@ -12,4 +12,12 @@ nav img {
   width: 10rem;
 }
 
+.sec-info {
+  display: none;
+}
+
+.sec-info:hover {
+  cursor: pointer;
+  display: contents;
+}
 
