@@ -24,9 +24,9 @@
         <h1 class="p-2">Welcome</h1>
         <h3 class="p-2">Some text</h3>
         <p class="p-2">Ugh XOXO labore, green juice mumblecore truffaut sartorial commodo everyday carry tousled four dollar toast nostrud kickstarter skateboard. Sunt DIY 3 wolf moon consequat, dreamcatcher snackwave eiusmod sriracha whatever. Glossier knausgaard succulents dolore. Fixie veniam farm-to-table, cardigan kale chips ea ullamco. Cred chicharrones aute hell of fixie umami woke pinterest tacos copper mug mollit farm-to-table post-ironic do.</p>
-        <div class="d-flex border">
-          <i class="fab fa-github-square"></i>
-          <i class="fab fa-linkedin"></i>
+        <div class="d-flex">
+          <i class="fab fa-github-square fa-3x"></i>
+          <i class="fab fa-linkedin fa-3x"></i>
         </div>
       </div>
     </section>
@@ -500,58 +500,66 @@
       </div>
     </section>
     <section id="about" class="w-75 my-2">
-      <div>
+      <div class="my-3">
         <h1 class="my-3">About Me</h1>
-        <p>
+        <p class="w-75 mx-auto">
           Green juice fixie blog synth fingerstache hoodie food truck man bun kinfolk letterpress hexagon. Hell of polaroid fanny pack culpa sunt adipisicing. Aliqua health goth adipisicing gastropub poke duis dolore esse everyday carry. Fixie bespoke celiac franzen minim intelligentsia bitters microdosing narwhal dolore. Occaecat seitan enamel pin tacos flexitarian activated charcoal.
         </p>
         <button class="btn btn-primary">Checkout my Resume</button>
       </div>
       <div class="d-flex justify-content-around">
-        <div>
+        <div class="mt-2">
           <h2>Languages</h2>
           
         </div>
-        <div>
+        <div class="mt-2">
           <h2>Frameworks</h2>
         </div>
-        <div>
+        <div class="mt-2">
           <h2>Skills</h2>
         </div>
       </div>
     </section>
     <section id="contact" class="w-75 my-2">
-      <div>
+      <div class="my-3">
         <h1 class="my-3">Contact</h1>
-        <form>
+        <form class="w-75 mx-auto">
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name">
+            </div>
+          </div>
           <div class="form-group">
             <label for="exampleFormControlInput1">Email address</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
           </div>
           <div class="form-group">
-            <label for="exampleFormControlSelect1">Example select</label>
+            <label for="exampleFormControlSelect1">Select Industry</label>
             <select class="form-control" id="exampleFormControlSelect1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <option>Web Development</option>
+              <option>Software Development</option>
+              <option>Game Development</option>
+              <option>E-commerce</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="exampleFormControlSelect2">Example multiple select</label>
-            <select multiple class="form-control" id="exampleFormControlSelect2">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+            <label for="exampleFormControlSelect1">Select Language</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Any</option>
+              <option>Ruby</option>
+              <option>Python</option>
+              <option>C#</option>
+              <option>Javascript</option>
             </select>
           </div>
           <div class="form-group">
             <label for="exampleFormControlTextarea1">Example textarea</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
     </section>
