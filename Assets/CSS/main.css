@@ -1,0 +1,19 @@
+* { padding: 0; margin: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+main { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+
+section { width: 80%; }
+
+nav { padding: 2rem; width: 20%; position: fixed; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; top: 0; }
+
+nav img { border-radius: 50%; width: 5rem; }
+
+nav a { margin-top: 1rem; text-decoration: none; color: #5a1592; font-size: 1.5rem; }
+
+footer { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+#intro { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+#into-hero polygon { position: absolute; top: -70; z-index: 999; }
+
+.t-bot img { width: 3rem; height: 3rem; }
