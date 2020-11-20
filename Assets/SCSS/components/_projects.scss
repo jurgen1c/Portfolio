@@ -1,6 +1,176 @@
-.t-bot {
-  img{
-    width: 3rem;
-    height: 3rem;
+#projects{
+  margin-top: 3rem;
+}
+
+.p-wrap{
+  flex-flow: row wrap;
+}
+.card {
+  padding: 1rem;
+  width: 47%;
+  height: 15em;
+  border-radius: 5px;
+  margin: 1rem;
+  &:hover {
+    .sec-info{
+      display: block;
+    }
   }
 }
+
+.sec-info{
+  padding: 1rem;
+  display: none;
+  color: white;
+  i{
+    padding: 0 1.5rem;
+  }
+  button{
+    font-size: 1.1rem;
+    margin: 1.5rem 0 0 1rem;
+  }
+}
+
+.card-title {
+  font-size: 2.5rem;
+  color: white;
+  margin: 0 1rem;
+}
+
+.t-bot {
+  background-image: url("../Images/tweet_bot.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.csm {
+  background-image: url("../Images/csm_home.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 2% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 85%; /* Could be more or less, depending on screen size */
+}
+
+.modal-info{
+  margin-top: 3rem;
+  padding: 2rem 4rem 0 4rem;
+  button{
+    margin: .5rem 0 0 0;
+    width: 10em;
+  }
+}
+
+/* The Close Button */
+.t-bot-close,
+.csm-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.t-bot-close:hover,
+.t-bot-close:focus,
+.csm-close:hover,
+.csm-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.t-botSlides, .csmSlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  position: relative;
+  div{
+    position: absolute;
+    top: -2rem;
+    right: 34%;
+  }
+}
+
+/* The dots/bullets/indicators */
+.t-bot-dot,
+.csm-dot {
+  cursor: pointer;
+  height: 5rem;
+  width: 7rem;
+  margin: 0 2px;
+  border: none;
+  display: inline-block;
+  transition: border 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, 
+.t-bot-dot:hover, 
+.csm-dot:hover{
+  border: 2px solid $header-color;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}

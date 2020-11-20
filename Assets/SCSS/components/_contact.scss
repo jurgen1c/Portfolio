@@ -1,0 +1,15 @@
+#contact{
+  margin-top: 3rem;
+  height: 100vh;
+  border-radius: 100% 0 0 0;
+  background: $main-color;
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.form-group{
+  margin: 1rem;
+}

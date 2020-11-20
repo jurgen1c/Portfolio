@@ -1,0 +1,20 @@
+#about{
+  margin-top: 3rem;
+}
+.about-wrap{
+  padding: 1rem;
+  button{
+    font-size: 1.2rem;
+  }
+}
+
+.skill-wrap {
+  text-align: center;
+  width: 21rem;
+  height: 300px;
+  padding: 1rem;
+  color: whitesmoke;
+  background: $main-light;
+  border-radius: 10px;
+  font-family: $secondary-font;
+}

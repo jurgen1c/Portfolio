@@ -17,38 +17,406 @@
   </nav>
   <main>
     <section id="intro">
-      <svg id="intro-hero" width="800" height="500">
-        <polygon stroke="none" fill="red" points="153 259, 351 150, 450 252, 600 206, 654 300, 654 432, 441 464, 201 433"></polygon>
-      </svg>
-      <div>
+      <div class="intro-wrap">
         <h1 class="p-2">Welcome</h1>
         <h3 class="p-2">Some text</h3>
         <p class="p-2">Ugh XOXO labore, green juice mumblecore truffaut sartorial commodo everyday carry tousled four dollar toast nostrud kickstarter skateboard. Sunt DIY 3 wolf moon consequat, dreamcatcher snackwave eiusmod sriracha whatever. Glossier knausgaard succulents dolore. Fixie veniam farm-to-table, cardigan kale chips ea ullamco. Cred chicharrones aute hell of fixie umami woke pinterest tacos copper mug mollit farm-to-table post-ironic do.</p>
-        <div class="d-flex">
+        <div>
           <i class="fab fa-github-square fa-3x"></i>
           <i class="fab fa-linkedin fa-3x"></i>
         </div>
       </div>
+      <div class="intro-ani">
+        <div class="intro-text">
+          <h1 class="hide">
+            <span class="text">Welcome</span>
+          </h1>
+          <h1 class="hide">
+            <span class="text">To My</span>
+          </h1>
+          <h1 class="hide">
+            <span class="text">Portafolio</span>
+          </h1>
+        </div>
+      </div>
+      <div class="slider"></div>
     </section>
     <section id="projects" class="w-75">
       <div>
-        <h1 class="py-3">Latest Projects</h1>
-        <div class="d-flex flex-wrap">
-          <div class="t-bot card w-50">
-            <img src="./Assets/Images/tweet_bot.png" class="card-img" alt="...">
-            <div class="card-img-overlay text-white">
-              <h2 class="card-title">Twitter Bot</h2>
-              <div class="sec-info">
-                <div class="d-flex my-2 justify-content-around">
-                  <i class="fab fa-shopify fa-2x bg-secondary p-2 rounded"></i>
-                  <i class="fas fa-water fa-2x bg-secondary p-2 rounded"></i>
-                  <i class="fab fa-js-square fa-2x bg-secondary p-2 rounded"></i>
-                  <i class="fab fa-sass fa-2x bg-secondary p-2 rounded"></i>
+        <h1 class="main-header">Latest Projects</h1>
+        <div class="d-flex p-wrap">
+          <div class="t-bot card">
+            <h2 class="card-title">Twitter Bot</h2>
+            <div class="sec-info">
+              <div class="">
+                <i class="fab fa-shopify fa-3x"></i>
+                <i class="fas fa-water fa-3x"></i>
+                <i class="fab fa-js-square fa-3x"></i>
+                <i class="fab fa-sass fa-3x"></i>
+              </div>
+              <!-- Trigger/Open The Modal -->
+              <button id="t-botBtn" class="btn">More Info...</button>
+            </div>
+          </div>
+          <!-- The Modal tbot -->
+          <div id="t-botModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="d-flex space-between">
+                <h1 class="main-header">Twitter Bot</h1>
+                <span class="t-bot-close">&times;</span>
+              </div>
+              <!-- Slideshow container -->
+              <div class="slideshow-container">
+
+                <!-- Full-width slides/quotes -->
+                <div class="t-botSlides">
+                  <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+                  <p class="author">- John Keats</p>
                 </div>
-                <p class="card-text mb-2">A simple but elegant solution to quickly convert sales</p>
-                <button type="button" class="btn btn-primary my-2" data-toggle="modal" data-target="#t-botModal">
-                  More Info...
-                </button>
+
+                <div class="t-botSlides">
+                  <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+                  <p class="author">- Ernest Hemingway</p>
+                </div>
+
+                <div class="t-botSlides">
+                  <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+                  <p class="author">- Thomas A. Edison</p>
+                </div>
+
+                <!-- Next/prev buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+
+              <!-- Dots/bullets/indicators -->
+              <div class="dot-container">
+                <div>
+                  <img src="./Assets/Images/tweet_bot.png"class="t-bot-dot" onclick="currentSlide(1)">
+                  <a class="t-bot-dot" onclick="currentSlide(2)"></a>
+                  <a class="t-bot-dot" onclick="currentSlide(3)"></a>
+                </div>
+              </div>
+              <div class="d-flex space-between modal-info">
+                <p>Some text in the Modal..</p>
+                <div class="d-column">
+                  <button class="btn">Demo</button>
+                  <button class="btn">Source</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="csm card">
+            <h2 class="card-title">Crowd Sourced Media</h2>
+            <div class="sec-info">
+              <div class="d-flex">
+                <i class="fab fa-shopify fa-3x"></i>
+                <i class="fas fa-water fa-3x"></i>
+                <i class="fab fa-js-square fa-3x"></i>
+                <i class="fab fa-sass fa-3x"></i>
+              </div>
+              <!-- Trigger/Open The Modal -->
+              <button id="csmBtn" class="btn">More Info...</button>
+
+            </div>
+          </div>
+          <!-- The Modal csm -->
+          <div id="csmModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="d-flex space-between">
+                <h1 class="main-header">Crowd Souced Media</h1>
+                <span class="csm-close">&times;</span>
+              </div>
+              <!-- Slideshow container -->
+              <div class="slideshow-container">
+
+                <!-- Full-width slides/quotes -->
+                <div class="csmSlides">
+                  <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+                  <p class="author">- John Keats</p>
+                </div>
+
+                <div class="csmSlides">
+                  <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+                  <p class="author">- Ernest Hemingway</p>
+                </div>
+
+                <div class="csmSlides">
+                  <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+                  <p class="author">- JCG</p>
+                </div>
+
+                <!-- Next/prev buttons -->
+                <a class="prev" onclick="plusSlidesC(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlidesC(1)">&#10095;</a>
+              </div>
+
+              <!-- Dots/bullets/indicators -->
+              <div class="dot-container">
+                <span class="csm-dot" onclick="currentSlideC(1)"></span>
+                <span class="csm-dot" onclick="currentSlideC(2)"></span>
+                <span class="csm-dot" onclick="currentSlideC(3)"></span>
+              </div>
+              <div class="d-flex">
+                <p>Crowd source media to fight fake news</p>
+                <button class="btn">Live</button>
+                <button class="btn">Source</button>
+              </div>
+            </div>
+          </div>
+          <div class="space-invaders card">
+            <h2 class="card-title">Space Invaders Custom</h2>
+            <div class="sec-info">
+              <div class="">
+                <i class="fab fa-shopify fa-3x"></i>
+                <i class="fas fa-water fa-3x"></i>
+                <i class="fab fa-js-square fa-3x"></i>
+                <i class="fab fa-sass fa-3x"></i>
+              </div>
+              <!-- Trigger/Open The Modal -->
+              <button id="t-botBtn" class="btn">More Info...</button>
+            </div>
+          </div>
+          <!-- The Modal Space Invaders -->
+          <div id="sinvadersModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="d-flex space-between">
+                <h1 class="main-header">Twitter Bot</h1>
+                <span class="t-bot-close">&times;</span>
+              </div>
+              <!-- Slideshow container -->
+              <div class="slideshow-container">
+
+                <!-- Full-width slides/quotes -->
+                <div class="t-botSlides">
+                  <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+                  <p class="author">- John Keats</p>
+                </div>
+
+                <div class="t-botSlides">
+                  <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+                  <p class="author">- Ernest Hemingway</p>
+                </div>
+
+                <div class="t-botSlides">
+                  <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+                  <p class="author">- Thomas A. Edison</p>
+                </div>
+
+                <!-- Next/prev buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+
+              <!-- Dots/bullets/indicators -->
+              <div class="dot-container">
+                <div>
+                  <img src="./Assets/Images/tweet_bot.png"class="t-bot-dot" onclick="currentSlide(1)">
+                  <a class="t-bot-dot" onclick="currentSlide(2)"></a>
+                  <a class="t-bot-dot" onclick="currentSlide(3)"></a>
+                </div>
+              </div>
+              <div class="d-flex space-between modal-info">
+                <p>Some text in the Modal..</p>
+                <div class="d-column">
+                  <button class="btn">Demo</button>
+                  <button class="btn">Source</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portafolio card">
+            <h2 class="card-title">Portafolio</h2>
+            <div class="sec-info">
+              <div class="">
+                <i class="fab fa-shopify fa-3x"></i>
+                <i class="fas fa-water fa-3x"></i>
+                <i class="fab fa-js-square fa-3x"></i>
+                <i class="fab fa-sass fa-3x"></i>
+              </div>
+              <!-- Trigger/Open The Modal -->
+              <button id="t-botBtn" class="btn">More Info...</button>
+            </div>
+          </div>
+          <!-- The Modal Portafolio -->
+          <div id="portafolioModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="d-flex space-between">
+                <h1 class="main-header">Twitter Bot</h1>
+                <span class="t-bot-close">&times;</span>
+              </div>
+              <!-- Slideshow container -->
+              <div class="slideshow-container">
+
+                <!-- Full-width slides/quotes -->
+                <div class="t-botSlides">
+                  <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+                  <p class="author">- John Keats</p>
+                </div>
+
+                <div class="t-botSlides">
+                  <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+                  <p class="author">- Ernest Hemingway</p>
+                </div>
+
+                <div class="t-botSlides">
+                  <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+                  <p class="author">- Thomas A. Edison</p>
+                </div>
+
+                <!-- Next/prev buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+
+              <!-- Dots/bullets/indicators -->
+              <div class="dot-container">
+                <div>
+                  <img src="./Assets/Images/tweet_bot.png"class="t-bot-dot" onclick="currentSlide(1)">
+                  <a class="t-bot-dot" onclick="currentSlide(2)"></a>
+                  <a class="t-bot-dot" onclick="currentSlide(3)"></a>
+                </div>
+              </div>
+              <div class="d-flex space-between modal-info">
+                <p>Some text in the Modal..</p>
+                <div class="d-column">
+                  <button class="btn">Demo</button>
+                  <button class="btn">Source</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="etnias card">
+            <h2 class="card-title">Etnias</h2>
+            <div class="sec-info">
+              <div class="">
+                <i class="fab fa-shopify fa-3x"></i>
+                <i class="fas fa-water fa-3x"></i>
+                <i class="fab fa-js-square fa-3x"></i>
+                <i class="fab fa-sass fa-3x"></i>
+              </div>
+              <!-- Trigger/Open The Modal -->
+              <button id="t-botBtn" class="btn">More Info...</button>
+            </div>
+          </div>
+          <!-- The Modal Etnias -->
+          <div id="etniasModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="d-flex space-between">
+                <h1 class="main-header">Twitter Bot</h1>
+                <span class="t-bot-close">&times;</span>
+              </div>
+              <!-- Slideshow container -->
+              <div class="slideshow-container">
+
+                <!-- Full-width slides/quotes -->
+                <div class="t-botSlides">
+                  <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+                  <p class="author">- John Keats</p>
+                </div>
+
+                <div class="t-botSlides">
+                  <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+                  <p class="author">- Ernest Hemingway</p>
+                </div>
+
+                <div class="t-botSlides">
+                  <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+                  <p class="author">- Thomas A. Edison</p>
+                </div>
+
+                <!-- Next/prev buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+
+              <!-- Dots/bullets/indicators -->
+              <div class="dot-container">
+                <div>
+                  <img src="./Assets/Images/tweet_bot.png"class="t-bot-dot" onclick="currentSlide(1)">
+                  <a class="t-bot-dot" onclick="currentSlide(2)"></a>
+                  <a class="t-bot-dot" onclick="currentSlide(3)"></a>
+                </div>
+              </div>
+              <div class="d-flex space-between modal-info">
+                <p>Some text in the Modal..</p>
+                <div class="d-column">
+                  <button class="btn">Demo</button>
+                  <button class="btn">Source</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="vianda card">
+            <h2 class="card-title">Vianda</h2>
+            <div class="sec-info">
+              <div class="">
+                <i class="fab fa-shopify fa-3x"></i>
+                <i class="fas fa-water fa-3x"></i>
+                <i class="fab fa-js-square fa-3x"></i>
+                <i class="fab fa-sass fa-3x"></i>
+              </div>
+              <!-- Trigger/Open The Modal -->
+              <button id="t-botBtn" class="btn">More Info...</button>
+            </div>
+          </div>
+          <!-- The Modal Vianda -->
+          <div id="viandaModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="d-flex space-between">
+                <h1 class="main-header">Twitter Bot</h1>
+                <span class="t-bot-close">&times;</span>
+              </div>
+              <!-- Slideshow container -->
+              <div class="slideshow-container">
+
+                <!-- Full-width slides/quotes -->
+                <div class="t-botSlides">
+                  <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+                  <p class="author">- John Keats</p>
+                </div>
+
+                <div class="t-botSlides">
+                  <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+                  <p class="author">- Ernest Hemingway</p>
+                </div>
+
+                <div class="t-botSlides">
+                  <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+                  <p class="author">- Thomas A. Edison</p>
+                </div>
+
+                <!-- Next/prev buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+
+              <!-- Dots/bullets/indicators -->
+              <div class="dot-container">
+                <div>
+                  <img src="./Assets/Images/tweet_bot.png"class="t-bot-dot" onclick="currentSlide(1)">
+                  <a class="t-bot-dot" onclick="currentSlide(2)"></a>
+                  <a class="t-bot-dot" onclick="currentSlide(3)"></a>
+                </div>
+              </div>
+              <div class="d-flex space-between modal-info">
+                <p>Some text in the Modal..</p>
+                <div class="d-column">
+                  <button class="btn">Demo</button>
+                  <button class="btn">Source</button>
+                </div>
               </div>
             </div>
           </div>
@@ -56,71 +424,72 @@
       </div>
     </section>
     <section id="about" class="w-75 my-2">
-      <div class="my-3">
-        <h1 class="my-3">About Me</h1>
-        <p class="w-75 mx-auto">
+      <h1 class="main-header">About Me</h1>
+      <div class="about-wrap">
+        <p class="frame-text">
           Green juice fixie blog synth fingerstache hoodie food truck man bun kinfolk letterpress hexagon. Hell of polaroid fanny pack culpa sunt adipisicing. Aliqua health goth adipisicing gastropub poke duis dolore esse everyday carry. Fixie bespoke celiac franzen minim intelligentsia bitters microdosing narwhal dolore. Occaecat seitan enamel pin tacos flexitarian activated charcoal.
         </p>
         <button class="btn btn-primary">Checkout my Resume</button>
-      </div>
-      <div class="d-flex justify-content-around">
-        <div class="mt-2">
-          <h2>Languages</h2>
-          
-        </div>
-        <div class="mt-2">
-          <h2>Frameworks</h2>
-        </div>
-        <div class="mt-2">
-          <h2>Skills</h2>
+        <div class="d-flex space-between">
+          <div class="skill-wrap">
+            <h2>Languages</h2>
+            <i class="fas fa-water fa-2x bg-secondary p-2 rounded"></i>
+            <i class="fab fa-js-square fa-2x bg-secondary p-2 rounded"></i>
+            <i class="fab fa-sass fa-2x bg-secondary p-2 rounded"></i>
+          </div>
+          <div class="skill-wrap">
+            <h2>Frameworks</h2>
+            <i class="fab fa-shopify fa-2x bg-secondary p-2 rounded"></i>
+          </div>
+          <div class="skill-wrap">
+            <h2>Skills</h2>
+            <i class="fab fa-github-square fa-3x"></i>
+          </div>
         </div>
       </div>
     </section>
-    <section id="contact" class="w-75 my-2">
-      <div class="my-3">
-        <h1 class="my-3">Contact</h1>
-        <form class="w-75 mx-auto">
-          <div class="row">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="First name">
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Last name">
-            </div>
+    <section id="contact">
+      <h1 class="main-header">Contact</h1>
+      <form>
+        <div class="">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name">
           </div>
-          <div class="form-group">
-            <label for="exampleFormControlInput1">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name">
           </div>
-          <div class="form-group">
-            <label for="exampleFormControlSelect1">Select Industry</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>Web Development</option>
-              <option>Software Development</option>
-              <option>Game Development</option>
-              <option>E-commerce</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlSelect1">Select Language</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>Any</option>
-              <option>Ruby</option>
-              <option>Python</option>
-              <option>C#</option>
-              <option>Javascript</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Select Industry</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Web Development</option>
+            <option>Software Development</option>
+            <option>Game Development</option>
+            <option>E-commerce</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Select Language</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Any</option>
+            <option>Ruby</option>
+            <option>Python</option>
+            <option>C#</option>
+            <option>Javascript</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Example textarea</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </section>
   </main>
-  <footer></footer>
   <script src="./Assets/Javascript/anime.min.js"></script>
   <script src="./Assets/Javascript/app.js"></script>
 </body>

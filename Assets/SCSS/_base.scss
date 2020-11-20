@@ -24,16 +24,58 @@ nav {
   top: 0;
   img{
     border-radius: 50%;
-    width: 5rem;
+    width: 7rem;
   }
   a{
-    margin-top: 1rem;
+    margin-top: 2rem;
     text-decoration: none;
     color: $main-color;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-family: $main-font;
+    &:hover {
+      color: $header-color;
+      text-decoration: underline;
+    }
   }
 }
 
-footer {
+.d-flex{
   display: flex;
+}
+
+.d-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.space-between{
+  justify-content: space-between;
+}
+
+.main-header{
+  font-family: $main-font;
+  font-size: 3rem;
+  color: $header-color;
+  margin: 1rem 0;
+}
+
+.frame-text{
+  background: $main-light;
+  padding: 1.5rem;
+  border-radius: 10px;
+  color: whitesmoke;
+}
+
+.btn {
+  padding: 1rem;
+  margin: 1rem 0;
+  width: fit-content;
+  height: fit-content;
+  outline: none;
+  color: whitesmoke;
+  background: $main-color;
+  border-radius: 7px;
+  border: none;
+  font-family: $secondary-font;
 }

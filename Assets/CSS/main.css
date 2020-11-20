@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Lobster&display=swap");
+/* @include respond(tablet) { background: green; // responsive code for tablet viewport i.e. 600px } */
 * { padding: 0; margin: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 main { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
@@ -6,14 +8,126 @@ section { width: 80%; }
 
 nav { padding: 2rem; width: 20%; position: fixed; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; top: 0; }
 
-nav img { border-radius: 50%; width: 5rem; }
+nav img { border-radius: 50%; width: 7rem; }
 
-nav a { margin-top: 1rem; text-decoration: none; color: #5a1592; font-size: 1.5rem; }
+nav a { margin-top: 2rem; text-decoration: none; color: #5a1592; font-size: 2rem; font-family: "Lobster", sans-serif; }
 
-footer { display: -webkit-box; display: -ms-flexbox; display: flex; }
+nav a:hover { color: #faba42; text-decoration: underline; }
 
-#intro { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; }
+.d-flex { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-#into-hero polygon { position: absolute; top: -70; z-index: 999; }
+.d-column { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.t-bot img { width: 3rem; height: 3rem; }
+.space-between { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.main-header { font-family: "Lobster", sans-serif; font-size: 3rem; color: #faba42; margin: 1rem 0; }
+
+.frame-text { background: #b980e7; padding: 1.5rem; border-radius: 10px; color: whitesmoke; }
+
+.btn { padding: 1rem; margin: 1rem 0; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; outline: none; color: whitesmoke; background: #5a1592; border-radius: 7px; border: none; font-family: "Heebo", sans-serif; }
+
+#intro { position: relative; height: 100vh; background: #5a1592; border-radius: 0 0 0 85%; }
+
+#intro h1 { font-family: "Lobster", sans-serif; }
+
+.intro-wrap { height: 100%; padding: 2rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; color: whitesmoke; }
+
+.intro-wrap h1 { font-size: 8rem; margin-right: 3em; }
+
+.intro-wrap h3 { font-family: "Heebo", sans-serif; font-size: 4rem; }
+
+.intro-wrap p { background: #b980e7; padding: 2rem; border-radius: 5px; font-family: "Heebo", sans-serif; }
+
+.intro-wrap div { padding: 0 3rem; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+
+.intro-wrap div i { margin: 0 1rem; }
+
+.intro-ani { background: #ffc979; position: fixed; top: 0; right: 0; width: 100%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.intro-text { color: black; font-family: "Heebo", sans-serif; font-size: 3.5rem; }
+
+.hide { background: #ffc979; overflow: hidden; }
+
+.hide span { -webkit-transform: translateY(100%); transform: translateY(100%); display: inline-block; }
+
+.slider { background: #b980e7; position: fixed; top: 0; right: 0; width: 100%; height: 100%; -webkit-transform: translateY(100%); transform: translateY(100%); }
+
+#projects { margin-top: 3rem; }
+
+.p-wrap { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap; }
+
+.card { padding: 1rem; width: 47%; height: 15em; border-radius: 5px; margin: 1rem; }
+
+.card:hover .sec-info { display: block; }
+
+.sec-info { padding: 1rem; display: none; color: white; }
+
+.sec-info i { padding: 0 1.5rem; }
+
+.sec-info button { font-size: 1.1rem; margin: 1.5rem 0 0 1rem; }
+
+.card-title { font-size: 2.5rem; color: white; margin: 0 1rem; }
+
+.t-bot { background-image: url("../Images/tweet_bot.png"); background-position: center; background-size: cover; }
+
+.csm { background-image: url("../Images/csm_home.png"); background-position: center; background-size: cover; }
+
+.modal { display: none; /* Hidden by default */ position: fixed; /* Stay in place */ z-index: 1; /* Sit on top */ left: 0; top: 0; width: 100%; /* Full width */ height: 100%; /* Full height */ overflow: auto; /* Enable scroll if needed */ background-color: black; /* Fallback color */ background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */ }
+
+/* Modal Content/Box */
+.modal-content { background-color: #fefefe; margin: 2% auto; /* 15% from the top and centered */ padding: 20px; border: 1px solid #888; border-radius: 10px; width: 85%; /* Could be more or less, depending on screen size */ }
+
+.modal-info { margin-top: 3rem; padding: 2rem 4rem 0 4rem; }
+
+.modal-info button { margin: .5rem 0 0 0; width: 10em; }
+
+/* The Close Button */
+.t-bot-close, .csm-close { color: #aaa; float: right; font-size: 28px; font-weight: bold; }
+
+.t-bot-close:hover, .t-bot-close:focus, .csm-close:hover, .csm-close:focus { color: black; text-decoration: none; cursor: pointer; }
+
+/* Slideshow container */
+.slideshow-container { position: relative; background: #f1f1f1f1; }
+
+/* Slides */
+.t-botSlides, .csmSlides { display: none; padding: 80px; text-align: center; }
+
+/* Next & previous buttons */
+.prev, .next { cursor: pointer; position: absolute; top: 50%; width: auto; margin-top: -30px; padding: 16px; color: #888; font-weight: bold; font-size: 20px; border-radius: 0 3px 3px 0; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+/* Position the "next button" to the right */
+.next { position: absolute; right: 0; border-radius: 3px 0 0 3px; }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover { background-color: rgba(0, 0, 0, 0.8); color: white; }
+
+/* The dot/bullet/indicator container */
+.dot-container { position: relative; }
+
+.dot-container div { position: absolute; top: -2rem; right: 34%; }
+
+/* The dots/bullets/indicators */
+.t-bot-dot, .csm-dot { cursor: pointer; height: 5rem; width: 7rem; margin: 0 2px; border: none; display: inline-block; -webkit-transition: border 0.6s ease; transition: border 0.6s ease; }
+
+/* Add a background color to the active dot/circle */
+.active, .t-bot-dot:hover, .csm-dot:hover { border: 2px solid #faba42; }
+
+/* Add an italic font style to all quotes */
+q { font-style: italic; }
+
+/* Add a blue color to the author */
+.author { color: cornflowerblue; }
+
+#about { margin-top: 3rem; }
+
+.about-wrap { padding: 1rem; }
+
+.about-wrap button { font-size: 1.2rem; }
+
+.skill-wrap { text-align: center; width: 21rem; height: 300px; padding: 1rem; color: whitesmoke; background: #b980e7; border-radius: 10px; font-family: "Heebo", sans-serif; }
+
+#contact { margin-top: 3rem; height: 100vh; border-radius: 100% 0 0 0; background: #5a1592; }
+
+#contact form { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.form-group { margin: 1rem; }
