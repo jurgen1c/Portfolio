@@ -1,15 +1,46 @@
 #contact{
   margin-top: 3rem;
-  height: 100vh;
+  height: fit-content;
   border-radius: 100% 0 0 0;
   background: $main-color;
-  form{
+  .form-wrap{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: flex-end;
+    padding: 4rem;
   }
-}
-
-.form-group{
-  margin: 1rem;
+  form{
+    align-items: center;
+    padding: 0 2rem;
+    color: white;
+    font-family: $secondary-font;
+    label{
+      margin: .4rem;
+    } 
+    input, 
+    select{
+      margin: .4rem;
+      padding: .2rem;
+      width: 26em;
+      height: 2rem;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+    }
+    textarea{
+      margin: .4rem;
+      padding: .2rem;
+      width: 26em;
+      height: 7em;
+      border: none;
+      border-radius: 5px;
+      &:active, &:focus{
+        outline: none;
+        border: none;
+      }
+    }
+    button{
+      background: $main-light;
+      font-size: 1.4rem;
+    }
+  }
 }
