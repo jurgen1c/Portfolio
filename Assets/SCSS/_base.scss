@@ -22,6 +22,17 @@ nav {
   flex-direction: column;
   align-items: center;
   top: 0;
+  svg {
+    z-index: -1;
+    position: absolute;
+    width: 320px;
+  }
+  path {
+    fill: none;
+    stroke: url(#linearGradient);;
+    stroke-width: 4;
+    stroke-dasharray: 240 1386;
+  }
   img{
     border-radius: 50%;
     width: 7rem;
@@ -32,6 +43,7 @@ nav {
     color: $main-color;
     font-size: 2rem;
     font-family: $main-font;
+    font-weight: 600;
     &:hover {
       color: $header-color;
       text-decoration: underline;
@@ -58,6 +70,7 @@ nav {
   font-size: 3rem;
   color: $header-color;
   margin: 1rem 0;
+  font-weight: 600;
 }
 
 .frame-text{
@@ -77,5 +90,6 @@ nav {
   background: $main-color;
   border-radius: 7px;
   border: none;
-  font-family: $secondary-font;
+  font-family: $main-font;
+  font-weight: 600;
 }

@@ -1,31 +1,95 @@
+// Intro Animation --------------------------------------
+function introAnimation() {
+  var tl = anime.timeline({
+    easing: 'easeOutExpo',
+    duration: 2500
+  });
+  
+  // Add children
+  tl
+  .add({
+    targets: '.text',
+    translateY: ['100%', '0%']
+  })
+  .add({
+    targets: '.slider',
+    translateY: ['100%', '-100%'],
+  })
+  .add({
+    targets: '.intro-ani',
+    translateY: ['0%', '-100%']
+  }, 2700)
+  .add({
+    targets: 'nav',
+    translateX: ['-100%', '0%']
+  })
+  .add({
+    targets: '.intro-wrap',
+    opacity: [0, 1]
+  }, 5800);
+}
 
-var tl = anime.timeline({
-  easing: 'easeOutExpo',
-  duration: 2500
+
+// Form animation ----------------------------------
+
+/* document.querySelector('#contact-form').addEventListener('focus', function(e){
+  anime({
+    tagerts: '.form-morph',
+    strokeDashoffset: [anime.setDashoffset, 0]
+  });
+}); */
+
+// Nav animation -------------------------------------
+
+var current = null;
+document.querySelector('#email').addEventListener('focus', function(e) {
+  if (current) current.pause();
+  current = anime({
+    targets: 'path',
+    strokeDashoffset: {
+      value: 0,
+      duration: 700,
+      easing: 'easeOutQuart'
+    },
+    strokeDasharray: {
+      value: '240 1386',
+      duration: 700,
+      easing: 'easeOutQuart'
+    }
+  });
 });
-
-// Add children
-tl
-.add({
-  targets: '.text',
-  translateY: ['100%', '0%']
-})
-.add({
-  targets: '.slider',
-  translateY: ['100%', '-100%'],
-})
-.add({
-  targets: '.intro-ani',
-  translateY: ['0%', '-100%']
-}, 2700)
-.add({
-  targets: 'nav',
-  translateX: ['-100%', '0%']
-})
-.add({
-  targets: '.intro-wrap',
-  opacity: [0, 1]
-}, 5800);
+document.querySelector('#password').addEventListener('focus', function(e) {
+  if (current) current.pause();
+  current = anime({
+    targets: 'path',
+    strokeDashoffset: {
+      value: -336,
+      duration: 700,
+      easing: 'easeOutQuart'
+    },
+    strokeDasharray: {
+      value: '240 1386',
+      duration: 700,
+      easing: 'easeOutQuart'
+    }
+  });
+});
+document.querySelector('#submit').addEventListener('focus', function(e) {
+  if (current) current.pause();
+  current = anime({
+    targets: 'path',
+    strokeDashoffset: {
+      value: -730,
+      duration: 700,
+      easing: 'easeOutQuart'
+    },
+    strokeDasharray: {
+      value: '530 1386',
+      duration: 700,
+      easing: 'easeOutQuart'
+    }
+  });
+});
 
 // T-bot modal and Slider --------------------------------------------
 

@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Text+Me+One&display=swap');
 
 $main-color: rgb(90, 21, 146);
 $main-light: rgb(185, 128, 231);
 $header-color: rgb(250, 186, 66);
 $header-light: rgb(255, 201, 121);
 
-$main-font: "Lobster", sans-serif;
-$secondary-font: "Heebo", sans-serif;
+$main-font: "Megrim", sans-serif;
+$secondary-font: "Text Me One", sans-serif;
 
 
 @mixin responsive {

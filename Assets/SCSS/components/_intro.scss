@@ -3,7 +3,9 @@
   height: 100vh;
   background: $main-color;
   border-radius: 0 0 0 85%;
-  h1 {
+  h1{
+    font-size: 10rem;
+    font-weight: 400;
     font-family: $main-font;
   }
 }
@@ -17,8 +19,7 @@
   justify-content: space-around;
   color: whitesmoke;
   h1{
-    font-size: 8rem;
-    margin-right: 3em;
+    margin-right: 1.7em;
   }
   h3{
     font-family: $secondary-font;

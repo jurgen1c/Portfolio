@@ -1,8 +1,14 @@
 #contact{
+  position: relative;
   margin-top: 3rem;
   height: fit-content;
   border-radius: 100% 0 0 0;
   background: $main-color;
+  svg{
+    position: absolute;
+    bottom: 150px;
+    left: -130px;
+  }
   .form-wrap{
     display: flex;
     justify-content: flex-end;
@@ -18,6 +24,7 @@
     } 
     input, 
     select{
+      font-family: $secondary-font;
       margin: .4rem;
       padding: .2rem;
       width: 26em;
@@ -27,6 +34,7 @@
       border-radius: 5px;
     }
     textarea{
+      font-family: $secondary-font;
       margin: .4rem;
       padding: .2rem;
       width: 26em;

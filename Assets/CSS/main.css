@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Megrim&family=Text+Me+One&display=swap");
 /* @include respond(tablet) { background: green; // responsive code for tablet viewport i.e. 600px } */
 * { padding: 0; margin: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
@@ -8,9 +8,13 @@ section { width: 80%; }
 
 nav { padding: 2rem; width: 20%; position: fixed; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; top: 0; }
 
+nav svg { z-index: -1; position: absolute; width: 320px; }
+
+nav path { fill: none; stroke: url(#linearGradient); stroke-width: 4; stroke-dasharray: 240 1386; }
+
 nav img { border-radius: 50%; width: 7rem; }
 
-nav a { margin-top: 2rem; text-decoration: none; color: #5a1592; font-size: 2rem; font-family: "Lobster", sans-serif; }
+nav a { margin-top: 2rem; text-decoration: none; color: #5a1592; font-size: 2rem; font-family: "Megrim", sans-serif; font-weight: 600; }
 
 nav a:hover { color: #faba42; text-decoration: underline; }
 
@@ -20,23 +24,23 @@ nav a:hover { color: #faba42; text-decoration: underline; }
 
 .space-between { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-.main-header { font-family: "Lobster", sans-serif; font-size: 3rem; color: #faba42; margin: 1rem 0; }
+.main-header { font-family: "Megrim", sans-serif; font-size: 3rem; color: #faba42; margin: 1rem 0; font-weight: 600; }
 
 .frame-text { background: #b980e7; padding: 1.5rem; border-radius: 10px; color: whitesmoke; }
 
-.btn { padding: 1rem; margin: 1rem 0; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; outline: none; color: whitesmoke; background: #5a1592; border-radius: 7px; border: none; font-family: "Heebo", sans-serif; }
+.btn { padding: 1rem; margin: 1rem 0; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; outline: none; color: whitesmoke; background: #5a1592; border-radius: 7px; border: none; font-family: "Megrim", sans-serif; font-weight: 600; }
 
 #intro { position: relative; height: 100vh; background: #5a1592; border-radius: 0 0 0 85%; }
 
-#intro h1 { font-family: "Lobster", sans-serif; }
+#intro h1 { font-size: 10rem; font-weight: 400; font-family: "Megrim", sans-serif; }
 
 .intro-wrap { height: 100%; padding: 2rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; color: whitesmoke; }
 
-.intro-wrap h1 { font-size: 8rem; margin-right: 3em; }
+.intro-wrap h1 { margin-right: 1.7em; }
 
-.intro-wrap h3 { font-family: "Heebo", sans-serif; font-size: 4rem; }
+.intro-wrap h3 { font-family: "Text Me One", sans-serif; font-size: 4rem; }
 
-.intro-wrap p { background: #b980e7; padding: 2rem; border-radius: 5px; font-family: "Heebo", sans-serif; }
+.intro-wrap p { background: #b980e7; padding: 2rem; border-radius: 5px; font-family: "Text Me One", sans-serif; }
 
 .intro-wrap div { padding: 0 3rem; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
 
@@ -44,7 +48,7 @@ nav a:hover { color: #faba42; text-decoration: underline; }
 
 .intro-ani { background: #ffc979; position: fixed; top: 0; right: 0; width: 100%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.intro-text { color: black; font-family: "Heebo", sans-serif; font-size: 3.5rem; }
+.intro-text { color: black; font-family: "Text Me One", sans-serif; font-size: 3.5rem; }
 
 .hide { background: #ffc979; overflow: hidden; }
 
@@ -66,7 +70,7 @@ nav a:hover { color: #faba42; text-decoration: underline; }
 
 .sec-info button { font-size: 1.1rem; margin: 1.5rem 0 0 1rem; }
 
-.card-title { font-size: 2.5rem; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; color: white; background: #5a1592; border-radius: 10px; padding: 0 .5rem; margin: 0 .5rem; }
+.card-title { font-size: 2rem; font-family: "Megrim", sans-serif; font-weight: 400; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; color: white; background: #5a1592; border-radius: 10px; padding: 0 .5rem; margin: 0 .5rem; }
 
 .t-bot { background-image: url("../Images/tweet_bot.png"); background-position: center; background-size: cover; }
 
@@ -83,7 +87,7 @@ nav a:hover { color: #faba42; text-decoration: underline; }
 .modal { display: none; /* Hidden by default */ position: fixed; /* Stay in place */ z-index: 1; /* Sit on top */ left: 0; top: 0; width: 100%; /* Full width */ height: 100%; /* Full height */ overflow: auto; /* Enable scroll if needed */ background-color: black; /* Fallback color */ background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */ }
 
 /* Modal Content/Box */
-.modal-content { background-color: #fefefe; margin: 2% auto; /* 15% from the top and centered */ padding: 20px; border: 1px solid #888; border-radius: 10px; width: 85%; /* Could be more or less, depending on screen size */ }
+.modal-content { background-color: #fefefe; margin: 2% auto; /* 15% from the top and centered */ padding: 20px; border: 1px solid #888; border-radius: 10px; width: 85%; /* Could be more or less, depending on screen size */ font-family: "Text Me One", sans-serif; }
 
 .modal-info { margin-top: 3rem; padding: 2rem 4rem 0 4rem; }
 
@@ -128,23 +132,27 @@ q { font-style: italic; }
 
 #about { margin-top: 3rem; }
 
-.about-wrap { padding: 1rem; }
+.about-wrap { padding: 1rem; font-family: "Text Me One", sans-serif; }
 
 .about-wrap button { font-size: 1.2rem; }
 
-.skill-wrap { text-align: center; width: 21rem; height: 300px; padding: 1rem; color: whitesmoke; background: #b980e7; border-radius: 10px; font-family: "Heebo", sans-serif; }
+.skill-wrap { text-align: center; width: 21rem; height: 300px; padding: 1rem; color: whitesmoke; background: #b980e7; border-radius: 10px; font-family: "Text Me One", sans-serif; }
 
-#contact { margin-top: 3rem; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; border-radius: 100% 0 0 0; background: #5a1592; }
+.skill-wrap h2 { font-family: "Megrim", sans-serif; }
+
+#contact { position: relative; margin-top: 3rem; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; border-radius: 100% 0 0 0; background: #5a1592; }
+
+#contact svg { position: absolute; bottom: 150px; left: -130px; }
 
 #contact .form-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; padding: 4rem; }
 
-#contact form { -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0 2rem; color: white; font-family: "Heebo", sans-serif; }
+#contact form { -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0 2rem; color: white; font-family: "Text Me One", sans-serif; }
 
 #contact form label { margin: .4rem; }
 
-#contact form input, #contact form select { margin: .4rem; padding: .2rem; width: 26em; height: 2rem; outline: none; border: none; border-radius: 5px; }
+#contact form input, #contact form select { font-family: "Text Me One", sans-serif; margin: .4rem; padding: .2rem; width: 26em; height: 2rem; outline: none; border: none; border-radius: 5px; }
 
-#contact form textarea { margin: .4rem; padding: .2rem; width: 26em; height: 7em; border: none; border-radius: 5px; }
+#contact form textarea { font-family: "Text Me One", sans-serif; margin: .4rem; padding: .2rem; width: 26em; height: 7em; border: none; border-radius: 5px; }
 
 #contact form textarea:active, #contact form textarea:focus { outline: none; border: none; }
 
