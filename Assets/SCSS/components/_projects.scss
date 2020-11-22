@@ -113,7 +113,11 @@
 
 /* The Close Button */
 .t-bot-close,
-.csm-close {
+.csm-close, 
+.ittc-close,
+.invaders-close,
+.etnias-close,
+.vianda-close {
   color: #aaa;
   float: right;
   font-size: 28px;
@@ -123,7 +127,15 @@
 .t-bot-close:hover,
 .t-bot-close:focus,
 .csm-close:hover,
-.csm-close:focus {
+.csm-close:focus,
+.ittc-close:hover,
+.ittc-close:focus,
+.invaders-close:hover,
+.invaders-close:focus,
+.etnias-close:hover,
+.etnias-close:focus,
+.vianda-close:hover,
+.vianda-close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
@@ -136,7 +148,12 @@
 }
 
 /* Slides */
-.t-botSlides, .csmSlides {
+.t-botSlides, 
+.csmSlides,
+.ittcSlides,
+.invadersSlides,
+.etniasSlides,
+.viandaSlides {
   display: none;
   padding: 80px;
   text-align: center;
@@ -182,7 +199,11 @@
 
 /* The dots/bullets/indicators */
 .t-bot-dot,
-.csm-dot {
+.csm-dot,
+.ittc-dot,
+.invaders-dot,
+.etnias-dot,
+.vianda-dot {
   cursor: pointer;
   height: 5rem;
   width: 7rem;
@@ -195,7 +216,11 @@
 /* Add a background color to the active dot/circle */
 .active, 
 .t-bot-dot:hover, 
-.csm-dot:hover{
+.csm-dot:hover,
+.ittc-dot:hover,
+.invaders-dot:hover,
+.etnias-dot:hover,
+.vianda-dot:hover{
   border: 2px solid $header-color;
 }
 

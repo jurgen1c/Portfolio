@@ -130,3 +130,211 @@ function showSlidesC(n) {
   slides[cslideIndex-1].style.display = "block";
   dots[cslideIndex-1].className += " active";
 }
+
+// ITTC Modal & Slider ------------------------------------------
+
+var imodal = document.getElementById("ittcModal");
+var ibtn = document.getElementById("ittcBtn");
+var ispan = document.getElementsByClassName("ittc-close")[0];
+
+// Get the modal
+
+// When the user clicks on the button, open the modal
+ibtn.onclick = function() {
+  imodal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+ispan.onclick = function() {
+  imodal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == imodal) {
+    imodal.style.display = "none";
+  }
+}
+
+var islideIndex = 1;
+showSlidesI(islideIndex);
+
+function plusSlidesI(n) {
+  showSlidesI(islideIndex += n);
+}
+
+function currentSlideI(n) {
+  showSlidesI(islideIndex = n);
+}
+
+function showSlidesI(n) {
+  var i;
+  var slides = document.getElementsByClassName("ittcSlides");
+  var dots = document.getElementsByClassName("ittc-dot");
+  if (n > slides.length) {islideIndex = 1}
+    if (n < 1) {islideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[islideIndex-1].style.display = "block";
+  dots[islideIndex-1].className += " active";
+}
+
+// Invaders Modal & Slider ------------------------------------------
+
+var simodal = document.getElementById("invadersModal");
+var sibtn = document.getElementById("invadersBtn");
+var sispan = document.getElementsByClassName("invaders-close")[0];
+
+// Get the modal
+
+// When the user clicks on the button, open the modal
+sibtn.onclick = function() {
+  simodal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+sispan.onclick = function() {
+  simodal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == simodal) {
+    simodal.style.display = "none";
+  }
+}
+
+var sislideIndex = 1;
+showSlidesSi(sislideIndex);
+
+function plusSlidesSi(n) {
+  showSlidesSi(sislideIndex += n);
+}
+
+function currentSlideSi(n) {
+  showSlidesSi(sislideIndex = n);
+}
+
+function showSlidesSi(n) {
+  var i;
+  var slides = document.getElementsByClassName("invadersSlides");
+  var dots = document.getElementsByClassName("invaders-dot");
+  if (n > slides.length) {sislideIndex = 1}
+    if (n < 1) {sislideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[sislideIndex-1].style.display = "block";
+  dots[sislideIndex-1].className += " active";
+}
+
+// Etnias Modal & Slider ------------------------------------------
+
+var emodal = document.getElementById("etniasModal");
+var ebtn = document.getElementById("etniasBtn");
+var espan = document.getElementsByClassName("etnias-close")[0];
+
+// Get the modal
+
+// When the user clicks on the button, open the modal
+ebtn.onclick = function() {
+  emodal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+espan.onclick = function() {
+  emodal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == emodal) {
+    emodal.style.display = "none";
+  }
+}
+
+var eslideIndex = 1;
+showSlidesE(eslideIndex);
+
+function plusSlidesE(n) {
+  showSlidesE(eslideIndex += n);
+}
+
+function currentSlideE(n) {
+  showSlidesE(eslideIndex = n);
+}
+
+function showSlidesE(n) {
+  var i;
+  var slides = document.getElementsByClassName("etniasSlides");
+  var dots = document.getElementsByClassName("etnias-dot");
+  if (n > slides.length) {eslideIndex = 1}
+    if (n < 1) {eslideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[eslideIndex-1].style.display = "block";
+  dots[eslideIndex-1].className += " active";
+}
+
+// Vianda Modal & Slider ------------------------------------------
+
+var vmodal = document.getElementById("viandaModal");
+var vbtn = document.getElementById("viandaBtn");
+var vspan = document.getElementsByClassName("vianda-close")[0];
+
+// Get the modal
+
+// When the user clicks on the button, open the modal
+vbtn.onclick = function() {
+  vmodal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+vspan.onclick = function() {
+  vmodal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == vmodal) {
+    vmodal.style.display = "none";
+  }
+}
+
+var vslideIndex = 1;
+showSlidesV(vslideIndex);
+
+function plusSlidesV(n) {
+  showSlidesV(vslideIndex += n);
+}
+
+function currentSlideV(n) {
+  showSlidesV(vslideIndex = n);
+}
+
+function showSlidesV(n) {
+  var i;
+  var slides = document.getElementsByClassName("viandaSlides");
+  var dots = document.getElementsByClassName("vianda-dot");
+  if (n > slides.length) {eslideIndex = 1}
+    if (n < 1) {vslideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[vslideIndex-1].style.display = "block";
+  dots[vslideIndex-1].className += " active";
+}

@@ -90,15 +90,15 @@ nav a:hover { color: #faba42; text-decoration: underline; }
 .modal-info button { margin: .5rem 0 0 0; width: 10em; }
 
 /* The Close Button */
-.t-bot-close, .csm-close { color: #aaa; float: right; font-size: 28px; font-weight: bold; }
+.t-bot-close, .csm-close, .ittc-close, .invaders-close, .etnias-close, .vianda-close { color: #aaa; float: right; font-size: 28px; font-weight: bold; }
 
-.t-bot-close:hover, .t-bot-close:focus, .csm-close:hover, .csm-close:focus { color: black; text-decoration: none; cursor: pointer; }
+.t-bot-close:hover, .t-bot-close:focus, .csm-close:hover, .csm-close:focus, .ittc-close:hover, .ittc-close:focus, .invaders-close:hover, .invaders-close:focus, .etnias-close:hover, .etnias-close:focus, .vianda-close:hover, .vianda-close:focus { color: black; text-decoration: none; cursor: pointer; }
 
 /* Slideshow container */
 .slideshow-container { position: relative; background: #f1f1f1f1; }
 
 /* Slides */
-.t-botSlides, .csmSlides { display: none; padding: 80px; text-align: center; }
+.t-botSlides, .csmSlides, .ittcSlides, .invadersSlides, .etniasSlides, .viandaSlides { display: none; padding: 80px; text-align: center; }
 
 /* Next & previous buttons */
 .prev, .next { cursor: pointer; position: absolute; top: 50%; width: auto; margin-top: -30px; padding: 16px; color: #888; font-weight: bold; font-size: 20px; border-radius: 0 3px 3px 0; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
@@ -115,10 +115,10 @@ nav a:hover { color: #faba42; text-decoration: underline; }
 .dot-container div { position: absolute; top: -2rem; right: 34%; }
 
 /* The dots/bullets/indicators */
-.t-bot-dot, .csm-dot { cursor: pointer; height: 5rem; width: 7rem; margin: 0 2px; border: none; display: inline-block; -webkit-transition: border 0.6s ease; transition: border 0.6s ease; }
+.t-bot-dot, .csm-dot, .ittc-dot, .invaders-dot, .etnias-dot, .vianda-dot { cursor: pointer; height: 5rem; width: 7rem; margin: 0 2px; border: none; display: inline-block; -webkit-transition: border 0.6s ease; transition: border 0.6s ease; }
 
 /* Add a background color to the active dot/circle */
-.active, .t-bot-dot:hover, .csm-dot:hover { border: 2px solid #faba42; }
+.active, .t-bot-dot:hover, .csm-dot:hover, .ittc-dot:hover, .invaders-dot:hover, .etnias-dot:hover, .vianda-dot:hover { border: 2px solid #faba42; }
 
 /* Add an italic font style to all quotes */
 q { font-style: italic; }
