@@ -1,22 +1,20 @@
 #contact{
-  position: relative;
   margin-top: 3rem;
   height: fit-content;
   border-radius: 100% 0 0 0;
   background: $main-color;
-  svg{
-    position: absolute;
-    bottom: 150px;
-    left: -130px;
+  h1{
+    margin: 1rem 0;
+    height: fit-content;
   }
   .form-wrap{
     display: flex;
-    justify-content: flex-end;
-    padding: 4rem;
+    justify-content: center;
+    width: 50%;
+    margin: 2rem 0 0 0;
   }
   form{
     align-items: center;
-    padding: 0 2rem;
     color: white;
     font-family: $secondary-font;
     label{
@@ -52,3 +50,26 @@
     }
   }
 }
+
+.ani-wrap{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  margin: .5rem 1rem 0 0;
+  .form-square{
+    background: transparent;
+    border: solid 2px $header-color;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    /* top: ;
+    left: 10px; */
+  }
+  
+  .form-circle {
+    background: transparent;
+    border: solid 2px $main-light;
+    position: absolute;
+  }
+}
+

@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Text+Me+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Raleway&display=swap');
 
-$main-color: rgb(90, 21, 146);
-$main-light: rgb(185, 128, 231);
-$header-color: rgb(250, 186, 66);
-$header-light: rgb(255, 201, 121);
+$main-color: #020E2D;
+$main-light: #264288;
+$header-color: #B97F24;
+$header-light: #BF9553;
+$bg-color: #d2d8db;
+// #66369D
 
 $main-font: "Megrim", sans-serif;
-$secondary-font: "Text Me One", sans-serif;
+$secondary-font: "Raleway", sans-serif;
 
 
 @mixin responsive {

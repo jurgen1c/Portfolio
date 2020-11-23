@@ -9,28 +9,6 @@
 </head>
 <body onload="introAnimation()">
   <nav>
-    <svg viewBox="0 0 320 300">
-      <defs>
-        <linearGradient
-                        inkscape:collect="always"
-                        id="linearGradient"
-                        x1="13"
-                        y1="193.49992"
-                        x2="307"
-                        y2="193.49992"
-                        gradientUnits="userSpaceOnUse">
-          <stop
-                style="stop-color:#ff00ff;"
-                offset="0"
-                id="stop876" />
-          <stop
-                style="stop-color:#ff0000;"
-                offset="1"
-                id="stop878" />
-        </linearGradient>
-      </defs>
-      <path d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143" />
-    </svg>
     <img src="./Assets/Images/profile.jpg" alt="profile">
     <a id="email" href="#intro">Intro</a>
     <a id="password" href="#projects">Projects</a>
@@ -40,12 +18,18 @@
   <main>
     <section id="intro">
       <div class="intro-wrap">
-        <h1>Welcome</h1>
-        <h3 class="p-2">Some text</h3>
-        <p class="p-2">Ugh XOXO labore, green juice mumblecore truffaut sartorial commodo everyday carry tousled four dollar toast nostrud kickstarter skateboard. Sunt DIY 3 wolf moon consequat, dreamcatcher snackwave eiusmod sriracha whatever. Glossier knausgaard succulents dolore. Fixie veniam farm-to-table, cardigan kale chips ea ullamco. Cred chicharrones aute hell of fixie umami woke pinterest tacos copper mug mollit farm-to-table post-ironic do.</p>
+        <h1>Jurgen Clausen Gutierrez</h1>
+        <h3>Full Stack Software Developer</h3>
+        <p>
+          Thank you for visiting my portafolio in here you will find some examples of my recent work and means of how to get in touch with me. Though a late bloomer software development has become an all consuming passion of mine and I'm always looking for new and interesting proyects to work on.
+        </p>
         <div>
-          <i class="fab fa-github-square fa-3x"></i>
-          <i class="fab fa-linkedin fa-3x"></i>
+          <a href="https://github.com/jurgen1c" target="_blank">
+            <i class="fab fa-github-square fa-3x"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/jurgen-clausen-2740061a9/" target="_blank">
+            <i class="fab fa-linkedin fa-3x"></i>
+          </a>
         </div>
       </div>
       <div class="intro-ani">
@@ -83,7 +67,7 @@
             <!-- Modal content -->
             <div class="modal-content">
               <div class="d-flex space-between">
-                <h1 class="main-header">Twitter Bot</h1>
+                <h1 class="main-header">Whistle Bot</h1>
                 <span class="t-bot-close">&times;</span>
               </div>
               <!-- Slideshow container -->
@@ -91,18 +75,18 @@
 
                 <!-- Full-width slides/quotes -->
                 <div class="t-botSlides">
-                  <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
-                  <p class="author">- John Keats</p>
+                  <img src="./Assets/Images/whistle_bot/tweet_bot.png" alt="tweet bot code">
+                  <h3>Bot Main Script</h3>
                 </div>
 
                 <div class="t-botSlides">
-                  <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
-                  <p class="author">- Ernest Hemingway</p>
+                  <img src="./Assets/Images/whistle_bot/Bot-screenshot2.png" alt="tweet bot code">
+                  <h3>Bot Scraper Class</h3>
                 </div>
 
                 <div class="t-botSlides">
-                  <q>I have not failed. I've just found 10,000 ways that won't work.</q>
-                  <p class="author">- Thomas A. Edison</p>
+                  <img src="./Assets/Images/whistle_bot/tweet_example.png" alt="tweet bot code">
+                  <h3>Bot Example Tweet</h3>
                 </div>
 
                 <!-- Next/prev buttons -->
@@ -113,16 +97,20 @@
               <!-- Dots/bullets/indicators -->
               <div class="dot-container">
                 <div>
-                  <img src="./Assets/Images/tweet_bot.png"class="t-bot-dot" onclick="currentSlide(1)">
-                  <a class="t-bot-dot" onclick="currentSlide(2)"></a>
-                  <a class="t-bot-dot" onclick="currentSlide(3)"></a>
+                  <img src="./Assets/Images/whistle_bot/tweet_bot.png"class="t-bot-dot" onclick="currentSlide(1)">
+                  <img src="./Assets/Images/whistle_bot/Bot-screenshot2.png"class="t-bot-dot" onclick="currentSlide(2)">
+                  <img src="./Assets/Images/whistle_bot/tweet_example.png"class="t-bot-dot" onclick="currentSlide(3)">
                 </div>
               </div>
               <div class="d-flex space-between modal-info">
-                <p>Some text in the Modal..</p>
+                <p>A Twitter Bot to exert presurre on politicians in these dificult times. This was made specifically for my country of Costa Rica,
+                  but it can be easily adjusted to any group of politicians from any where by adjusting the accounts array, scraper and election day to your needs. This bot will scrap the web
+                  for Costa Rica's current unemployement rate and Corona virus cases, then count down the days to the next election and construct a tweet reminding all accounts how
+                  many days they have left to act using the info scrapped.
+                </p>
                 <div class="d-column">
-                  <button class="btn">Demo</button>
-                  <button class="btn">Source</button>
+                  <a href="https://twitter.com/BotWhistle" target="_blank" class="btn">Demo</a>
+                  <a href="https://github.com/jurgen1c/Ruby-Capstone-Twitter-Bot" target="_blank" class="btn">Source</a>
                 </div>
               </div>
             </div>
@@ -155,18 +143,18 @@
 
                 <!-- Full-width slides/quotes -->
                 <div class="csmSlides">
-                  <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
-                  <p class="author">- John Keats</p>
+                  <img src="./Assets/Images/csm/csm_home.png" alt="csm home">
+                  <h3>CSM Home Page</h3>
                 </div>
 
                 <div class="csmSlides">
-                  <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
-                  <p class="author">- Ernest Hemingway</p>
+                  <img src="./Assets/Images/csm/article.png" alt="csm home">
+                  <h3>Article Page</h3>
                 </div>
 
                 <div class="csmSlides">
-                  <q>I have not failed. I've just found 10,000 ways that won't work.</q>
-                  <p class="author">- JCG</p>
+                  <img src="./Assets/Images/csm/user.png" alt="csm home">
+                  <h3>User Page</h3>
                 </div>
 
                 <!-- Next/prev buttons -->
@@ -176,14 +164,20 @@
 
               <!-- Dots/bullets/indicators -->
               <div class="dot-container">
-                <span class="csm-dot" onclick="currentSlideC(1)"></span>
-                <span class="csm-dot" onclick="currentSlideC(2)"></span>
-                <span class="csm-dot" onclick="currentSlideC(3)"></span>
+                <div>
+                  <img src="./Assets/Images/csm/csm_home.png"class="csm-dot" onclick="currentSlideC(1)">
+                  <img src="./Assets/Images/csm/article.png"class="csm-dot" onclick="currentSlideC(2)">
+                  <img src="./Assets/Images/csm/user.png"class="csm-dot" onclick="currentSlideC(3)">
+                </div>
               </div>
-              <div class="d-flex">
-                <p>Crowd source media to fight fake news</p>
-                <button class="btn">Live</button>
-                <button class="btn">Source</button>
+              <div class="d-flex space-between modal-info">
+                <p>This Ruby on Rails website was developed with the concept of combating fake news in the real sense and figurative as well. 
+                  To achieve this users must register and provide for every article created. Users may follow other users and create reviews of other users articles.
+                </p>
+                <div class="d-column">
+                  <a href="https://crowd-sourced-media.herokuapp.com/" target="_blank" class="btn">Live</a>
+                  <a href="https://github.com/jurgen1c/CS-Media" target="_blank" class="btn">Source</a>
+                </div>
               </div>
             </div>
           </div>
@@ -205,7 +199,7 @@
             <!-- Modal content -->
             <div class="modal-content">
               <div class="d-flex space-between">
-                <h1 class="main-header">Twitter Bot</h1>
+                <h1 class="main-header">Timetraveller Convention</h1>
                 <span class="ittc-close">&times;</span>
               </div>
               <!-- Slideshow container -->
@@ -213,18 +207,18 @@
 
                 <!-- Full-width slides/quotes -->
                 <div class="ittcSlides">
-                  <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
-                  <p class="author">- John Keats</p>
+                  <img src="./Assets/Images/ittc/ittc_home.png" alt="ittc home">
+                  <h3>ITC Home Page</h3>
                 </div>
 
                 <div class="ittcSlides">
-                  <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
-                  <p class="author">- Ernest Hemingway</p>
+                  <img src="./Assets/Images/ittc/program.png" alt="ittc program">
+                  <h3>ITC Program Page</h3>
                 </div>
 
                 <div class="ittcSlides">
-                  <q>I have not failed. I've just found 10,000 ways that won't work.</q>
-                  <p class="author">- Thomas A. Edison</p>
+                  <img src="./Assets/Images/ittc/join.png" alt="ittc join">
+                  <h3>ITC Join Page</h3>
                 </div>
 
                 <!-- Next/prev buttons -->
@@ -235,16 +229,16 @@
               <!-- Dots/bullets/indicators -->
               <div class="dot-container">
                 <div>
-                  <img src="./Assets/Images/tweet_bot.png"class="ittc-dot" onclick="currentSlideI(1)">
-                  <a class="ittc-dot" onclick="currentSlideI(2)"></a>
-                  <a class="ittc-dot" onclick="currentSlideI(3)"></a>
+                  <img src="./Assets/Images/ittc/ittc_home.png"class="ittc-dot" onclick="currentSlideI(1)">
+                  <img src="./Assets/Images/ittc/program.png"class="ittc-dot" onclick="currentSlideC(2)">
+                  <img src="./Assets/Images/ittc/join.png"class="ittc-dot" onclick="currentSlideC(3)">
                 </div>
               </div>
               <div class="d-flex space-between modal-info">
                 <p>Some text in the Modal..</p>
                 <div class="d-column">
-                  <button class="btn">Demo</button>
-                  <button class="btn">Source</button>
+                  <a href="https://raw.githack.com/jurgen1c/Capstone/feature-branch/index.html" target="_blank" class="btn">Demo</a>
+                  <a href="https://github.com/jurgen1c/Capstone" target="_blank" class="btn">Source</a>
                 </div>
               </div>
             </div>
@@ -265,7 +259,7 @@
             <!-- Modal content -->
             <div class="modal-content">
               <div class="d-flex space-between">
-                <h1 class="main-header">Twitter Bot</h1>
+                <h1 class="main-header">Py Space Invaders</h1>
                 <span class="invaders-close">&times;</span>
               </div>
               <!-- Slideshow container -->
@@ -273,18 +267,18 @@
 
                 <!-- Full-width slides/quotes -->
                 <div class="invadersSlides">
-                  <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
-                  <p class="author">- John Keats</p>
+                  <img src="./Assets/Images/sinvaders/invaders_home.png" alt="invaders home">
+                  <h3>Main Program</h3>
                 </div>
 
                 <div class="invadersSlides">
-                  <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
-                  <p class="author">- Ernest Hemingway</p>
+                  <img src="./Assets/Images/sinvaders/invaders_menu.png" alt="main menu">
+                  <h3>Main Menu</h3>
                 </div>
 
                 <div class="invadersSlides">
-                  <q>I have not failed. I've just found 10,000 ways that won't work.</q>
-                  <p class="author">- Thomas A. Edison</p>
+                  <img src="./Assets/Images/sinvaders/invaders_game.png" alt="game window">
+                  <h3>Game Window</h3>
                 </div>
 
                 <!-- Next/prev buttons -->
@@ -295,16 +289,17 @@
               <!-- Dots/bullets/indicators -->
               <div class="dot-container">
                 <div>
-                  <img src="./Assets/Images/tweet_bot.png"class="invaders-dot" onclick="currentSlideSi(1)">
-                  <a class="invaders-dot" onclick="currentSlideSi(2)"></a>
-                  <a class="invaders-dot" onclick="currentSlideSi(3)"></a>
+                  <img src="./Assets/Images/sinvaders/invaders_home.png"class="invaders-dot" onclick="currentSlideSi(1)">
+                  <img src="./Assets/Images/sinvaders/invaders_menu.png"class="invaders-dot" onclick="currentSlideSi(2)">
+                  <img src="./Assets/Images/sinvaders/invaders_game.png"class="invaders-dot" onclick="currentSlideSi(3)">
                 </div>
               </div>
               <div class="d-flex space-between modal-info">
-                <p>Some text in the Modal..</p>
+                <p>Out of my love retro games and game development in general I dove into pygame with this simple program to revisit the classic from the arcade.
+                </p>
                 <div class="d-column">
-                  <button class="btn">Demo</button>
-                  <button class="btn">Source</button>
+                  <a href="" target="_blank" class="btn">Demo</a>
+                  <a href="https://github.com/jurgen1c/Space-Invaders-Custom" class="btn">Source</a>
                 </div>
               </div>
             </div>
@@ -328,7 +323,7 @@
             <!-- Modal content -->
             <div class="modal-content">
               <div class="d-flex space-between">
-                <h1 class="main-header">Twitter Bot</h1>
+                <h1 class="main-header">Etnias World</h1>
                 <span class="etnias-close">&times;</span>
               </div>
               <!-- Slideshow container -->
@@ -336,18 +331,18 @@
 
                 <!-- Full-width slides/quotes -->
                 <div class="etniasSlides">
-                  <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
-                  <p class="author">- John Keats</p>
+                  <img src="./Assets/Images/etnias/etnias_home.png" alt="home page">
+                  <h3>Home Page</h3>
                 </div>
 
                 <div class="etniasSlides">
-                  <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
-                  <p class="author">- Ernest Hemingway</p>
+                  <img src="./Assets/Images/etnias/collection.png" alt="collection page">
+                  <h3>Collection Page</h3>
                 </div>
 
                 <div class="etniasSlides">
-                  <q>I have not failed. I've just found 10,000 ways that won't work.</q>
-                  <p class="author">- Thomas A. Edison</p>
+                  <img src="./Assets/Images/etnias/product.png" alt="product page">
+                  <h3>Product Page</h3>
                 </div>
 
                 <!-- Next/prev buttons -->
@@ -358,16 +353,18 @@
               <!-- Dots/bullets/indicators -->
               <div class="dot-container">
                 <div>
-                  <img src="./Assets/Images/tweet_bot.png"class="etnias-dot" onclick="currentSlideE(1)">
-                  <a class="etnias-dot" onclick="currentSlideE(2)"></a>
-                  <a class="etnias-dot" onclick="currentSlideE(3)"></a>
+                  <img src="./Assets/Images/etnias/etnias_home.png"class="etnias-dot" onclick="currentSlideE(1)">
+                  <img src="./Assets/Images/etnias/collection.png"class="etnias-dot" onclick="currentSlideE(2)">
+                  <img src="./Assets/Images/etnias/product.png"class="etnias-dot" onclick="currentSlideE(3)">
                 </div>
               </div>
               <div class="d-flex space-between modal-info">
-                <p>Some text in the Modal..</p>
+                <p>This e-commerce fashion website was developed under a month following client specifications using shopify as back end and liquid to modify the front-end to the clients needs.
+                  Client parameters were as follows: user may make accounts, designers may register to sell they're products & influencers may register to join referal prgram.
+                  As this is an active store no source code can be shared as a matter of privacy and security.
+                </p>
                 <div class="d-column">
-                  <button class="btn">Demo</button>
-                  <button class="btn">Source</button>
+                  <a href="https://www.etniasworld.com" target="_blank" class="btn">Live</a>
                 </div>
               </div>
             </div>
@@ -391,7 +388,7 @@
             <!-- Modal content -->
             <div class="modal-content">
               <div class="d-flex space-between">
-                <h1 class="main-header">Twitter Bot</h1>
+                <h1 class="main-header">Vianda 2 Go</h1>
                 <span class="vianda-close">&times;</span>
               </div>
               <!-- Slideshow container -->
@@ -399,18 +396,18 @@
 
                 <!-- Full-width slides/quotes -->
                 <div class="viandaSlides">
-                  <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
-                  <p class="author">- John Keats</p>
+                  <img src="./Assets/Images/vianda/vianda_home.png" alt="home page">
+                  <h3>Home Page</h3>
                 </div>
 
                 <div class="viandaSlides">
-                  <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
-                  <p class="author">- Ernest Hemingway</p>
+                  <img src="./Assets/Images/vianda/menu.png" alt="menu page">
+                  <h3>Menu Page</h3>
                 </div>
 
                 <div class="viandaSlides">
-                  <q>I have not failed. I've just found 10,000 ways that won't work.</q>
-                  <p class="author">- Thomas A. Edison</p>
+                  <img src="./Assets/Images/vianda/product.png" alt="product page">
+                  <h3>Product Page</h3>
                 </div>
 
                 <!-- Next/prev buttons -->
@@ -421,16 +418,18 @@
               <!-- Dots/bullets/indicators -->
               <div class="dot-container">
                 <div>
-                  <img src="./Assets/Images/tweet_bot.png"class="vianda-dot" onclick="currentSlideV(1)">
-                  <a class="vianda-dot" onclick="currentSlideV(2)"></a>
-                  <a class="vianda-dot" onclick="currentSlideV(3)"></a>
+                  <img src="./Assets/Images/vianda/vianda_home.png"class="vianda-dot" onclick="currentSlideV(1)">
+                  <img src="./Assets/Images/vianda/menu.png"class="vianda-dot" onclick="currentSlideV(2)">
+                  <img src="./Assets/Images/vianda/product.png"class="vianda-dot" onclick="currentSlideV(3)">
                 </div>
               </div>
               <div class="d-flex space-between modal-info">
-                <p>Some text in the Modal..</p>
+                <p>This restaurant page was developed under a month for a local resturant to face the changing reality caused by the Covid-19 pandemic.
+                  Client specifications were as follows: user may create an account, user may subscribe to a monthly or weekly service, client may choose when food should be delivered,
+                  glovo delivery service integration. As this is an active store no source code can be shared as a matter of privacy and security.
+                </p>
                 <div class="d-column">
-                  <button class="btn">Demo</button>
-                  <button class="btn">Source</button>
+                  <a href="https://www.vianda2go.com" target="_blank" class="btn">Live</a>
                 </div>
               </div>
             </div>
@@ -442,86 +441,136 @@
       <h1 class="main-header">About Me</h1>
       <div class="about-wrap">
         <p class="frame-text">
-          Green juice fixie blog synth fingerstache hoodie food truck man bun kinfolk letterpress hexagon. Hell of polaroid fanny pack culpa sunt adipisicing. Aliqua health goth adipisicing gastropub poke duis dolore esse everyday carry. Fixie bespoke celiac franzen minim intelligentsia bitters microdosing narwhal dolore. Occaecat seitan enamel pin tacos flexitarian activated charcoal.
+          Junior developer with experience in Ruby, JavaScript, C# & Python. Most projects I've worked in so far relate to web-development, although currently seeking certification in data science. My ultimate personal goal is to work in the game development industry or develop a game myself.
         </p>
-        <button class="btn btn-primary">Checkout my Resume</button>
+        <a href="https://docs.google.com/document/d/1o573HQQXt6oQ_HtbcgH5_Wno2BQdSTERQC6aZh93YU8/edit?usp=sharing" target="_blank" class="btn btn-primary">
+          Checkout my Resume
+        </a>
         <div class="d-flex space-between">
           <div class="skill-wrap">
             <h2>Languages</h2>
-            <i class="fas fa-water fa-2x bg-secondary p-2 rounded"></i>
-            <i class="fab fa-js-square fa-2x bg-secondary p-2 rounded"></i>
-            <i class="fab fa-sass fa-2x bg-secondary p-2 rounded"></i>
-            <i class="far fa-gem fa-3x"></i>
-            <i class="fab fa-html5 fa-3x"></i>
-            <i class="fab fa-python fa-3x"></i>
-            <i class="fab fa-css3-alt"></i>
+            <div class="d-column">
+              <div class="d-flex space-between">
+                <p>
+                  <i class="fas fa-water"></i><br /> Liquid
+                </p>
+                <p><i class="fab fa-js-square"></i><br /> JavaScript</p>
+              </div>
+              <div class="d-flex space-between">
+                <p><i class="fab fa-sass"></i><br /> SCSS</p>
+                <p><i class="far fa-gem"></i><br /> Ruby</p>
+              </div>
+              <p><i class="fab fa-html5"></i><br /> HTML 5</p>
+              <p><i class="fab fa-python"></i><br /> Python</p>
+              <p><i class="fab fa-css3-alt"></i><br /> CSS 3</p>
+            </div>
           </div>
           <div class="skill-wrap">
             <h2>Frameworks</h2>
-            <i class="fab fa-shopify fa-2x bg-secondary p-2 rounded"></i>
-            <i class="fas fa-road fa-3x"></i>
+            <div class="d-column">
+              <i class="fab fa-shopify fa-2x">Shopify</i>
+              <i class="fas fa-road fa-2x">Ruby on Rails</i>
+            </div>
           </div>
           <div class="skill-wrap">
             <h2>Skills</h2>
-            <i class="fab fa-github-square fa-3x"></i>
+            <div class="d-column">
+              <i class="fab fa-github-square fa-2x">Github</i>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section id="contact">
       <h1 class="main-header">Contact</h1>
-      <svg width="800px" height="600px">
-        <path fill="blue" d="M 249 154 Q 293 106 400 150 C 443 215 576 114 533 222 C 487 268 431 284 500 300 C 549 266 711 223 650 300 Q 544 345 560 395 A 50 50 0 1 1 405 441 Q 394 349 311 350 Q 133 377 207 226 Z"></path>
-      </svg>
-      <div class="form-wrap">
-        <form class="d-column">
-          <div class="form-group">
-            <div class="d-column">
-              <label for="formControlInput">First Name</label>
-              <input type="text" class="form-control" placeholder="First name">
+      <div class="d-flex space-between">
+        <div class="ani-wrap">
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <svg width="600" height="600" id="form-path">
+            <path fill="none" stroke="none" d="M 200 301 Q 252 264 206 235 Q 170 175 99 146 C 17 94 131 5 164 70 Q 195 123 252 183 Q 279 241 309 190 Q 363 136 398 73 C 444 4 540 78 467 131 Q 404 168 350 226 Q 297 256 344 292 Q 392 349 452 388 C 504 463 404 526 359 436 Q 345 372 306 322 Q 273 276 246 322 Q 194 369 159 434 C 95 501 30 438 83 373 Q 141 337 200 301 Z"></path>
+          </svg>
+        </div>
+        <div class="form-wrap">
+          <form class="d-column">
+            <div class="form-group">
+              <div class="d-column">
+                <label for="formControlInput">First Name</label>
+                <input type="text" class="form-control" placeholder="First name">
+              </div>
             </div>
-          </div>
-          <div class="form-group">
-            <div class="d-column">
-              <label for="formControlInput">Last Name</label>
-              <input type="text" class="form-control" placeholder="Last name">
+            <div class="form-group">
+              <div class="d-column">
+                <label for="formControlInput">Last Name</label>
+                <input type="text" class="form-control" placeholder="Last name">
+              </div>
             </div>
-          </div>
-          <div class="d-column">
-            <label for="exampleFormControlInput1">Email address</label>
-            <input type="email" class="form-control " id="exampleFormControlInput1" placeholder="name@example.com">
-          </div>
-          <div class="form-group">
             <div class="d-column">
-              <label for="exampleFormControlSelect1">Select Industry</label>
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option>Web Development</option>
-                <option>Software Development</option>
-                <option>Game Development</option>
-                <option>E-commerce</option>
-              </select>
+              <label for="exampleFormControlInput1">Email address</label>
+              <input type="email" class="form-control " id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
-          </div>
-          <div class="form-group">
-            <div class="d-column">
-              <label for="exampleFormControlSelect1">Select Language</label>
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option>Any</option>
-                <option>Ruby</option>
-                <option>Python</option>
-                <option>C#</option>
-                <option>Javascript</option>
-              </select>
+            <div class="form-group">
+              <div class="d-column">
+                <label for="exampleFormControlSelect1">Select Industry</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Web Development</option>
+                  <option>Software Development</option>
+                  <option>Game Development</option>
+                  <option>E-commerce</option>
+                </select>
+              </div>
             </div>
-          </div>
-          <div class="form-group">
-            <div class="d-column">
-              <label for="exampleFormControlTextarea1">Message</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <div class="form-group">
+              <div class="d-column">
+                <label for="exampleFormControlSelect1">Select Language</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Any</option>
+                  <option>Ruby</option>
+                  <option>Python</option>
+                  <option>C#</option>
+                  <option>Javascript</option>
+                </select>
+              </div>
             </div>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+            <div class="form-group">
+              <div class="d-column">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>

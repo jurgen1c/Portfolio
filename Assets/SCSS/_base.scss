@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body{
+  background: $bg-color;
+}
+
 main{
   display: flex;
   flex-direction: column;
@@ -11,28 +15,17 @@ main{
 }
 
 section {
-  width: 80%;
+  width: 83%;
 }
 
 nav {
   padding: 2rem;
-  width: 20%;
+  width: 17%;
   position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
   top: 0;
-  svg {
-    z-index: -1;
-    position: absolute;
-    width: 320px;
-  }
-  path {
-    fill: none;
-    stroke: url(#linearGradient);;
-    stroke-width: 4;
-    stroke-dasharray: 240 1386;
-  }
   img{
     border-radius: 50%;
     width: 7rem;
@@ -67,7 +60,7 @@ nav {
 
 .main-header{
   font-family: $main-font;
-  font-size: 3rem;
+  font-size: 4rem;
   color: $header-color;
   margin: 1rem 0;
   font-weight: 600;

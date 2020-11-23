@@ -46,37 +46,37 @@
 }
 
 .t-bot {
-  background-image: url("../Images/tweet_bot.png");
+  background-image: url("../Images/whistle_bot/tweet_bot.png");
   background-position: center;
   background-size: cover;
 }
 
 .csm {
-  background-image: url("../Images/csm_home.png");
+  background-image: url("../Images/csm/csm_home.png");
   background-position: center;
   background-size: cover;
 }
 
 .invaders{
-  background-image: url("../Images/invaders_home.png");
+  background-image: url("../Images/sinvaders/invaders_home.png");
   background-position: center;
   background-size: cover;
 }
 
 .ittc{
-  background-image: url("../Images/ittc_home.png");
+  background-image: url("../Images/ittc/ittc_home.png");
   background-position: center;
   background-size: cover;
 }
 
 .etnias{
-  background-image: url("../Images/etnias_home.png");
+  background-image: url("../Images/etnias/etnias_home.png");
   background-position: center;
   background-size: cover;
 }
 
 .vianda{
-  background-image: url("../Images/vianda_home.png");
+  background-image: url("../Images/vianda/vianda_home.png");
   background-position: center;
   background-size: cover;
 }
@@ -96,7 +96,7 @@
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: $bg-color;
   margin: 2% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
@@ -108,8 +108,13 @@
 .modal-info{
   margin-top: 3rem;
   padding: 2rem 4rem 0 4rem;
+  p{
+    padding: 0 2rem;
+    text-align: justify;
+    width: 75%;
+  }
   button{
-    margin: .5rem 0 0 0;
+    margin: .5rem 3rem 0 0;
     width: 10em;
   }
 }
@@ -148,6 +153,10 @@
 .slideshow-container {
   position: relative;
   background: #f1f1f1f1;
+  margin: 0 auto;
+  width: 90%;
+  height: 27em;
+  border-radius: 15px;
 }
 
 /* Slides */
@@ -158,8 +167,24 @@
 .etniasSlides,
 .viandaSlides {
   display: none;
-  padding: 80px;
   text-align: center;
+  img{
+    border-radius: 15px;
+    width: 100%;
+    height:27em;
+  }
+  h3{
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    color: white;
+    background: $main-color;
+    z-index: 3;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    font-family: $main-font;
+  }
 }
 
 /* Next & previous buttons */
@@ -214,6 +239,7 @@
   border: none;
   display: inline-block;
   transition: border 0.6s ease;
+  border-radius: 10px;
 }
 
 /* Add a background color to the active dot/circle */

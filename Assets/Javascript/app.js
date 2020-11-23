@@ -22,15 +22,29 @@ function introAnimation() {
   .add({
     targets: 'nav',
     translateX: ['-100%', '0%']
-  })
+  }, 4300)
   .add({
     targets: '.intro-wrap',
     opacity: [0, 1]
-  }, 5800);
+  }, 4500);
 }
 
 
 // Form animation ----------------------------------
+
+let path = anime.path("#form-path path");
+anime({
+  targets: '.form-square',
+  translateX: path('x'),
+  translateY: path('y'),
+  rotate: path('angle'),
+  delay: anime.stagger(200),
+  rotate: '1turn',
+  easing: 'linear',
+  duration: 5500,
+  loop: true
+});
+
 
 /* document.querySelector('#contact-form').addEventListener('focus', function(e){
   anime({
@@ -38,58 +52,6 @@ function introAnimation() {
     strokeDashoffset: [anime.setDashoffset, 0]
   });
 }); */
-
-// Nav animation -------------------------------------
-
-var current = null;
-document.querySelector('#email').addEventListener('focus', function(e) {
-  if (current) current.pause();
-  current = anime({
-    targets: 'path',
-    strokeDashoffset: {
-      value: 0,
-      duration: 700,
-      easing: 'easeOutQuart'
-    },
-    strokeDasharray: {
-      value: '240 1386',
-      duration: 700,
-      easing: 'easeOutQuart'
-    }
-  });
-});
-document.querySelector('#password').addEventListener('focus', function(e) {
-  if (current) current.pause();
-  current = anime({
-    targets: 'path',
-    strokeDashoffset: {
-      value: -336,
-      duration: 700,
-      easing: 'easeOutQuart'
-    },
-    strokeDasharray: {
-      value: '240 1386',
-      duration: 700,
-      easing: 'easeOutQuart'
-    }
-  });
-});
-document.querySelector('#submit').addEventListener('focus', function(e) {
-  if (current) current.pause();
-  current = anime({
-    targets: 'path',
-    strokeDashoffset: {
-      value: -730,
-      duration: 700,
-      easing: 'easeOutQuart'
-    },
-    strokeDasharray: {
-      value: '530 1386',
-      duration: 700,
-      easing: 'easeOutQuart'
-    }
-  });
-});
 
 // T-bot modal and Slider --------------------------------------------
 
@@ -107,13 +69,6 @@ tbtn.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 tspan.onclick = function() {
   tmodal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == tmodal) {
-    tmodal.style.display = "none";
-  }
 }
 
 var slideIndex = 1;
@@ -162,11 +117,11 @@ cspan.onclick = function() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+/* window.onclick = function(event) {
   if (event.target == cmodal) {
     cmodal.style.display = "none";
   }
-}
+} */
 
 var cslideIndex = 1;
 showSlidesC(cslideIndex);
@@ -214,11 +169,11 @@ ispan.onclick = function() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+/* window.onclick = function(event) {
   if (event.target == imodal) {
     imodal.style.display = "none";
   }
-}
+} */
 
 var islideIndex = 1;
 showSlidesI(islideIndex);
@@ -266,11 +221,11 @@ sispan.onclick = function() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+/* window.onclick = function(event) {
   if (event.target == simodal) {
     simodal.style.display = "none";
   }
-}
+} */
 
 var sislideIndex = 1;
 showSlidesSi(sislideIndex);
@@ -318,11 +273,11 @@ espan.onclick = function() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+/* window.onclick = function(event) {
   if (event.target == emodal) {
     emodal.style.display = "none";
   }
-}
+} */
 
 var eslideIndex = 1;
 showSlidesE(eslideIndex);
@@ -371,7 +326,17 @@ vspan.onclick = function() {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == vmodal) {
+  if (event.target == tmodal) {
+    tmodal.style.display = "none";
+  } else if (event.target == cmodal){
+    cmodal.style.display = "none";
+  } else if (event.target == imodal) {
+    imodal.style.display = "none";
+  } else if (event.target == simodal) {
+    simodal.style.display = "none";
+  } else if (event.target == emodal) {
+    emodal.style.display = "none";
+  } else if (event.target == vmodal) {
     vmodal.style.display = "none";
   }
 }
