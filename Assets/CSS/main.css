@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Megrim&family=Raleway&display=swap");
+/* @include respond(tablet) { background: green; // responsive code for tablet viewport i.e. 600px } */
+* { padding: 0; margin: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body { background: #d2d8db; }
+
+main { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+
+section { width: 83%; }
+
+nav { padding: 2rem; width: 17%; position: fixed; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; top: 0; }
+
+nav img { border-radius: 50%; width: 7rem; }
+
+nav a { margin-top: 2rem; text-decoration: none; color: #020E2D; font-size: 2rem; font-family: "Megrim", sans-serif; font-weight: 600; }
+
+nav a:hover { color: #B97F24; text-decoration: underline; }
+
+.d-flex { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.d-column { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.space-between { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.main-header { font-family: "Megrim", sans-serif; font-size: 4rem; color: #B97F24; margin: 1rem 0; font-weight: 600; }
+
+.frame-text { background: #264288; padding: 1.5rem; border-radius: 10px; color: whitesmoke; }
+
+.btn { padding: 1rem; margin: 1rem 0; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; outline: none; color: whitesmoke; background: #020E2D; border-radius: 7px; border: none; font-family: "Megrim", sans-serif; font-weight: 600; }
+
+#intro { position: relative; height: 100vh; background: #020E2D; border-radius: 0 0 0 85%; }
+
+.intro-wrap { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; color: whitesmoke; }
+
+.intro-wrap h1 { font-size: 5.5rem; font-weight: 400; font-family: "Megrim", sans-serif; margin-right: 0; }
+
+.intro-wrap h3 { font-family: "Raleway", sans-serif; font-size: 3rem; }
+
+.intro-wrap p { background: #264288; width: 90%; padding: 2rem; border-radius: 5px; font-family: "Raleway", sans-serif; }
+
+.intro-wrap a { color: white; }
+
+.intro-wrap a:hover { color: #B97F24; }
+
+.intro-wrap div { padding: 0 3rem; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+
+.intro-wrap div i { margin: 0 1rem; }
+
+.intro-ani { background: #BF9553; position: fixed; top: 0; right: 0; width: 100%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; z-index: 99; }
+
+.intro-ani h1 { font-size: 10rem; font-weight: 400; font-family: "Megrim", sans-serif; }
+
+.intro-text { color: #0f0f0f; font-family: "Raleway", sans-serif; font-size: 3.5rem; }
+
+.hide { background: #BF9553; overflow: hidden; }
+
+.hide span { -webkit-transform: translateY(100%); transform: translateY(100%); display: inline-block; }
+
+.slider { background: #264288; position: fixed; top: 0; right: 0; width: 100%; height: 100%; -webkit-transform: translateY(100%); transform: translateY(100%); z-index: 99; }
+
+#projects { margin-top: 3rem; }
+
+.p-wrap { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap; }
+
+.card { padding: 1rem; width: 47%; height: 15em; -webkit-box-shadow: 2px 5px 15px -1px rgba(0, 0, 0, 0.72); box-shadow: 2px 5px 15px -1px rgba(0, 0, 0, 0.72); border-radius: 5px; margin: 1rem; }
+
+.card:hover .sec-info { display: block; }
+
+.sec-info { padding: 1rem; display: none; color: white; }
+
+.sec-info i { text-shadow: 4px 5px 15px #264288; padding: 0 1.5rem; }
+
+.sec-info button { font-size: 1.1rem; margin: 1.5rem 0 0 1rem; }
+
+.card-title { font-size: 2rem; font-family: "Megrim", sans-serif; font-weight: 400; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; color: white; background: #020E2D; border-radius: 10px; padding: 0 .5rem; margin: 0 .5rem; }
+
+.t-bot { background-image: url("../Images/whistle_bot/tweet_bot.png"); background-position: center; background-size: cover; }
+
+.csm { background-image: url("../Images/csm/csm_home.png"); background-position: center; background-size: cover; }
+
+.invaders { background-image: url("../Images/sinvaders/invaders_home.png"); background-position: center; background-size: cover; }
+
+.ittc { background-image: url("../Images/ittc/ittc_home.png"); background-position: center; background-size: cover; }
+
+.etnias { background-image: url("../Images/etnias/etnias_home.png"); background-position: center; background-size: cover; }
+
+.vianda { background-image: url("../Images/vianda/vianda_home.png"); background-position: center; background-size: cover; }
+
+.modal { display: none; /* Hidden by default */ position: fixed; /* Stay in place */ z-index: 1; /* Sit on top */ left: 0; top: 0; width: 100%; /* Full width */ height: 100%; /* Full height */ overflow: auto; /* Enable scroll if needed */ background-color: black; /* Fallback color */ background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */ }
+
+/* Modal Content/Box */
+.modal-content { background-color: #d2d8db; margin: 2% auto; /* 15% from the top and centered */ padding: 20px; border: 1px solid #888; border-radius: 10px; width: 85%; /* Could be more or less, depending on screen size */ font-family: "Raleway", sans-serif; }
+
+.modal-info { margin-top: 3rem; padding: 2rem 4rem 0 4rem; }
+
+.modal-info p { padding: 0 2rem; text-align: justify; width: 75%; }
+
+.modal-info button { margin: .5rem 3rem 0 0; width: 10em; }
+
+/* The Close Button */
+.t-bot-close, .csm-close, .ittc-close, .invaders-close, .etnias-close, .vianda-close { color: #aaa; float: right; font-size: 28px; font-weight: bold; }
+
+.t-bot-close:hover, .t-bot-close:focus, .csm-close:hover, .csm-close:focus, .ittc-close:hover, .ittc-close:focus, .invaders-close:hover, .invaders-close:focus, .etnias-close:hover, .etnias-close:focus, .vianda-close:hover, .vianda-close:focus { color: black; text-decoration: none; cursor: pointer; }
+
+/* Slideshow container */
+.slideshow-container { position: relative; background: #f1f1f1f1; margin: 0 auto; width: 90%; height: 27em; border-radius: 15px; }
+
+/* Slides */
+.t-botSlides, .csmSlides, .ittcSlides, .invadersSlides, .etniasSlides, .viandaSlides { display: none; text-align: center; }
+
+.t-botSlides img, .csmSlides img, .ittcSlides img, .invadersSlides img, .etniasSlides img, .viandaSlides img { border-radius: 15px; width: 100%; height: 27em; }
+
+.t-botSlides h3, .csmSlides h3, .ittcSlides h3, .invadersSlides h3, .etniasSlides h3, .viandaSlides h3 { position: absolute; top: 30px; right: 100px; color: white; background: #020E2D; z-index: 3; padding: 1rem; font-size: 1.5rem; border-radius: 5px; font-family: "Megrim", sans-serif; }
+
+/* Next & previous buttons */
+.prev, .next { cursor: pointer; position: absolute; top: 50%; width: auto; margin-top: -30px; padding: 16px; color: #888; font-weight: bold; font-size: 20px; border-radius: 0 3px 3px 0; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+/* Position the "next button" to the right */
+.next { position: absolute; right: 0; border-radius: 3px 0 0 3px; }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover { background-color: rgba(0, 0, 0, 0.8); color: white; }
+
+/* The dot/bullet/indicator container */
+.dot-container { position: relative; }
+
+.dot-container div { position: absolute; top: -2rem; right: 34%; }
+
+/* The dots/bullets/indicators */
+.t-bot-dot, .csm-dot, .ittc-dot, .invaders-dot, .etnias-dot, .vianda-dot { cursor: pointer; height: 5rem; width: 7rem; margin: 0 2px; border: none; display: inline-block; -webkit-transition: border 0.6s ease; transition: border 0.6s ease; border-radius: 10px; }
+
+/* Add a background color to the active dot/circle */
+.active, .t-bot-dot:hover, .csm-dot:hover, .ittc-dot:hover, .invaders-dot:hover, .etnias-dot:hover, .vianda-dot:hover { border: 2px solid #B97F24; }
+
+/* Add an italic font style to all quotes */
+q { font-style: italic; }
+
+/* Add a blue color to the author */
+.author { color: cornflowerblue; }
+
+#about { margin-top: 3rem; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; }
+
+.about-wrap { padding: 1rem; font-family: "Raleway", sans-serif; }
+
+.about-wrap > div { padding: 0 5rem; }
+
+.about-wrap p { margin: 2rem 0; }
+
+.about-wrap a { font-size: 1.2rem; margin: 2rem 0; }
+
+.skill-wrap { text-align: center; width: 25%; height: 25em; padding: 1rem; margin: 2rem 0; color: whitesmoke; background: #264288; border-radius: 10px; font-family: "Raleway", sans-serif; }
+
+.skill-wrap h3 { font-family: "Megrim", sans-serif; color: #B97F24; margin-bottom: 1rem; font-size: 2rem; }
+
+.skill-wrap p { margin: .7rem .1rem; font-size: 1.2rem; }
+
+#contact { margin-top: 3rem; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; border-radius: 100% 0 0 0; background: #020E2D; }
+
+#contact h1 { margin: 1rem 0; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; }
+
+#contact .form-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 50%; margin: 2rem 0 0 0; }
+
+#contact form { -webkit-box-align: center; -ms-flex-align: center; align-items: center; color: white; font-family: "Raleway", sans-serif; }
+
+#contact form label { margin: .4rem; }
+
+#contact form input, #contact form select { font-family: "Raleway", sans-serif; margin: .4rem; padding: .2rem; width: 26em; height: 2rem; outline: none; border: none; border-radius: 5px; }
+
+#contact form textarea { font-family: "Raleway", sans-serif; margin: .4rem; padding: .2rem; width: 26em; height: 7em; border: none; border-radius: 5px; }
+
+#contact form textarea:active, #contact form textarea:focus { outline: none; border: none; }
+
+#contact form button { background: #264288; font-size: 1.4rem; }
+
+.ani-wrap { width: 50%; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; margin: .5rem 1rem 0 0; }
+
+.ani-wrap .form-square { background: transparent; border: solid 1px #B97F24; width: 2.5rem; height: 2.5rem; position: absolute; }
+
+.ani-wrap .circle { margin: 7rem auto; position: relative; background: transparent; border: solid 2px #264288; border-radius: 50%; width: 25rem; height: 25rem; }
