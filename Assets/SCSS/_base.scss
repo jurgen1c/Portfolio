@@ -16,6 +16,9 @@ main{
 
 section {
   width: 83%;
+  @include responsive {
+    width: 100%;
+  }
 }
 
 nav {
@@ -42,10 +45,23 @@ nav {
       text-decoration: underline;
     }
   }
+  @include responsive {
+    width: 100%;
+    flex-direction: row;
+    img{
+      display: none;
+    }
+    a{
+      font-size: 1rem;
+    }
+  }
 }
 
 .d-flex{
   display: flex;
+  @include responsive {
+    flex-direction: column;
+  }
 }
 
 .d-column{
@@ -64,6 +80,9 @@ nav {
   color: $header-color;
   margin: 1rem 0;
   font-weight: 600;
+  @include responsive {
+    font-size: 2.5rem;
+  }
 }
 
 .frame-text{
@@ -71,6 +90,9 @@ nav {
   padding: 1.5rem;
   border-radius: 10px;
   color: whitesmoke;
+  @include responsive {
+    padding: .5rem;
+  }
 }
 
 .btn {
@@ -85,4 +107,8 @@ nav {
   border: none;
   font-family: $main-font;
   font-weight: 600;
+  @include responsive {
+    padding: .5rem;
+    margin: .5rem 0;
+  }
 }

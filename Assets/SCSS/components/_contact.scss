@@ -49,6 +49,26 @@
       font-size: 1.4rem;
     }
   }
+  @include responsive {
+    margin-top: 1.5rem;
+    .form-wrap{
+      margin: 1rem 0 0 0;
+      width: 100%;
+    }
+    form{
+      input, 
+      select{
+        width: 90%;
+      }
+      textarea{
+        width: 90%;
+        height: 3em;
+      }
+      button{
+        font-size: .7rem;
+      }
+    }
+  }
 }
 
 .ani-wrap{
@@ -62,15 +82,13 @@
     height: 2.5rem;
     position: absolute;
   }
-  
-  .circle {
-    margin: 7rem auto;
-    position: relative;
-    background: transparent;
-    border: solid 2px $main-light;
-    border-radius: 50%;
-    width: 25rem;
-    height: 25rem;
+  @include responsive{
+    width: 90%;
+    margin: .5rem auto;
+    .form-square{
+      width: 1rem;
+      height: 1rem;
+    }
   }
 }
 
