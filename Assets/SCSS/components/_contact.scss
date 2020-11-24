@@ -52,24 +52,25 @@
 }
 
 .ani-wrap{
-  position: relative;
   width: 50%;
-  height: 100%;
+  height: fit-content;
   margin: .5rem 1rem 0 0;
   .form-square{
     background: transparent;
-    border: solid 2px $header-color;
+    border: solid 1px $header-color;
     width: 2.5rem;
     height: 2.5rem;
     position: absolute;
-    /* top: ;
-    left: 10px; */
   }
   
-  .form-circle {
+  .circle {
+    margin: 7rem auto;
+    position: relative;
     background: transparent;
     border: solid 2px $main-light;
-    position: absolute;
+    border-radius: 50%;
+    width: 25rem;
+    height: 25rem;
   }
 }
 

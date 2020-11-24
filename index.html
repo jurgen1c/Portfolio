@@ -448,34 +448,38 @@
         </a>
         <div class="d-flex space-between">
           <div class="skill-wrap">
-            <h2>Languages</h2>
+            <h3>Languages</h3>
             <div class="d-column">
+              <p>
+                <i class="fas fa-water"></i> Liquid
+              </p>
+              <p><i class="fab fa-js-square"></i> JavaScript</p>
               <div class="d-flex space-between">
-                <p>
-                  <i class="fas fa-water"></i><br /> Liquid
-                </p>
-                <p><i class="fab fa-js-square"></i><br /> JavaScript</p>
               </div>
-              <div class="d-flex space-between">
-                <p><i class="fab fa-sass"></i><br /> SCSS</p>
-                <p><i class="far fa-gem"></i><br /> Ruby</p>
-              </div>
-              <p><i class="fab fa-html5"></i><br /> HTML 5</p>
-              <p><i class="fab fa-python"></i><br /> Python</p>
-              <p><i class="fab fa-css3-alt"></i><br /> CSS 3</p>
+              <p><i class="fab fa-sass"></i> SCSS</p>
+              <p><i class="far fa-gem"></i> Ruby</p>
+              <p><i class="fab fa-html5"></i> HTML 5</p>
+              <p><i class="fab fa-python"></i> Python</p>
+              <p><i class="fab fa-css3-alt"></i> CSS 3</p>
             </div>
           </div>
           <div class="skill-wrap">
-            <h2>Frameworks</h2>
+            <h3>Frameworks</h3>
             <div class="d-column">
-              <i class="fab fa-shopify fa-2x">Shopify</i>
-              <i class="fas fa-road fa-2x">Ruby on Rails</i>
+              <p><i class="fab fa-bootstrap"></i> Bootstrap</p>
+              <p><i class="fab fa-shopify"></i> Shopify</p>
+              <p><i class="fas fa-road"></i> Ruby on Rails</p>
+              <p><i class="fab fa-react"></i> React</p>
             </div>
           </div>
           <div class="skill-wrap">
-            <h2>Skills</h2>
+            <h3>Skills</h3>
             <div class="d-column">
-              <i class="fab fa-github-square fa-2x">Github</i>
+              <p><i class="fab fa-github-square"></i> Github</p>
+              <p><i class="fab fa-unity"></i> Unity</p>
+              <p><i class="fas fa-cart-plus"></i> E-Commerce</p>
+              <p><i class="fas fa-stream"></i> Git Flow</p>
+              <p><i class="fab fa-aws"></i> AWS</p>
             </div>
           </div>
         </div>
@@ -491,38 +495,13 @@
           <div class="form-square"></div>
           <div class="form-square"></div>
           <div class="form-square"></div>
-          <div class="form-square"></div>
-          <div class="form-square"></div>
-          <div class="form-square"></div>
-          <div class="form-square"></div>
-          <div class="form-square"></div>
-          <div class="form-square"></div>
-          <div class="form-square"></div>
-          <div class="form-square"></div>
-          <div class="form-square"></div>
-          <div class="form-square"></div>
-          <div class="form-square"></div>
-          <div class="form-square"></div>
-          <div class="form-square"></div>
-          <div class="form-square"></div>
-          <div class="form-square"></div>
-          <div class="form-square"></div>
-          <div class="form-square"></div>
-          <div class="form-square"></div>
-          <div class="form-square"></div>
-          <div class="form-square"></div>
-          <div class="form-square"></div>
-          <div class="form-square"></div>
-          <div class="form-square"></div>
-          <div class="form-square"></div>
-          <div class="form-square"></div>
-          <div class="form-square"></div>
           <svg width="600" height="600" id="form-path">
             <path fill="none" stroke="none" d="M 200 301 Q 252 264 206 235 Q 170 175 99 146 C 17 94 131 5 164 70 Q 195 123 252 183 Q 279 241 309 190 Q 363 136 398 73 C 444 4 540 78 467 131 Q 404 168 350 226 Q 297 256 344 292 Q 392 349 452 388 C 504 463 404 526 359 436 Q 345 372 306 322 Q 273 276 246 322 Q 194 369 159 434 C 95 501 30 438 83 373 Q 141 337 200 301 Z"></path>
           </svg>
         </div>
         <div class="form-wrap">
-          <form class="d-column">
+          <form class="d-column" action="https://mailthis.to/jcgportafolio"
+          method="POST" encType="multipart/form-data">
             <div class="form-group">
               <div class="d-column">
                 <label for="formControlInput">First Name</label>
@@ -568,7 +547,10 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <input type="hidden" name="_subject" value="Contact form submitted">
+            <input type="hidden" name="_after" value="https://jurgen1c.github.io/Portafolio/.">
+            <input type="hidden" name="_honeypot" value="">
+            <button type="submit" name="submit" value="Submit Form" class="btn"></button>
           </form>
         </div>
       </div>

@@ -142,15 +142,17 @@ q { font-style: italic; }
 
 .about-wrap { padding: 1rem; font-family: "Raleway", sans-serif; }
 
+.about-wrap > div { padding: 0 5rem; }
+
 .about-wrap p { margin: 2rem 0; }
 
 .about-wrap a { font-size: 1.2rem; margin: 2rem 0; }
 
-.skill-wrap { text-align: center; width: 21rem; height: 25em; padding: 1rem; margin: 2rem 0; color: whitesmoke; background: #264288; border-radius: 10px; font-family: "Raleway", sans-serif; }
+.skill-wrap { text-align: center; width: 25%; height: 25em; padding: 1rem; margin: 2rem 0; color: whitesmoke; background: #264288; border-radius: 10px; font-family: "Raleway", sans-serif; }
 
-.skill-wrap h2 { font-family: "Megrim", sans-serif; }
+.skill-wrap h3 { font-family: "Megrim", sans-serif; color: #B97F24; margin-bottom: 1rem; font-size: 2rem; }
 
-.skill-wrap p { margin: .5rem .1rem; font-size: 2rem; }
+.skill-wrap p { margin: .7rem .1rem; font-size: 1.2rem; }
 
 #contact { margin-top: 3rem; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; border-radius: 100% 0 0 0; background: #020E2D; }
 
@@ -170,8 +172,8 @@ q { font-style: italic; }
 
 #contact form button { background: #264288; font-size: 1.4rem; }
 
-.ani-wrap { position: relative; width: 50%; height: 100%; margin: .5rem 1rem 0 0; }
+.ani-wrap { width: 50%; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; margin: .5rem 1rem 0 0; }
 
-.ani-wrap .form-square { background: transparent; border: solid 2px #B97F24; width: 2.5rem; height: 2.5rem; position: absolute; /* top: ; left: 10px; */ }
+.ani-wrap .form-square { background: transparent; border: solid 1px #B97F24; width: 2.5rem; height: 2.5rem; position: absolute; }
 
-.ani-wrap .form-circle { background: transparent; border: solid 2px #264288; position: absolute; }
+.ani-wrap .circle { margin: 7rem auto; position: relative; background: transparent; border: solid 2px #264288; border-radius: 50%; width: 25rem; height: 25rem; }

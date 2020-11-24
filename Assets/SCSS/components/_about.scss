@@ -5,6 +5,9 @@
 .about-wrap{
   padding: 1rem;
   font-family: $secondary-font;
+  > div {
+    padding: 0 5rem;
+  }
   p{
     margin: 2rem 0;
   }
@@ -16,7 +19,7 @@
 
 .skill-wrap {
   text-align: center;
-  width: 21rem;
+  width: 25%;
   height: 25em;
   padding: 1rem;
   margin: 2rem 0;
@@ -24,11 +27,14 @@
   background: $main-light;
   border-radius: 10px;
   font-family: $secondary-font;
-  h2{
+  h3{
     font-family: $main-font;
+    color: $header-color;
+    margin-bottom: 1rem;
+    font-size: 2rem;
   }
   p{
-    margin: .5rem .1rem;
-    font-size: 2rem;
+    margin: .7rem .1rem;
+    font-size: 1.2rem;
   }
 }

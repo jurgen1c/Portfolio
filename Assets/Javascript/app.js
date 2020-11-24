@@ -32,16 +32,29 @@ function introAnimation() {
 
 // Form animation ----------------------------------
 
+/* document.querySelector('body').addEventListener('mousemove', squareMove);
+
+function squareMove(){
+  let square = document.querySelectorAll('.form-square');
+  square.forEach(function(square){
+    let x = (square.getBoundingClientRect().left) + (square.clientWidth / 2);
+    let y = (square.getBoundingClientRect().right) + (square.clientHeight / 2);
+    let radian = Math.atan2(target.pageX - x , target.pageY - y);
+    let rot = (radian * (180 / Math.PI) * -1) + 270;
+    square.style.transform = "rotate(" + rot + "deg)";
+  });
+} */
+
 let path = anime.path("#form-path path");
 anime({
   targets: '.form-square',
   translateX: path('x'),
   translateY: path('y'),
   rotate: path('angle'),
-  delay: anime.stagger(200),
+  delay: anime.stagger(500),
   rotate: '1turn',
   easing: 'linear',
-  duration: 5500,
+  duration: 10500,
   loop: true
 });
 
