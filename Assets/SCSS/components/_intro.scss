@@ -16,11 +16,16 @@
     font-size: 5.5rem;
     font-weight: 400;
     font-family: $main-font;
-    margin-right: 0;
+    @include responsive {
+      font-size: 2.5rem;
+    }
   }
   h3{
     font-family: $secondary-font;
     font-size: 3rem;
+    @include responsive {
+      font-size: 1.5rem;
+    }
   }
   p{
     background: $main-light;
@@ -28,7 +33,9 @@
     padding: 2rem;
     border-radius: 5px;
     font-family: $secondary-font;
-  
+    @include responsive {
+      padding: 1rem;
+    }
   }
   a{
     color: white;
@@ -41,6 +48,9 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    @include responsive {
+      padding: 0 1rem;
+    }
     i{
       margin: 0 1rem;
     }
@@ -62,6 +72,9 @@
     font-size: 10rem;
     font-weight: 400;
     font-family: $main-font;
+    @include responsive {
+      font-size: 5rem;
+    }
   }
 }
 
