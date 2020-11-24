@@ -1,0 +1,40 @@
+#about{
+  margin-top: 3rem;
+  height: fit-content;
+}
+.about-wrap{
+  padding: 1rem;
+  font-family: $secondary-font;
+  > div {
+    padding: 0 5rem;
+  }
+  p{
+    margin: 2rem 0;
+  }
+  a{
+    font-size: 1.2rem;
+    margin: 2rem 0;
+  }
+}
+
+.skill-wrap {
+  text-align: center;
+  width: 25%;
+  height: 25em;
+  padding: 1rem;
+  margin: 2rem 0;
+  color: whitesmoke;
+  background: $main-light;
+  border-radius: 10px;
+  font-family: $secondary-font;
+  h3{
+    font-family: $main-font;
+    color: $header-color;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  p{
+    margin: .7rem .1rem;
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,76 @@
+#contact{
+  margin-top: 3rem;
+  height: fit-content;
+  border-radius: 100% 0 0 0;
+  background: $main-color;
+  h1{
+    margin: 1rem 0;
+    height: fit-content;
+  }
+  .form-wrap{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 2rem 0 0 0;
+  }
+  form{
+    align-items: center;
+    color: white;
+    font-family: $secondary-font;
+    label{
+      margin: .4rem;
+    } 
+    input, 
+    select{
+      font-family: $secondary-font;
+      margin: .4rem;
+      padding: .2rem;
+      width: 26em;
+      height: 2rem;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+    }
+    textarea{
+      font-family: $secondary-font;
+      margin: .4rem;
+      padding: .2rem;
+      width: 26em;
+      height: 7em;
+      border: none;
+      border-radius: 5px;
+      &:active, &:focus{
+        outline: none;
+        border: none;
+      }
+    }
+    button{
+      background: $main-light;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.ani-wrap{
+  width: 50%;
+  height: fit-content;
+  margin: .5rem 1rem 0 0;
+  .form-square{
+    background: transparent;
+    border: solid 1px $header-color;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+  }
+  
+  .circle {
+    margin: 7rem auto;
+    position: relative;
+    background: transparent;
+    border: solid 2px $main-light;
+    border-radius: 50%;
+    width: 25rem;
+    height: 25rem;
+  }
+}
+

@@ -3,563 +3,560 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./Assets/Css/styles.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="./Assets/CSS/main.css">
   <script src="https://kit.fontawesome.com/cf19c7517f.js" crossorigin="anonymous"></script>
   <title>JCG Portafolio</title>
 </head>
-<body>
-  <main class="d-flex flex-column align-items-end">
-    <nav class="w-25 fixed-top p-5 d-flex flex-column">
-      <img src="./Assets/Images/profile.jpg" alt="profile" class="profile rounded-circle">
-      <div class="d-flex flex-column align-items-center">
-        <a href="#intro" class="my-2">Intro</a>
-        <a href="#projects" class="my-2">Projects</a>
-        <a href="#about" class="my-2">About</a>
-        <a href="#contact" class="my-2">Contact</a>
-      </div>
-    </nav>
-    <section id="intro" class="w-75">
-      <div class="p-3">
-        <h1 class="p-2">Welcome</h1>
-        <h3 class="p-2">Some text</h3>
-        <p class="p-2">Ugh XOXO labore, green juice mumblecore truffaut sartorial commodo everyday carry tousled four dollar toast nostrud kickstarter skateboard. Sunt DIY 3 wolf moon consequat, dreamcatcher snackwave eiusmod sriracha whatever. Glossier knausgaard succulents dolore. Fixie veniam farm-to-table, cardigan kale chips ea ullamco. Cred chicharrones aute hell of fixie umami woke pinterest tacos copper mug mollit farm-to-table post-ironic do.</p>
-        <div class="d-flex border">
-          <i class="fab fa-github-square"></i>
-          <i class="fab fa-linkedin"></i>
-        </div>
-      </div>
-    </section>
-    <section id="projects" class="w-75">
-      <div>
-        <h1 class="py-3">Latest Projects</h1>
-        <div class="d-flex flex-wrap">
-          <div class="t-bot card w-50">
-            <img src="./Assets/Images/tweet_bot.png" class="card-img" alt="...">
-            <div class="card-img-overlay text-white">
-              <h2 class="card-title">Twitter Bot</h2>
-              <div class="sec-info">
-                <div class="d-flex my-2 justify-content-around">
-                  <i class="fab fa-shopify fa-2x bg-secondary p-2 rounded"></i>
-                  <i class="fas fa-water fa-2x bg-secondary p-2 rounded"></i>
-                  <i class="fab fa-js-square fa-2x bg-secondary p-2 rounded"></i>
-                  <i class="fab fa-sass fa-2x bg-secondary p-2 rounded"></i>
-                </div>
-                <p class="card-text mb-2">A simple but elegant solution to quickly convert sales</p>
-                <button type="button" class="btn btn-primary my-2" data-toggle="modal" data-target="#t-botModal">
-                  More Info...
-                </button>
-              </div>
-            </div>
-            <!-- Button trigger modal -->
-
-            <!-- Modal -->
-            <div class="modal fade" id="t-botModal" tabindex="-1" aria-labelledby="t-botModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="t-botModalLabel">Twitter Bot</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <div id="carouselT-botIndicators" class="carousel slide" data-ride="carousel">
-                      <ol class="carousel-indicators">
-                        <li data-target="#carouselT-botIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselT-botIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselT-botIndicators" data-slide-to="2"></li>
-                      </ol>
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img src="./Assets/Images/tweet_bot.png" class="d-block w-100" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                          </div>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="..." class="d-block w-100" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                          </div>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="..." class="d-block w-100" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <a class="carousel-control-prev" href="#carouselT-botIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                      </a>
-                      <a class="carousel-control-next" href="#carouselT-botIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                      </a>
-                    </div>
-                    <div class="d-flex">
-                      <p class="w-75">Green juice fixie blog synth fingerstache hoodie food truck man bun kinfolk letterpress hexagon. Hell of polaroid fanny pack culpa sunt adipisicing. Aliqua health goth adipisicing gastropub poke duis dolore esse everyday carry. Fixie bespoke celiac franzen minim intelligentsia bitters microdosing narwhal dolore. Occaecat seitan enamel pin tacos flexitarian activated charcoal.</p>
-                      <div class="d-flex flex-column align-items-center justify-content-center w-25">
-                        <button class="btn btn-primary w-50 mb-3">Live</button>
-                        <button class="btn btn-primary w-50">Source</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cs-media card w-50">
-            <img src="./Assets/Images/tweet_bot.png" class="card-img" alt="...">
-            <div class="card-img-overlay text-white">
-              <h2 class="card-title">Crowd Sourced Media</h2>
-              <div class="sec-info">
-                <div class="d-flex my-2 justify-content-around">
-                  <i class="fab fa-shopify fa-2x bg-secondary p-2 rounded"></i>
-                  <i class="fas fa-water fa-2x bg-secondary p-2 rounded"></i>
-                  <i class="fab fa-js-square fa-2x bg-secondary p-2 rounded"></i>
-                  <i class="fab fa-sass fa-2x bg-secondary p-2 rounded"></i>
-                </div>
-                <p class="card-text mb-2">A simple but elegant solution to quickly convert sales</p>
-                <button type="button" class="btn btn-primary my-2" data-toggle="modal" data-target="#cs-mediaModal">
-                  More Info...
-                </button>
-              </div>
-            </div>
-            <!-- Button trigger modal -->
-
-            <!-- Modal -->
-            <div class="modal fade" id="cs-mediaModal" tabindex="-1" aria-labelledby="cs-mediaModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="cs-mediaModalLabel">Crowd Sourced Media</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <div id="carouselCs-mediaIndicators" class="carousel slide" data-ride="carousel">
-                      <ol class="carousel-indicators">
-                        <li data-target="#carouselCs-mediaIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselCs-mediaIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselCs-mediaIndicators" data-slide-to="2"></li>
-                      </ol>
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img src="./Assets/Images/tweet_bot.png" class="d-block w-100" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                          </div>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="..." class="d-block w-100" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                          </div>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="..." class="d-block w-100" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <a class="carousel-control-prev" href="#carouselCs-mediaIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                      </a>
-                      <a class="carousel-control-next" href="#carouselCs-mediaIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                      </a>
-                    </div>
-                    <div class="d-flex">
-                      <p class="w-75">Green juice fixie blog synth fingerstache hoodie food truck man bun kinfolk letterpress hexagon. Hell of polaroid fanny pack culpa sunt adipisicing. Aliqua health goth adipisicing gastropub poke duis dolore esse everyday carry. Fixie bespoke celiac franzen minim intelligentsia bitters microdosing narwhal dolore. Occaecat seitan enamel pin tacos flexitarian activated charcoal.</p>
-                      <div class="d-flex flex-column align-items-center justify-content-center w-25">
-                        <button class="btn btn-primary w-50 mb-3">Live</button>
-                        <button class="btn btn-primary w-50">Source</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="invaders card w-50">
-            <img src="./Assets/Images/tweet_bot.png" class="card-img" alt="...">
-            <div class="card-img-overlay text-white">
-              <h2 class="card-title">Space Invaders</h2>
-              <div class="sec-info">
-                <div class="d-flex my-2 justify-content-around">
-                  <i class="fab fa-shopify fa-2x bg-secondary p-2 rounded"></i>
-                  <i class="fas fa-water fa-2x bg-secondary p-2 rounded"></i>
-                  <i class="fab fa-js-square fa-2x bg-secondary p-2 rounded"></i>
-                  <i class="fab fa-sass fa-2x bg-secondary p-2 rounded"></i>
-                </div>
-                <p class="card-text mb-2">A simple but elegant solution to quickly convert sales</p>
-                <button type="button" class="btn btn-primary my-2" data-toggle="modal" data-target="#invadersModal">
-                  More Info...
-                </button>
-              </div>
-            </div>
-            <!-- Button trigger modal -->
-
-            <!-- Modal -->
-            <div class="modal fade" id="invadersModal" tabindex="-1" aria-labelledby="invadersModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="invadersModalLabel">Space Invaders</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <div id="carouselInvadersIndicators" class="carousel slide" data-ride="carousel">
-                      <ol class="carousel-indicators">
-                        <li data-target="#carouselInvadersIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselInvadersIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselInvadersIndicators" data-slide-to="2"></li>
-                      </ol>
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img src="./Assets/Images/tweet_bot.png" class="d-block w-100" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                          </div>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="..." class="d-block w-100" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                          </div>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="..." class="d-block w-100" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <a class="carousel-control-prev" href="#carouselInvadersIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                      </a>
-                      <a class="carousel-control-next" href="#carouselInvadersIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                      </a>
-                    </div>
-                    <div class="d-flex">
-                      <p class="w-75">Green juice fixie blog synth fingerstache hoodie food truck man bun kinfolk letterpress hexagon. Hell of polaroid fanny pack culpa sunt adipisicing. Aliqua health goth adipisicing gastropub poke duis dolore esse everyday carry. Fixie bespoke celiac franzen minim intelligentsia bitters microdosing narwhal dolore. Occaecat seitan enamel pin tacos flexitarian activated charcoal.</p>
-                      <div class="d-flex flex-column align-items-center justify-content-center w-25">
-                        <button class="btn btn-primary w-50 mb-3">Live</button>
-                        <button class="btn btn-primary w-50">Source</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="vianda card w-50">
-            <img src="./Assets/Images/tweet_bot.png" class="card-img" alt="...">
-            <div class="card-img-overlay text-white">
-              <h2 class="card-title">Vianda</h2>
-              <div class="sec-info">
-                <div class="d-flex my-2 justify-content-around">
-                  <i class="fab fa-shopify fa-2x bg-secondary p-2 rounded"></i>
-                  <i class="fas fa-water fa-2x bg-secondary p-2 rounded"></i>
-                  <i class="fab fa-js-square fa-2x bg-secondary p-2 rounded"></i>
-                  <i class="fab fa-sass fa-2x bg-secondary p-2 rounded"></i>
-                </div>
-                <p class="card-text mb-2">A simple but elegant solution to quickly convert sales</p>
-                <button type="button" class="btn btn-primary my-2" data-toggle="modal" data-target="#viandaModal">
-                  More Info...
-                </button>
-              </div>
-            </div>
-            <!-- Button trigger modal -->
-
-            <!-- Modal -->
-            <div class="modal fade" id="viandaModal" tabindex="-1" aria-labelledby="viandaModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="viandaModalLabel">Vianda</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <div id="carouselViandaIndicators" class="carousel slide" data-ride="carousel">
-                      <ol class="carousel-indicators">
-                        <li data-target="#carouselViandaIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselViandaIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselViandaIndicators" data-slide-to="2"></li>
-                      </ol>
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img src="./Assets/Images/tweet_bot.png" class="d-block w-100" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                          </div>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="..." class="d-block w-100" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                          </div>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="..." class="d-block w-100" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <a class="carousel-control-prev" href="#carouselViandaIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                      </a>
-                      <a class="carousel-control-next" href="#carouselViandaIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                      </a>
-                    </div>
-                    <div class="d-flex">
-                      <p class="w-75">Green juice fixie blog synth fingerstache hoodie food truck man bun kinfolk letterpress hexagon. Hell of polaroid fanny pack culpa sunt adipisicing. Aliqua health goth adipisicing gastropub poke duis dolore esse everyday carry. Fixie bespoke celiac franzen minim intelligentsia bitters microdosing narwhal dolore. Occaecat seitan enamel pin tacos flexitarian activated charcoal.</p>
-                      <div class="d-flex flex-column align-items-center justify-content-center w-25">
-                        <button class="btn btn-primary w-50 mb-3">Live</button>
-                        <button class="btn btn-primary w-50">Source</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portafolio card w-50">
-            <img src="./Assets/Images/tweet_bot.png" class="card-img" alt="...">
-            <div class="card-img-overlay text-white">
-              <h2 class="card-title">Portafolio</h2>
-              <div class="sec-info">
-                <div class="d-flex my-2 justify-content-around">
-                  <i class="fab fa-shopify fa-2x bg-secondary p-2 rounded"></i>
-                  <i class="fas fa-water fa-2x bg-secondary p-2 rounded"></i>
-                  <i class="fab fa-js-square fa-2x bg-secondary p-2 rounded"></i>
-                  <i class="fab fa-sass fa-2x bg-secondary p-2 rounded"></i>
-                </div>
-                <p class="card-text mb-2">A simple but elegant solution to quickly convert sales</p>
-                <button type="button" class="btn btn-primary my-2" data-toggle="modal" data-target="#portafolioModal">
-                  More Info...
-                </button>
-              </div>
-            </div>
-            <!-- Button trigger modal -->
-
-            <!-- Modal -->
-            <div class="modal fade" id="portafolioModal" tabindex="-1" aria-labelledby="portafolioModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="portafolioModalLabel">Portafolio</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <div id="carouselPortafolioIndicators" class="carousel slide" data-ride="carousel">
-                      <ol class="carousel-indicators">
-                        <li data-target="#carouselPortafolioIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselPortafolioIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselPortafolioIndicators" data-slide-to="2"></li>
-                      </ol>
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img src="./Assets/Images/tweet_bot.png" class="d-block w-100" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                          </div>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="..." class="d-block w-100" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                          </div>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="..." class="d-block w-100" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <a class="carousel-control-prev" href="#carouselPortafolioIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                      </a>
-                      <a class="carousel-control-next" href="#carouselPortafolioIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                      </a>
-                    </div>
-                    <div class="d-flex">
-                      <p class="w-75">Green juice fixie blog synth fingerstache hoodie food truck man bun kinfolk letterpress hexagon. Hell of polaroid fanny pack culpa sunt adipisicing. Aliqua health goth adipisicing gastropub poke duis dolore esse everyday carry. Fixie bespoke celiac franzen minim intelligentsia bitters microdosing narwhal dolore. Occaecat seitan enamel pin tacos flexitarian activated charcoal.</p>
-                      <div class="d-flex flex-column align-items-center justify-content-center w-25">
-                        <button class="btn btn-primary w-50 mb-3">Live</button>
-                        <button class="btn btn-primary w-50">Source</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="ecommerce card w-50">
-            <img src="./Assets/Images/tweet_bot.png" class="card-img" alt="...">
-            <div class="card-img-overlay text-white">
-              <h2 class="card-title">Etnias World</h2>
-              <div class="sec-info">
-                <div class="d-flex my-2 justify-content-around">
-                  <i class="fab fa-shopify fa-2x bg-secondary p-2 rounded"></i>
-                  <i class="fas fa-water fa-2x bg-secondary p-2 rounded"></i>
-                  <i class="fab fa-js-square fa-2x bg-secondary p-2 rounded"></i>
-                  <i class="fab fa-sass fa-2x bg-secondary p-2 rounded"></i>
-                </div>
-                <p class="card-text mb-2">A simple but elegant solution to quickly convert sales</p>
-                <button type="button" class="btn btn-primary my-2" data-toggle="modal" data-target="#ecommerceModal">
-                  More Info...
-                </button>
-              </div>
-            </div>
-            <!-- Button trigger modal -->
-
-            <!-- Modal -->
-            <div class="modal fade" id="ecommerceModal" tabindex="-1" aria-labelledby="ecommerceModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="ecommerceModalLabel">Etnias World</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <div id="carouselEcommerceIndicators" class="carousel slide" data-ride="carousel">
-                      <ol class="carousel-indicators">
-                        <li data-target="#carouselEcommerceIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselEcommerceIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselEcommerceIndicators" data-slide-to="2"></li>
-                      </ol>
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img src="./Assets/Images/tweet_bot.png" class="d-block w-100" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                          </div>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="..." class="d-block w-100" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                          </div>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="..." class="d-block w-100" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <a class="carousel-control-prev" href="#carouselEcommerceIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                      </a>
-                      <a class="carousel-control-next" href="#carouselEcommerceIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                      </a>
-                    </div>
-                    <div class="d-flex">
-                      <p class="w-75">Green juice fixie blog synth fingerstache hoodie food truck man bun kinfolk letterpress hexagon. Hell of polaroid fanny pack culpa sunt adipisicing. Aliqua health goth adipisicing gastropub poke duis dolore esse everyday carry. Fixie bespoke celiac franzen minim intelligentsia bitters microdosing narwhal dolore. Occaecat seitan enamel pin tacos flexitarian activated charcoal.</p>
-                      <div class="d-flex flex-column align-items-center justify-content-center w-25">
-                        <button class="btn btn-primary w-50 mb-3">Live</button>
-                        <button class="btn btn-primary w-50">Source</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="about" class="w-75 my-2">
-      <div>
-        <h1 class="my-3">About Me</h1>
+<body onload="introAnimation()">
+  <nav>
+    <img src="./Assets/Images/profile.jpg" alt="profile">
+    <a id="email" href="#intro">Intro</a>
+    <a id="password" href="#projects">Projects</a>
+    <a id="submit" href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <main>
+    <section id="intro">
+      <div class="intro-wrap">
+        <h1>Jurgen Clausen Gutierrez</h1>
+        <h3>Full Stack Software Developer</h3>
         <p>
-          Green juice fixie blog synth fingerstache hoodie food truck man bun kinfolk letterpress hexagon. Hell of polaroid fanny pack culpa sunt adipisicing. Aliqua health goth adipisicing gastropub poke duis dolore esse everyday carry. Fixie bespoke celiac franzen minim intelligentsia bitters microdosing narwhal dolore. Occaecat seitan enamel pin tacos flexitarian activated charcoal.
+          Thank you for visiting my portafolio in here you will find some examples of my recent work and means of how to get in touch with me. Though a late bloomer software development has become an all consuming passion of mine and I'm always looking for new and interesting proyects to work on.
         </p>
-        <button class="btn btn-primary">Checkout my Resume</button>
+        <div>
+          <a href="https://github.com/jurgen1c" target="_blank">
+            <i class="fab fa-github-square fa-3x"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/jurgen-clausen-2740061a9/" target="_blank">
+            <i class="fab fa-linkedin fa-3x"></i>
+          </a>
+        </div>
       </div>
-      <div class="d-flex justify-content-around">
-        <div>
-          <h2>Languages</h2>
-          
+      <div class="intro-ani">
+        <div class="intro-text">
+          <h1 class="hide">
+            <span class="text">Welcome</span>
+          </h1>
+          <h1 class="hide">
+            <span class="text">To My</span>
+          </h1>
+          <h1 class="hide">
+            <span class="text">Portafolio</span>
+          </h1>
         </div>
-        <div>
-          <h2>Frameworks</h2>
-        </div>
-        <div>
-          <h2>Skills</h2>
+      </div>
+      <div class="slider"></div>
+    </section>
+    <section id="projects">
+      <div>
+        <h1 class="main-header">Latest Projects</h1>
+        <div class="d-flex p-wrap">
+          <div class="t-bot card">
+            <h2 class="card-title">Whistle Bot</h2>
+            <div class="sec-info">
+              <div class="">
+                <i class="far fa-gem fa-3x"></i>
+              </div>
+              <!-- Trigger/Open The Modal -->
+              <button id="t-botBtn" class="btn">More Info...</button>
+            </div>
+          </div>
+          <!-- The Modal tbot -->
+          <div id="t-botModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="d-flex space-between">
+                <h1 class="main-header">Whistle Bot</h1>
+                <span class="t-bot-close">&times;</span>
+              </div>
+              <!-- Slideshow container -->
+              <div class="slideshow-container">
+
+                <!-- Full-width slides/quotes -->
+                <div class="t-botSlides">
+                  <img src="./Assets/Images/whistle_bot/tweet_bot.png" alt="tweet bot code">
+                  <h3>Bot Main Script</h3>
+                </div>
+
+                <div class="t-botSlides">
+                  <img src="./Assets/Images/whistle_bot/Bot-screenshot2.png" alt="tweet bot code">
+                  <h3>Bot Scraper Class</h3>
+                </div>
+
+                <div class="t-botSlides">
+                  <img src="./Assets/Images/whistle_bot/tweet_example.png" alt="tweet bot code">
+                  <h3>Bot Example Tweet</h3>
+                </div>
+
+                <!-- Next/prev buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+
+              <!-- Dots/bullets/indicators -->
+              <div class="dot-container">
+                <div>
+                  <img src="./Assets/Images/whistle_bot/tweet_bot.png"class="t-bot-dot" onclick="currentSlide(1)">
+                  <img src="./Assets/Images/whistle_bot/Bot-screenshot2.png"class="t-bot-dot" onclick="currentSlide(2)">
+                  <img src="./Assets/Images/whistle_bot/tweet_example.png"class="t-bot-dot" onclick="currentSlide(3)">
+                </div>
+              </div>
+              <div class="d-flex space-between modal-info">
+                <p>A Twitter Bot to exert presurre on politicians in these dificult times. This was made specifically for my country of Costa Rica,
+                  but it can be easily adjusted to any group of politicians from any where by adjusting the accounts array, scraper and election day to your needs. This bot will scrap the web
+                  for Costa Rica's current unemployement rate and Corona virus cases, then count down the days to the next election and construct a tweet reminding all accounts how
+                  many days they have left to act using the info scrapped.
+                </p>
+                <div class="d-column">
+                  <a href="https://twitter.com/BotWhistle" target="_blank" class="btn">Demo</a>
+                  <a href="https://github.com/jurgen1c/Ruby-Capstone-Twitter-Bot" target="_blank" class="btn">Source</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="csm card">
+            <h2 class="card-title">Crowd Sourced Media</h2>
+            <div class="sec-info">
+              <div class="d-flex">
+                <i class="far fa-gem fa-3x"></i>
+                <i class="fas fa-road fa-3x"></i>
+                <i class="fab fa-js-square fa-3x"></i>
+                <i class="fab fa-sass fa-3x"></i>
+              </div>
+              <!-- Trigger/Open The Modal -->
+              <button id="csmBtn" class="btn">More Info...</button>
+
+            </div>
+          </div>
+          <!-- The Modal csm -->
+          <div id="csmModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="d-flex space-between">
+                <h1 class="main-header">Crowd Souced Media</h1>
+                <span class="csm-close">&times;</span>
+              </div>
+              <!-- Slideshow container -->
+              <div class="slideshow-container">
+
+                <!-- Full-width slides/quotes -->
+                <div class="csmSlides">
+                  <img src="./Assets/Images/csm/csm_home.png" alt="csm home">
+                  <h3>CSM Home Page</h3>
+                </div>
+
+                <div class="csmSlides">
+                  <img src="./Assets/Images/csm/article.png" alt="csm home">
+                  <h3>Article Page</h3>
+                </div>
+
+                <div class="csmSlides">
+                  <img src="./Assets/Images/csm/user.png" alt="csm home">
+                  <h3>User Page</h3>
+                </div>
+
+                <!-- Next/prev buttons -->
+                <a class="prev" onclick="plusSlidesC(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlidesC(1)">&#10095;</a>
+              </div>
+
+              <!-- Dots/bullets/indicators -->
+              <div class="dot-container">
+                <div>
+                  <img src="./Assets/Images/csm/csm_home.png"class="csm-dot" onclick="currentSlideC(1)">
+                  <img src="./Assets/Images/csm/article.png"class="csm-dot" onclick="currentSlideC(2)">
+                  <img src="./Assets/Images/csm/user.png"class="csm-dot" onclick="currentSlideC(3)">
+                </div>
+              </div>
+              <div class="d-flex space-between modal-info">
+                <p>This Ruby on Rails website was developed with the concept of combating fake news in the real sense and figurative as well. 
+                  To achieve this users must register and provide for every article created. Users may follow other users and create reviews of other users articles.
+                </p>
+                <div class="d-column">
+                  <a href="https://crowd-sourced-media.herokuapp.com/" target="_blank" class="btn">Live</a>
+                  <a href="https://github.com/jurgen1c/CS-Media" target="_blank" class="btn">Source</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ittc card">
+            <h2 class="card-title">Timetraveller Convention</h2>
+            <div class="sec-info">
+              <div class="">
+                <i class="fab fa-html5 fa-3x"></i>
+                <i class="fab fa-js-square fa-3x"></i>
+                <i class="fab fa-sass fa-3x"></i>
+              </div>
+              <!-- Trigger/Open The Modal -->
+              <button id="ittcBtn" class="btn">More Info...</button>
+            </div>
+          </div>
+          <!-- The Modal ITTC -->
+          <div id="ittcModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="d-flex space-between">
+                <h1 class="main-header">Timetraveller Convention</h1>
+                <span class="ittc-close">&times;</span>
+              </div>
+              <!-- Slideshow container -->
+              <div class="slideshow-container">
+
+                <!-- Full-width slides/quotes -->
+                <div class="ittcSlides">
+                  <img src="./Assets/Images/ittc/ittc_home.png" alt="ittc home">
+                  <h3>ITC Home Page</h3>
+                </div>
+
+                <div class="ittcSlides">
+                  <img src="./Assets/Images/ittc/program.png" alt="ittc program">
+                  <h3>ITC Program Page</h3>
+                </div>
+
+                <div class="ittcSlides">
+                  <img src="./Assets/Images/ittc/join.png" alt="ittc join">
+                  <h3>ITC Join Page</h3>
+                </div>
+
+                <!-- Next/prev buttons -->
+                <a class="prev" onclick="plusSlidesI(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlidesI(1)">&#10095;</a>
+              </div>
+
+              <!-- Dots/bullets/indicators -->
+              <div class="dot-container">
+                <div>
+                  <img src="./Assets/Images/ittc/ittc_home.png"class="ittc-dot" onclick="currentSlideI(1)">
+                  <img src="./Assets/Images/ittc/program.png"class="ittc-dot" onclick="currentSlideC(2)">
+                  <img src="./Assets/Images/ittc/join.png"class="ittc-dot" onclick="currentSlideC(3)">
+                </div>
+              </div>
+              <div class="d-flex space-between modal-info">
+                <p>Some text in the Modal..</p>
+                <div class="d-column">
+                  <a href="https://raw.githack.com/jurgen1c/Capstone/feature-branch/index.html" target="_blank" class="btn">Demo</a>
+                  <a href="https://github.com/jurgen1c/Capstone" target="_blank" class="btn">Source</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="invaders card">
+            <h2 class="card-title">Space Invaders Custom</h2>
+            <div class="sec-info">
+              <div class="">
+                <i class="fab fa-python fa-3x"></i>
+              </div>
+              <!-- Trigger/Open The Modal -->
+              <button id="invadersBtn" class="btn">More Info...</button>
+            </div>
+          </div>
+          <!-- The Modal Space Invaders -->
+          <div id="invadersModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="d-flex space-between">
+                <h1 class="main-header">Py Space Invaders</h1>
+                <span class="invaders-close">&times;</span>
+              </div>
+              <!-- Slideshow container -->
+              <div class="slideshow-container">
+
+                <!-- Full-width slides/quotes -->
+                <div class="invadersSlides">
+                  <img src="./Assets/Images/sinvaders/invaders_home.png" alt="invaders home">
+                  <h3>Main Program</h3>
+                </div>
+
+                <div class="invadersSlides">
+                  <img src="./Assets/Images/sinvaders/invaders_menu.png" alt="main menu">
+                  <h3>Main Menu</h3>
+                </div>
+
+                <div class="invadersSlides">
+                  <img src="./Assets/Images/sinvaders/invaders_game.png" alt="game window">
+                  <h3>Game Window</h3>
+                </div>
+
+                <!-- Next/prev buttons -->
+                <a class="prev" onclick="plusSlidesSi(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlidesSi(1)">&#10095;</a>
+              </div>
+
+              <!-- Dots/bullets/indicators -->
+              <div class="dot-container">
+                <div>
+                  <img src="./Assets/Images/sinvaders/invaders_home.png"class="invaders-dot" onclick="currentSlideSi(1)">
+                  <img src="./Assets/Images/sinvaders/invaders_menu.png"class="invaders-dot" onclick="currentSlideSi(2)">
+                  <img src="./Assets/Images/sinvaders/invaders_game.png"class="invaders-dot" onclick="currentSlideSi(3)">
+                </div>
+              </div>
+              <div class="d-flex space-between modal-info">
+                <p>Out of my love retro games and game development in general I dove into pygame with this simple program to revisit the classic from the arcade.
+                </p>
+                <div class="d-column">
+                  <a href="" target="_blank" class="btn">Demo</a>
+                  <a href="https://github.com/jurgen1c/Space-Invaders-Custom" class="btn">Source</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="etnias card">
+            <h2 class="card-title">Etnias</h2>
+            <div class="sec-info">
+              <div class="">
+                <i class="fab fa-shopify fa-3x"></i>
+                <i class="fas fa-water fa-3x"></i>
+                <i class="fab fa-js-square fa-3x"></i>
+                <i class="fab fa-sass fa-3x"></i>
+              </div>
+              <!-- Trigger/Open The Modal -->
+              <button id="etniasBtn" class="btn">More Info...</button>
+            </div>
+          </div>
+          <!-- The Modal Etnias -->
+          <div id="etniasModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="d-flex space-between">
+                <h1 class="main-header">Etnias World</h1>
+                <span class="etnias-close">&times;</span>
+              </div>
+              <!-- Slideshow container -->
+              <div class="slideshow-container">
+
+                <!-- Full-width slides/quotes -->
+                <div class="etniasSlides">
+                  <img src="./Assets/Images/etnias/etnias_home.png" alt="home page">
+                  <h3>Home Page</h3>
+                </div>
+
+                <div class="etniasSlides">
+                  <img src="./Assets/Images/etnias/collection.png" alt="collection page">
+                  <h3>Collection Page</h3>
+                </div>
+
+                <div class="etniasSlides">
+                  <img src="./Assets/Images/etnias/product.png" alt="product page">
+                  <h3>Product Page</h3>
+                </div>
+
+                <!-- Next/prev buttons -->
+                <a class="prev" onclick="plusSlidesE(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlidesE(1)">&#10095;</a>
+              </div>
+
+              <!-- Dots/bullets/indicators -->
+              <div class="dot-container">
+                <div>
+                  <img src="./Assets/Images/etnias/etnias_home.png"class="etnias-dot" onclick="currentSlideE(1)">
+                  <img src="./Assets/Images/etnias/collection.png"class="etnias-dot" onclick="currentSlideE(2)">
+                  <img src="./Assets/Images/etnias/product.png"class="etnias-dot" onclick="currentSlideE(3)">
+                </div>
+              </div>
+              <div class="d-flex space-between modal-info">
+                <p>This e-commerce fashion website was developed under a month following client specifications using shopify as back end and liquid to modify the front-end to the clients needs.
+                  Client parameters were as follows: user may make accounts, designers may register to sell they're products & influencers may register to join referal prgram.
+                  As this is an active store no source code can be shared as a matter of privacy and security.
+                </p>
+                <div class="d-column">
+                  <a href="https://www.etniasworld.com" target="_blank" class="btn">Live</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="vianda card">
+            <h2 class="card-title">Vianda</h2>
+            <div class="sec-info">
+              <div class="">
+                <i class="fab fa-shopify fa-3x"></i>
+                <i class="fas fa-water fa-3x"></i>
+                <i class="fab fa-js-square fa-3x"></i>
+                <i class="fab fa-sass fa-3x"></i>
+              </div>
+              <!-- Trigger/Open The Modal -->
+              <button id="viandaBtn" class="btn">More Info...</button>
+            </div>
+          </div>
+          <!-- The Modal Vianda -->
+          <div id="viandaModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="d-flex space-between">
+                <h1 class="main-header">Vianda 2 Go</h1>
+                <span class="vianda-close">&times;</span>
+              </div>
+              <!-- Slideshow container -->
+              <div class="slideshow-container">
+
+                <!-- Full-width slides/quotes -->
+                <div class="viandaSlides">
+                  <img src="./Assets/Images/vianda/vianda_home.png" alt="home page">
+                  <h3>Home Page</h3>
+                </div>
+
+                <div class="viandaSlides">
+                  <img src="./Assets/Images/vianda/menu.png" alt="menu page">
+                  <h3>Menu Page</h3>
+                </div>
+
+                <div class="viandaSlides">
+                  <img src="./Assets/Images/vianda/product.png" alt="product page">
+                  <h3>Product Page</h3>
+                </div>
+
+                <!-- Next/prev buttons -->
+                <a class="prev" onclick="plusSlidesV(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlidesV(1)">&#10095;</a>
+              </div>
+
+              <!-- Dots/bullets/indicators -->
+              <div class="dot-container">
+                <div>
+                  <img src="./Assets/Images/vianda/vianda_home.png"class="vianda-dot" onclick="currentSlideV(1)">
+                  <img src="./Assets/Images/vianda/menu.png"class="vianda-dot" onclick="currentSlideV(2)">
+                  <img src="./Assets/Images/vianda/product.png"class="vianda-dot" onclick="currentSlideV(3)">
+                </div>
+              </div>
+              <div class="d-flex space-between modal-info">
+                <p>This restaurant page was developed under a month for a local resturant to face the changing reality caused by the Covid-19 pandemic.
+                  Client specifications were as follows: user may create an account, user may subscribe to a monthly or weekly service, client may choose when food should be delivered,
+                  glovo delivery service integration. As this is an active store no source code can be shared as a matter of privacy and security.
+                </p>
+                <div class="d-column">
+                  <a href="https://www.vianda2go.com" target="_blank" class="btn">Live</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <section id="contact" class="w-75 my-2">
-      <div>
-        <h1 class="my-3">Contact</h1>
-        <form>
-          <div class="form-group">
-            <label for="exampleFormControlInput1">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    <section id="about">
+      <h1 class="main-header">About Me</h1>
+      <div class="about-wrap">
+        <p class="frame-text">
+          Junior developer with experience in Ruby, JavaScript, C# & Python. Most projects I've worked in so far relate to web-development, although currently seeking certification in data science. My ultimate personal goal is to work in the game development industry or develop a game myself.
+        </p>
+        <a href="https://docs.google.com/document/d/1o573HQQXt6oQ_HtbcgH5_Wno2BQdSTERQC6aZh93YU8/edit?usp=sharing" target="_blank" class="btn btn-primary">
+          Checkout my Resume
+        </a>
+        <div class="d-flex space-between">
+          <div class="skill-wrap">
+            <h3>Languages</h3>
+            <div class="d-column">
+              <p>
+                <i class="fas fa-water"></i> Liquid
+              </p>
+              <p><i class="fab fa-js-square"></i> JavaScript</p>
+              <div class="d-flex space-between">
+              </div>
+              <p><i class="fab fa-sass"></i> SCSS</p>
+              <p><i class="far fa-gem"></i> Ruby</p>
+              <p><i class="fab fa-html5"></i> HTML 5</p>
+              <p><i class="fab fa-python"></i> Python</p>
+              <p><i class="fab fa-css3-alt"></i> CSS 3</p>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="exampleFormControlSelect1">Example select</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
+          <div class="skill-wrap">
+            <h3>Frameworks</h3>
+            <div class="d-column">
+              <p><i class="fab fa-bootstrap"></i> Bootstrap</p>
+              <p><i class="fab fa-shopify"></i> Shopify</p>
+              <p><i class="fas fa-road"></i> Ruby on Rails</p>
+              <p><i class="fab fa-react"></i> React</p>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="exampleFormControlSelect2">Example multiple select</label>
-            <select multiple class="form-control" id="exampleFormControlSelect2">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
+          <div class="skill-wrap">
+            <h3>Skills</h3>
+            <div class="d-column">
+              <p><i class="fab fa-github-square"></i> Github</p>
+              <p><i class="fab fa-unity"></i> Unity</p>
+              <p><i class="fas fa-cart-plus"></i> E-Commerce</p>
+              <p><i class="fas fa-stream"></i> Git Flow</p>
+              <p><i class="fab fa-aws"></i> AWS</p>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-        </form>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h1 class="main-header">Contact</h1>
+      <div class="d-flex space-between">
+        <div class="ani-wrap">
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <div class="form-square"></div>
+          <svg width="600" height="600" id="form-path">
+            <path fill="none" stroke="none" d="M 200 301 Q 252 264 206 235 Q 170 175 99 146 C 17 94 131 5 164 70 Q 195 123 252 183 Q 279 241 309 190 Q 363 136 398 73 C 444 4 540 78 467 131 Q 404 168 350 226 Q 297 256 344 292 Q 392 349 452 388 C 504 463 404 526 359 436 Q 345 372 306 322 Q 273 276 246 322 Q 194 369 159 434 C 95 501 30 438 83 373 Q 141 337 200 301 Z"></path>
+          </svg>
+        </div>
+        <div class="form-wrap">
+          <form class="d-column" action="https://mailthis.to/jcgportafolio"
+          method="POST" encType="multipart/form-data">
+            <div class="form-group">
+              <div class="d-column">
+                <label for="formControlInput">First Name</label>
+                <input type="text" class="form-control" placeholder="First name">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="d-column">
+                <label for="formControlInput">Last Name</label>
+                <input type="text" class="form-control" placeholder="Last name">
+              </div>
+            </div>
+            <div class="d-column">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input type="email" class="form-control " id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+              <div class="d-column">
+                <label for="exampleFormControlSelect1">Select Industry</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Web Development</option>
+                  <option>Software Development</option>
+                  <option>Game Development</option>
+                  <option>E-commerce</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="d-column">
+                <label for="exampleFormControlSelect1">Select Language</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Any</option>
+                  <option>Ruby</option>
+                  <option>Python</option>
+                  <option>C#</option>
+                  <option>Javascript</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="d-column">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </div>
+            <input type="hidden" name="_subject" value="Contact form submitted">
+            <input type="hidden" name="_after" value="https://jurgen1c.github.io/Portafolio/.">
+            <input type="hidden" name="_honeypot" value="">
+            <button type="submit" name="submit" value="Submit Form" class="btn"></button>
+          </form>
+        </div>
       </div>
     </section>
   </main>
-  <footer></footer>
   <script src="./Assets/Javascript/anime.min.js"></script>
   <script src="./Assets/Javascript/app.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>

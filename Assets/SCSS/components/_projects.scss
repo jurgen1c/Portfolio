@@ -1,0 +1,260 @@
+#projects{
+  margin-top: 3rem;
+}
+
+.p-wrap{
+  flex-flow: row wrap;
+}
+.card {
+  padding: 1rem;
+  width: 47%;
+  height: 15em;
+  box-shadow: 2px 5px 15px -1px rgba(0,0,0,0.72);
+  border-radius: 5px;
+  margin: 1rem;
+  &:hover {
+    .sec-info{
+      display: block;
+    }
+  }
+}
+
+.sec-info{
+  padding: 1rem;
+  display: none;
+  color: white;
+  i{
+    text-shadow: 4px 5px 15px $main-light;
+    padding: 0 1.5rem;
+  }
+  button{
+    font-size: 1.1rem;
+    margin: 1.5rem 0 0 1rem;
+  }
+}
+
+.card-title {
+  font-size: 2rem;
+  font-family: $main-font;
+  font-weight: 400;
+  width: fit-content;
+  color: white;
+  background: $main-color;
+  border-radius: 10px;
+  padding: 0 .5rem;
+  margin: 0 .5rem;
+}
+
+.t-bot {
+  background-image: url("../Images/whistle_bot/tweet_bot.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.csm {
+  background-image: url("../Images/csm/csm_home.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.invaders{
+  background-image: url("../Images/sinvaders/invaders_home.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.ittc{
+  background-image: url("../Images/ittc/ittc_home.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.etnias{
+  background-image: url("../Images/etnias/etnias_home.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.vianda{
+  background-image: url("../Images/vianda/vianda_home.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: $bg-color;
+  margin: 2% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 85%; /* Could be more or less, depending on screen size */
+  font-family: $secondary-font;
+}
+
+.modal-info{
+  margin-top: 3rem;
+  padding: 2rem 4rem 0 4rem;
+  p{
+    padding: 0 2rem;
+    text-align: justify;
+    width: 75%;
+  }
+  button{
+    margin: .5rem 3rem 0 0;
+    width: 10em;
+  }
+}
+
+/* The Close Button */
+.t-bot-close,
+.csm-close, 
+.ittc-close,
+.invaders-close,
+.etnias-close,
+.vianda-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.t-bot-close:hover,
+.t-bot-close:focus,
+.csm-close:hover,
+.csm-close:focus,
+.ittc-close:hover,
+.ittc-close:focus,
+.invaders-close:hover,
+.invaders-close:focus,
+.etnias-close:hover,
+.etnias-close:focus,
+.vianda-close:hover,
+.vianda-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+  margin: 0 auto;
+  width: 90%;
+  height: 27em;
+  border-radius: 15px;
+}
+
+/* Slides */
+.t-botSlides, 
+.csmSlides,
+.ittcSlides,
+.invadersSlides,
+.etniasSlides,
+.viandaSlides {
+  display: none;
+  text-align: center;
+  img{
+    border-radius: 15px;
+    width: 100%;
+    height:27em;
+  }
+  h3{
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    color: white;
+    background: $main-color;
+    z-index: 3;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    font-family: $main-font;
+  }
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  position: relative;
+  div{
+    position: absolute;
+    top: -2rem;
+    right: 34%;
+  }
+}
+
+/* The dots/bullets/indicators */
+.t-bot-dot,
+.csm-dot,
+.ittc-dot,
+.invaders-dot,
+.etnias-dot,
+.vianda-dot {
+  cursor: pointer;
+  height: 5rem;
+  width: 7rem;
+  margin: 0 2px;
+  border: none;
+  display: inline-block;
+  transition: border 0.6s ease;
+  border-radius: 10px;
+}
+
+/* Add a background color to the active dot/circle */
+.active, 
+.t-bot-dot:hover, 
+.csm-dot:hover,
+.ittc-dot:hover,
+.invaders-dot:hover,
+.etnias-dot:hover,
+.vianda-dot:hover{
+  border: 2px solid $header-color;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
