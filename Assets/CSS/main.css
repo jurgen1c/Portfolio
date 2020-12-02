@@ -120,9 +120,15 @@ nav a:hover { color: #B97F24; text-decoration: underline; }
 
 @media only screen and (max-width: 790px) { .modal-content { padding: 2rem; } }
 
-.modal-info { margin-top: 3rem; padding: 2rem 4rem 0 4rem; }
+.modal-info { margin-top: 3rem; padding: 2rem 4rem 0 4rem; text-align: justify; }
 
-.modal-info p { padding: 0 2rem; text-align: justify; width: 75%; }
+.modal-info .i-cont { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap; width: 70%; }
+
+.modal-info i { padding: .5rem .6rem; color: #020E2D; }
+
+.modal-info h3 { color: #020E2D; }
+
+.modal-info p { padding: 0 2rem; text-align: justify; width: 80%; }
 
 .modal-info button { margin: .5rem 3rem 0 0; width: 10em; }
 

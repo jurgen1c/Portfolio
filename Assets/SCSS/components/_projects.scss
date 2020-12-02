@@ -118,10 +118,22 @@
 .modal-info{
   margin-top: 3rem;
   padding: 2rem 4rem 0 4rem;
+  text-align: justify;
+  .i-cont{
+    flex-flow: row wrap;
+    width: 70%;
+  }
+  i{
+    padding: .5rem .6rem;
+    color: $main-color;
+  }
+  h3{
+    color: $main-color;
+  }
   p{
     padding: 0 2rem;
     text-align: justify;
-    width: 75%;
+    width: 80%;
   }
   button{
     margin: .5rem 3rem 0 0;
