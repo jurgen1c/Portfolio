@@ -17,9 +17,9 @@ nav a { margin-top: 2rem; text-decoration: none; color: #020E2D; font-size: 2rem
 
 nav a:hover { color: #B97F24; text-decoration: underline; }
 
-@media only screen and (max-width: 790px) { nav { width: 100%; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
+@media only screen and (max-width: 790px) { nav { width: 100%; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; background: #020E2D; }
   nav img { display: none; }
-  nav a { font-size: 1rem; } }
+  nav a { font-size: 1.5rem; margin: 1rem .5rem 0 0; color: #B97F24; } }
 
 .d-flex { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
@@ -42,6 +42,8 @@ nav a:hover { color: #B97F24; text-decoration: underline; }
 @media only screen and (max-width: 790px) { .btn { padding: .5rem; margin: .5rem 0; } }
 
 #intro { position: relative; height: 100vh; background: #020E2D; border-radius: 0 0 0 85%; }
+
+@media only screen and (max-width: 790px) { #intro { margin: 40px 0 0 0; } }
 
 .intro-wrap { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; color: whitesmoke; }
 

@@ -48,11 +48,14 @@ nav {
   @include responsive {
     width: 100%;
     flex-direction: row;
+    background: $main-color;
     img{
       display: none;
     }
     a{
-      font-size: 1rem;
+      font-size: 1.5rem;
+      margin: 1rem .5rem 0 0;
+      color: $header-color;
     }
   }
 }

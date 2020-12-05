@@ -3,6 +3,9 @@
   height: 100vh;
   background: $main-color;
   border-radius: 0 0 0 85%;
+  @include responsive{
+    margin: 40px 0 0 0;
+  }
 }
 
 .intro-wrap{
