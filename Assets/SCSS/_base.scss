@@ -21,6 +21,18 @@ section {
   }
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background: $main-color;
+  a{
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+  }
+}
+
 nav {
   padding: 2rem;
   width: 17%;
