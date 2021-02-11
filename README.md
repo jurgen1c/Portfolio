@@ -11,7 +11,7 @@
 - JavaScript
 -	SASS  
 
-### Check out the live version [here](https://jurgen1c.github.io/Portafolio/)     
+### Check out the live version [here](https://jurgen1c.github.io/Portfolio/)     
 
 ## 👤 Authors
 
