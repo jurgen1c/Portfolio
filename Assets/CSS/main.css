@@ -108,7 +108,7 @@ nav a:hover { color: #D09E36; text-decoration: underline; }
 
 @media only screen and (max-width: 690px) { .intro-ani h1 { font-size: 5rem; } }
 
-.intro-text { color: #0f0f0f; font-family: "Roboto Mono", sans-serif; font-size: 3.5rem; }
+.intro-text { color: whitesmoke; font-family: "Roboto Mono", sans-serif; font-size: 3.5rem; }
 
 .hide { background: #154384; overflow: hidden; }
 
