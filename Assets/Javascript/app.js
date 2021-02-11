@@ -13,11 +13,11 @@ function introAnimation() {
   })
   .add({
     targets: '.slider',
-    translateY: ['100%', '-100%'],
+    translateY: ['100%', '-120%'],
   })
   .add({
     targets: '.intro-ani',
-    translateY: ['0%', '-100%']
+    translateY: ['0%', '-120%']
   }, 2700)
   .add({
     targets: 'nav',

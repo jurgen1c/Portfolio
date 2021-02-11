@@ -7,9 +7,13 @@ main { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-or
 
 @media only screen and (max-width: 690px) { main { width: 100%; } }
 
+@media only screen and (min-width: 691px) and (max-width: 1000px) { main { width: 100%; } }
+
 section { width: 83%; }
 
 @media only screen and (max-width: 690px) { section { width: 100%; } }
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) { section { width: 100%; } }
 
 footer { width: 83%; margin-left: 17%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; color: white; background: #113969; padding: .5rem 0; }
 
@@ -17,23 +21,32 @@ footer a { color: white; margin: 0 1rem; text-decoration: none; }
 
 footer a:hover { color: #D09E36; }
 
-@media only screen and (max-width: 690px) { footer { width: 100%; margin: 0; } }
+@media only screen and (max-width: 690px) { footer { font-size: .6rem; width: 100%; margin: 0; } }
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) { footer { width: 100%; margin: 0; }
+  footer a { font-size: .9rem; } }
 
 nav { padding: 2rem; width: 17%; position: fixed; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; top: 0; }
 
-nav img { border-radius: 50%; width: 7rem; height: 9rem; }
+nav img { border-radius: 40%; width: 7rem; height: 9rem; }
 
-nav a { text-decoration: none; color: #113969; font-size: 2rem; font-family: "Raleway", sans-serif; font-weight: 600; }
+nav a { text-decoration: none; color: #113969; margin: 1rem 0; font-size: 2rem; font-family: "Raleway", sans-serif; font-weight: 600; }
 
 nav a:hover { color: #D09E36; text-decoration: underline; }
 
-@media only screen and (max-width: 690px) { nav { padding: 0; margin: 0; width: 100%; height: 50px; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background: #113969; z-index: 3; }
+@media only screen and (max-width: 690px) { nav { padding: 0; margin: 0; width: 100%; height: 50px; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background: #113969; z-index: 3; }
   nav img { display: none; }
+  nav a { margin: 0; font-size: 1rem; color: whitesmoke; } }
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) { nav { height: 80px; width: 100%; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background: #113969; z-index: 3; }
+  nav img { width: 60px; height: 70px; border: solid 1px #D09E36; }
   nav a { margin: 0; font-size: 1rem; color: whitesmoke; } }
 
 .d-flex { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
 @media only screen and (max-width: 690px) { .d-flex { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) { .d-flex { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap; } }
 
 .d-column { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
@@ -42,6 +55,8 @@ nav a:hover { color: #D09E36; text-decoration: underline; }
 .main-header { font-family: "Raleway", sans-serif; font-size: 4rem; color: #113969; margin: 1rem 0; font-weight: 600; }
 
 @media only screen and (max-width: 690px) { .main-header { font-size: 2.5rem; } }
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) { .main-header { font-size: 2.7rem; margin: 1rem 0 1rem .5rem; } }
 
 .frame-text { background: #154384; padding: 1.5rem; border-radius: 10px; color: whitesmoke; border: solid 2px #D09E36; }
 
@@ -54,6 +69,8 @@ nav a:hover { color: #D09E36; text-decoration: underline; }
 #intro { position: relative; height: 100vh; background: #113969; border-radius: 0 0 0 85%; }
 
 @media only screen and (max-width: 690px) { #intro { margin: 50px 0 0 0; } }
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) { #intro { margin: 80px 0 0 0; } }
 
 .intro-wrap { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; color: whitesmoke; }
 
@@ -72,6 +89,13 @@ nav a:hover { color: #D09E36; text-decoration: underline; }
 .intro-wrap div i { margin: 0 1rem; }
 
 @media only screen and (max-width: 690px) { .intro-wrap { width: 100%; }
+  .intro-wrap h1 { font-size: 2.5rem; margin-left: 1rem; }
+  .intro-wrap h3 { font-size: 1.5rem; margin-left: 1rem; }
+  .intro-wrap p { padding: 1rem; }
+  .intro-wrap div { padding: 0 1rem; }
+  .intro-wrap a { font-size: .5rem; } }
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) { .intro-wrap { width: 100%; }
   .intro-wrap h1 { font-size: 2.5rem; margin-left: 1rem; }
   .intro-wrap h3 { font-size: 1.5rem; margin-left: 1rem; }
   .intro-wrap p { padding: 1rem; }
@@ -102,6 +126,8 @@ nav a:hover { color: #D09E36; text-decoration: underline; }
 
 @media only screen and (max-width: 690px) { .card { width: 95%; height: auto; } }
 
+@media only screen and (min-width: 691px) and (max-width: 1000px) { .card { width: 85%; height: auto; margin: 1rem auto; } }
+
 .sec-info { padding: 1rem; display: none; color: white; }
 
 .sec-info i { color: #D09E36; text-shadow: -1px -1px 20px #113969; padding: 0 1.5rem; }
@@ -112,9 +138,15 @@ nav a:hover { color: #D09E36; text-decoration: underline; }
   .sec-info i { padding: .4rem .5rem; }
   .sec-info button { font-size: .7rem; margin: 0; } }
 
+@media only screen and (min-width: 691px) and (max-width: 1000px) { .sec-info { display: block; padding: .2rem; }
+  .sec-info i { padding: .5rem .6rem; }
+  .sec-info button { font-size: .7rem; margin: .3rem 0; } }
+
 .card-title { font-size: 2rem; font-family: "Raleway", sans-serif; font-weight: 400; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; color: white; background: #113969; border-radius: 10px; padding: 0 .5rem; margin: 0 .5rem; }
 
 @media only screen and (max-width: 690px) { .card-title { font-size: 1.5rem; } }
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) { .card-title { font-size: 1.8rem; } }
 
 .t-bot { background-image: url("../Images/whistle_bot/tweet_bot.png"); background-position: center; background-size: cover; }
 
@@ -135,6 +167,8 @@ nav a:hover { color: #D09E36; text-decoration: underline; }
 
 @media only screen and (max-width: 690px) { .modal-content { padding: 2rem; } }
 
+@media only screen and (min-width: 691px) and (max-width: 1000px) { .modal-content { margin: 15% auto; } }
+
 .modal-info { margin-top: 3rem; padding: 2rem 4rem 0 4rem; text-align: justify; }
 
 .modal-info .i-cont { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap; width: 70%; }
@@ -153,6 +187,12 @@ nav a:hover { color: #D09E36; text-decoration: underline; }
   .modal-info .i-cont { width: 100%; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
   .modal-info button { margin: .5rem 1rem 0 0; } }
 
+@media only screen and (min-width: 691px) and (max-width: 1000px) { .modal-info { margin-top: 3.5rem; padding: .5rem; text-align: center; }
+  .modal-info p { width: 100%; padding: 0; }
+  .modal-info h3 { text-align: center; }
+  .modal-info .i-cont { width: 100%; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+  .modal-info button { margin: .5rem 1rem 0 0; } }
+
 /* The Close Button */
 .t-bot-close, .csm-close, .ittc-close, .invaders-close, .etnias-close, .vianda-close { color: #aaa; float: right; font-size: 28px; font-weight: bold; }
 
@@ -165,6 +205,8 @@ nav a:hover { color: #D09E36; text-decoration: underline; }
 
 @media only screen and (max-width: 690px) { .slideshow-container { width: 100%; height: 15em; } }
 
+@media only screen and (min-width: 691px) and (max-width: 1000px) { .slideshow-container { width: 95%; height: 20em; } }
+
 /* Slides */
 .t-botSlides, .csmSlides, .ittcSlides, .invadersSlides, .etniasSlides, .viandaSlides { display: none; text-align: center; }
 
@@ -176,10 +218,15 @@ nav a:hover { color: #D09E36; text-decoration: underline; }
 
 @media only screen and (max-width: 690px) { .t-botSlides h3, .csmSlides h3, .ittcSlides h3, .invadersSlides h3, .etniasSlides h3, .viandaSlides h3 { top: 10px; font-size: 1rem; } }
 
+@media only screen and (min-width: 691px) and (max-width: 1000px) { .t-botSlides img, .csmSlides img, .ittcSlides img, .invadersSlides img, .etniasSlides img, .viandaSlides img { height: 20em; }
+  .t-botSlides h3, .csmSlides h3, .ittcSlides h3, .invadersSlides h3, .etniasSlides h3, .viandaSlides h3 { top: 10px; font-size: 1rem; } }
+
 /* Next & previous buttons */
 .prev, .next { cursor: pointer; position: absolute; top: 50%; width: auto; margin-top: -30px; padding: 16px; color: #888; font-weight: bold; font-size: 20px; border-radius: 0 3px 3px 0; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 
 @media only screen and (max-width: 690px) { .prev, .next { font-size: 1.5rem; } }
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) { .prev, .next { font-size: 1.6rem; } }
 
 /* Position the "next button" to the right */
 .next { position: absolute; right: 0; border-radius: 3px 0 0 3px; }
@@ -193,6 +240,8 @@ nav a:hover { color: #D09E36; text-decoration: underline; }
 .dot-container div { position: absolute; top: -2rem; right: 34%; }
 
 @media only screen and (max-width: 690px) { .dot-container div { top: -1rem; right: 10%; } }
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) { .dot-container div { top: -2.5rem; right: 15%; } }
 
 /* The dots/bullets/indicators */
 .t-bot-dot, .csm-dot, .ittc-dot, .invaders-dot, .etnias-dot, .vianda-dot { cursor: pointer; height: 5rem; width: 7rem; margin: 0 2px; border: none; display: inline-block; -webkit-transition: border 0.6s ease; transition: border 0.6s ease; border-radius: 10px; }
@@ -216,6 +265,10 @@ nav a:hover { color: #D09E36; text-decoration: underline; }
   .about-wrap p { margin: 1rem 0; }
   .about-wrap a { margin: 1rem auto; } }
 
+@media only screen and (min-width: 691px) and (max-width: 1000px) { .about-wrap > div { padding: 0 1rem; margin: 1rem 0; }
+  .about-wrap p { margin: 2rem 0; }
+  .about-wrap a { margin: 1rem auto; } }
+
 .skill-wrap { text-align: center; width: 25%; height: 25em; padding: 1rem; margin: 2rem 0; color: whitesmoke; background: #154384; border-radius: 10px; font-family: "Roboto Mono", sans-serif; }
 
 .skill-wrap h3 { font-family: "Raleway", sans-serif; margin-bottom: 1rem; font-size: 1.5rem; }
@@ -225,6 +278,8 @@ nav a:hover { color: #D09E36; text-decoration: underline; }
 @media only screen and (max-width: 690px) { .skill-wrap { width: 90%; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; padding: .3rem; margin: .5rem; }
   .skill-wrap h3 { font-size: 1rem; }
   .skill-wrap p { font-size: .9rem; } }
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) { .skill-wrap { width: 33%; } }
 
 #contact { margin-top: 3rem; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; border-radius: 100% 0 0 0; background: #113969; }
 
@@ -236,15 +291,22 @@ nav a:hover { color: #D09E36; text-decoration: underline; }
 
 #contact form label { margin: .4rem; }
 
-#contact form input, #contact form select { font-family: "Roboto Mono", sans-serif; margin: .4rem; padding: .2rem; width: 26em; height: 2rem; outline: none; border: none; border-radius: 5px; }
+#contact form input, #contact form select { border: 1px solid #D09E36; font-family: "Roboto Mono", sans-serif; margin: .4rem; padding: .2rem; width: 26em; height: 2rem; outline: none; border: none; border-radius: 5px; }
 
-#contact form textarea { font-family: "Roboto Mono", sans-serif; margin: .4rem; padding: .2rem; width: 26em; height: 7em; border: none; border-radius: 5px; }
+#contact form textarea { border: 1px solid #D09E36; font-family: "Roboto Mono", sans-serif; margin: .4rem; padding: .2rem; width: 26em; height: 7em; border: none; border-radius: 5px; }
 
 #contact form textarea:active, #contact form textarea:focus { outline: none; border: none; }
 
 #contact form button { background: #D09E36; font-size: 1.4rem; }
 
 @media only screen and (max-width: 690px) { #contact { width: 100%; margin-top: 1.5rem; }
+  #contact .form-wrap { margin: 1rem 0 0 0; width: 100%; }
+  #contact form { width: 100%; margin: 0; padding: 0; }
+  #contact form input, #contact form select { border: 1px solid #D09E36; width: 30em; margin: 0; padding: .2rem; }
+  #contact form textarea { border: 1px solid #D09E36; width: 30em; height: 3em; margin: 0; padding: .2rem; }
+  #contact form button { font-size: .8rem; margin: 1rem 0; } }
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) { #contact { width: 100%; margin-top: 1.5rem; }
   #contact .form-wrap { margin: 1rem 0 0 0; width: 100%; }
   #contact form { width: 100%; margin: 0; padding: 0; }
   #contact form input, #contact form select { border: 1px solid #D09E36; width: 30em; margin: 0; padding: 0; }
@@ -256,3 +318,5 @@ nav a:hover { color: #D09E36; text-decoration: underline; }
 .ani-wrap .form-square { background: transparent; border: solid 2px #D09E36; width: 2.5rem; height: 2.5rem; position: absolute; }
 
 @media only screen and (max-width: 690px) { .ani-wrap { display: none; } }
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) { .ani-wrap { display: none; } }

@@ -17,6 +17,6 @@ $secondary-font: "Roboto Mono", sans-serif;
   @if $size == phone {
     @media only screen and (max-width: 690px) { @content; }
   } @else if $size == tablet {
-    @media only screen and (min-width: 691px) and (max-width: 1243px) { @content; }
+    @media only screen and (min-width: 691px) and (max-width: 1000px) { @content; }
   } 
 }

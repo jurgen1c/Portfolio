@@ -15,11 +15,17 @@ main{
   @include responsive(phone){
     width: 100%;
   }
+  @include responsive(tablet) {
+    width: 100%;
+  }
 }
 
 section {
   width: 83%;
   @include responsive(phone) {
+    width: 100%;
+  }
+  @include responsive(tablet) {
     width: 100%;
   }
 }
@@ -41,9 +47,17 @@ footer {
     }
   }
   @include responsive(phone){
+    font-size: .6rem;
     width: 100%;
     margin: 0;
   }
+  @include responsive(tablet) {
+    width: 100%;
+    margin: 0;
+    a {
+      font-size: .9rem;
+    }
+  } 
 }
 
 nav {
@@ -55,13 +69,14 @@ nav {
   align-items: center;
   top: 0;
   img{
-    border-radius: 50%;
+    border-radius: 40%;
     width: 7rem;
     height: 9rem;
   }
   a{
     text-decoration: none;
     color: $main-color;
+    margin: 1rem 0;
     font-size: 2rem;
     font-family: $main-font;
     font-weight: 600;
@@ -76,12 +91,31 @@ nav {
     width: 100%;
     height: 50px;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     background: $main-color;
     z-index: 3;
     img{
       display: none;
+    }
+    a{
+      margin: 0;
+      font-size: 1rem;
+      color: whitesmoke;
+    }
+  }
+  @include responsive(tablet) {
+    height: 80px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: $main-color;
+    z-index: 3;
+    img{
+      width: 60px;
+      height: 70px;
+      border: solid 1px $main-light;
     }
     a{
       margin: 0;
@@ -95,6 +129,9 @@ nav {
   display: flex;
   @include responsive(phone) {
     flex-direction: column;
+  }
+  @include responsive(tablet){
+    flex-flow: row wrap;
   }
 }
 
@@ -116,6 +153,10 @@ nav {
   font-weight: 600;
   @include responsive(phone) {
     font-size: 2.5rem;
+  }
+  @include responsive(tablet) {
+    font-size: 2.7rem;
+    margin: 1rem 0 1rem .5rem;
   }
 }
 
