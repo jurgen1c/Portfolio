@@ -77,12 +77,13 @@
   margin: .5rem 1rem 0 0;
   .form-square{
     background: transparent;
-    border: solid 1px $header-color;
+    border: solid 2px $main-light;
     width: 2.5rem;
     height: 2.5rem;
     position: absolute;
   }
   @include responsive(phone) {
+    display: none;
     width: 90%;
     margin: .5rem auto;
     .form-square{

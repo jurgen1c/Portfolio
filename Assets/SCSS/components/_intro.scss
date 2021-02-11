@@ -4,7 +4,7 @@
   background: $main-color;
   border-radius: 0 0 0 85%;
   @include responsive(phone){
-    margin: 40px 0 0 0;
+    margin: 50px 0 0 0;
   }
 }
 
@@ -19,31 +19,23 @@
     font-size: 5.5rem;
     font-weight: 400;
     font-family: $main-font;
-    @include responsive(phone) {
-      font-size: 2.5rem;
-    }
   }
   h3{
     font-family: $secondary-font;
     font-size: 3rem;
-    @include responsive(phone) {
-      font-size: 1.5rem;
-    }
   }
   p{
-    background: $main-light;
+    background: $header-light;
+    border: solid 2px $main-light;
     width: 90%;
     padding: 2rem;
     border-radius: 5px;
     font-family: $secondary-font;
-    @include responsive(phone) {
-      padding: 1rem;
-    }
   }
   a{
     color: white;
     &:hover{
-      color: $header-color;
+      color: $main-light;
     }
   }
   div{
@@ -51,11 +43,23 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    @include responsive(phone) {
-      padding: 0 1rem;
-    }
     i{
       margin: 0 1rem;
+    }
+  }
+  @include responsive(phone){
+    width: 100%;
+    h1{
+      font-size: 2.5rem;
+    }
+    h3{
+      font-size: 1.5rem;
+    }
+    p{
+      padding: 1rem;
+    }
+    div {
+      padding: 0 1rem;
     }
   }
 }

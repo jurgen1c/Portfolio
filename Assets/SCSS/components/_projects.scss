@@ -28,7 +28,8 @@
   display: none;
   color: white;
   i{
-    text-shadow: 4px 5px 15px $main-light;
+    color: $main-light;
+    text-shadow: -1px -1px 20px $main-color;
     padding: 0 1.5rem;
     @include responsive(phone) {
       padding: 0 .5rem;
