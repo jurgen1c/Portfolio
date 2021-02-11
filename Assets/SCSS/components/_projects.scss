@@ -17,9 +17,14 @@
       display: block;
     }
   }
-  @include responsive {
+  @include responsive(phone) {
     width: 95%;
-    height: 10em;
+    height: auto;
+  }
+  @include responsive(tablet) {
+    width: 85%;
+    height: auto;
+    margin: 1rem auto;
   }
 }
 
@@ -28,15 +33,35 @@
   display: none;
   color: white;
   i{
-    text-shadow: 4px 5px 15px $main-light;
+    color: $main-light;
+    text-shadow: -1px -1px 20px $main-color;
     padding: 0 1.5rem;
-    @include responsive {
-      padding: 0 .5rem;
-    }
   }
   button{
     font-size: 1.1rem;
     margin: 1.5rem 0 0 1rem;
+  }
+  @include responsive(phone) {
+    display: block;
+    padding: .2rem;
+    i{
+      padding: .4rem .5rem;
+    }
+    button {
+      font-size: .7rem;
+      margin: 0;
+    }
+  }
+  @include responsive(tablet){
+    display: block;
+    padding: .2rem;
+    i{
+      padding: .5rem .6rem;
+    }
+    button {
+      font-size: .7rem;
+      margin: .3rem 0;
+    }
   }
 }
 
@@ -50,6 +75,12 @@
   border-radius: 10px;
   padding: 0 .5rem;
   margin: 0 .5rem;
+  @include responsive(phone){
+    font-size: 1.5rem;
+  }
+  @include responsive(tablet) {
+    font-size: 1.8rem;
+  }
 }
 
 .t-bot {
@@ -110,8 +141,11 @@
   border-radius: 10px;
   width: 85%; /* Could be more or less, depending on screen size */
   font-family: $secondary-font;
-  @include responsive {
+  @include responsive(phone) {
     padding: 2rem;
+  }
+  @include responsive(tablet){
+    margin: 15% auto;
   }
 }
 
@@ -138,7 +172,43 @@
   button{
     margin: .5rem 3rem 0 0;
     width: 10em;
-    @include responsive {
+  }
+  @include responsive(phone){
+    padding: .5rem;
+    text-align: center;
+    p {
+      width: 100%;
+      padding: 0;
+    }
+    h3 {
+      text-align: center;
+    }
+    .i-cont{
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    button {
+      margin: .5rem 1rem 0 0;
+    }
+  }
+  @include responsive(tablet){
+    margin-top: 3.5rem;
+    padding: .5rem;
+    text-align: center;
+    p {
+      width: 100%;
+      padding: 0;
+    }
+    h3 {
+      text-align: center;
+    }
+    .i-cont{
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    button {
       margin: .5rem 1rem 0 0;
     }
   }
@@ -155,7 +225,7 @@
   float: right;
   font-size: 28px;
   font-weight: bold;
-  @include responsive {
+  @include responsive(phone) {
     font-size: 1rem;
   }
 }
@@ -185,9 +255,13 @@
   width: 90%;
   height: 27em;
   border-radius: 15px;
-  @include responsive {
+  @include responsive(phone) {
     width: 100%;
     height: 15em;
+  }
+  @include responsive(tablet) {
+    width: 95%;
+    height: 20em;
   }
 }
 
@@ -204,7 +278,7 @@
     border-radius: 15px;
     width: 100%;
     height:27em;
-    @include responsive {
+    @include responsive(phone) {
       height: 15em;
     }
   }
@@ -219,7 +293,16 @@
     font-size: 1.5rem;
     border-radius: 5px;
     font-family: $main-font;
-    @include responsive {
+    @include responsive(phone) {
+      top: 10px;
+      font-size: 1rem;
+    }
+  }
+  @include responsive(tablet) {
+    img {
+      height: 20em;
+    }
+    h3 {
       top: 10px;
       font-size: 1rem;
     }
@@ -239,8 +322,11 @@
   font-size: 20px;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  @include responsive {
+  @include responsive(phone) {
     font-size: 1.5rem;
+  }
+  @include responsive(tablet) {
+    font-size: 1.6rem;
   }
 }
 
@@ -264,9 +350,13 @@
     position: absolute;
     top: -2rem;
     right: 34%;
-    @include responsive {
+    @include responsive(phone) {
       top: -1rem;
       right: 10%;
+    }
+    @include responsive(tablet) {
+      top: -2.5rem;
+      right: 15%;
     }
   }
 }
@@ -286,7 +376,7 @@
   display: inline-block;
   transition: border 0.6s ease;
   border-radius: 10px;
-  @include responsive {
+  @include responsive(phone) {
     height: 3rem;
     width: 3rem;
   }

@@ -3,8 +3,11 @@
   height: 100vh;
   background: $main-color;
   border-radius: 0 0 0 85%;
-  @include responsive{
-    margin: 40px 0 0 0;
+  @include responsive(phone){
+    margin: 50px 0 0 0;
+  }
+  @include responsive(tablet) {
+    margin: 80px 0 0 0;
   }
 }
 
@@ -19,31 +22,23 @@
     font-size: 5.5rem;
     font-weight: 400;
     font-family: $main-font;
-    @include responsive {
-      font-size: 2.5rem;
-    }
   }
   h3{
     font-family: $secondary-font;
     font-size: 3rem;
-    @include responsive {
-      font-size: 1.5rem;
-    }
   }
   p{
-    background: $main-light;
+    background: $header-light;
+    border: solid 2px $main-light;
     width: 90%;
     padding: 2rem;
     border-radius: 5px;
     font-family: $secondary-font;
-    @include responsive {
-      padding: 1rem;
-    }
   }
   a{
     color: white;
     &:hover{
-      color: $header-color;
+      color: $main-light;
     }
   }
   div{
@@ -51,11 +46,48 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    @include responsive {
-      padding: 0 1rem;
-    }
     i{
       margin: 0 1rem;
+    }
+  }
+  @include responsive(phone){
+    width: 100%;
+    h1{
+      font-size: 2.5rem;
+      margin-left: 1rem;
+    }
+    h3{
+      font-size: 1.5rem;
+      margin-left: 1rem;
+    }
+    p{
+      padding: 1rem;
+    }
+    div {
+      padding: 0 1rem;
+    }
+    a {
+      font-size: .5rem;
+    }
+  }
+  @include responsive(tablet){
+    width: 100%;
+    h1{
+      font-size: 2.5rem;
+      margin-left: 1rem;
+    }
+    h3{
+      font-size: 1.5rem;
+      margin-left: 1rem;
+    }
+    p{
+      padding: 1rem;
+    }
+    div {
+      padding: 0 1rem;
+    }
+    a {
+      font-size: .5rem;
     }
   }
 }
@@ -75,7 +107,7 @@
     font-size: 10rem;
     font-weight: 400;
     font-family: $main-font;
-    @include responsive {
+    @include responsive(phone) {
       font-size: 5rem;
     }
   }

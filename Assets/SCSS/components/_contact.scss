@@ -22,6 +22,7 @@
     } 
     input, 
     select{
+      border: 1px solid $main-light;
       font-family: $secondary-font;
       margin: .4rem;
       padding: .2rem;
@@ -32,6 +33,7 @@
       border-radius: 5px;
     }
     textarea{
+      border: 1px solid $main-light;
       font-family: $secondary-font;
       margin: .4rem;
       padding: .2rem;
@@ -49,23 +51,65 @@
       font-size: 1.4rem;
     }
   }
-  @include responsive {
+  @include responsive(phone) {
+    width: 100%;
     margin-top: 1.5rem;
     .form-wrap{
       margin: 1rem 0 0 0;
       width: 100%;
     }
     form{
+      width: 100%;
+      margin: 0;
+      padding: 0;
       input, 
       select{
-        width: 90%;
+        border: 1px solid $main-light;
+        width: 30em;
+        margin: 0;
+        padding: .2rem;
       }
       textarea{
-        width: 90%;
+        border: 1px solid $main-light;
+        width: 30em;
         height: 3em;
+        margin: 0;
+        padding: .2rem;
       }
       button{
-        font-size: .7rem;
+        font-size: .8rem;
+        margin: 1rem 0;
+      }
+    }
+  }
+  @include responsive(tablet) {
+    width: 100%;
+    margin-top: 1.5rem;
+    .form-wrap{
+      margin: 1rem 0 0 0;
+      width: 100%;
+    }
+    form{
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      input, 
+      select{
+        border: 1px solid $main-light;
+        width: 30em;
+        margin: 0;
+        padding: 0;
+      }
+      textarea{
+        border: 1px solid $main-light;
+        width: 30em;
+        height: 3em;
+        margin: 0;
+        padding: 0;
+      }
+      button{
+        font-size: .8rem;
+        margin: 1rem 0;
       }
     }
   }
@@ -77,18 +121,16 @@
   margin: .5rem 1rem 0 0;
   .form-square{
     background: transparent;
-    border: solid 1px $header-color;
+    border: solid 2px $main-light;
     width: 2.5rem;
     height: 2.5rem;
     position: absolute;
   }
-  @include responsive{
-    width: 90%;
-    margin: .5rem auto;
-    .form-square{
-      width: 1rem;
-      height: 1rem;
-    }
+  @include responsive(phone) {
+    display: none;
+  }
+  @include responsive(tablet) {
+    display: none;
   }
 }
 
