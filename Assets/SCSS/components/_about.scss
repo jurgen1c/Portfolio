@@ -7,21 +7,24 @@
   font-family: $secondary-font;
   > div {
     padding: 0 5rem;
-    @include responsive(phone) {
-      padding: 0 1rem;
-    }
   }
   p{
     margin: 2rem 0;
-    @include responsive(phone) {
-      margin: .5rem 0;
-    }
   }
   a{
     font-size: 1.2rem;
     margin: 2rem 0;
-    @include responsive(phone) {
+  }
+  @include responsive(phone){
+    > div {
+      padding: 0 1rem;
       margin: 1rem 0;
+    }
+    p{
+      margin: 1rem 0;
+    }
+    a{
+      margin: 1rem auto;
     }
   }
 }
