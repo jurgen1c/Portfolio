@@ -7,20 +7,20 @@
   font-family: $secondary-font;
   > div {
     padding: 0 5rem;
-    @include responsive {
+    @include responsive(phone) {
       padding: 0 1rem;
     }
   }
   p{
     margin: 2rem 0;
-    @include responsive {
+    @include responsive(phone) {
       margin: .5rem 0;
     }
   }
   a{
     font-size: 1.2rem;
     margin: 2rem 0;
-    @include responsive {
+    @include responsive(phone) {
       margin: 1rem 0;
     }
   }
@@ -38,15 +38,14 @@
   font-family: $secondary-font;
   h3{
     font-family: $main-font;
-    color: $header-color;
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   p{
     margin: .7rem .1rem;
     font-size: 1.2rem;
   }
-  @include responsive {
+  @include responsive(phone) {
     width: 90%;
     height: fit-content;
     padding: .3rem;

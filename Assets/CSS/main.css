@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Megrim&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Mono&display=swap");
 * { padding: 0; margin: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-body { background: #d2d8db; }
+body { background: #f5f5f5; }
 
 main { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
 
@@ -9,21 +9,21 @@ section { width: 83%; }
 
 @media only screen and (max-width: 790px) { section { width: 100%; } }
 
-footer { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; color: white; background: #020E2D; }
+footer { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; color: white; background: #113969; }
 
 footer a { color: white; margin: 0 1rem; text-decoration: none; }
 
 nav { padding: 2rem; width: 17%; position: fixed; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; top: 0; }
 
-nav img { border-radius: 50%; width: 7rem; }
+nav img { border-radius: 50%; width: 7rem; height: 9rem; }
 
-nav a { margin-top: 2rem; text-decoration: none; color: #020E2D; font-size: 2rem; font-family: "Megrim", sans-serif; font-weight: 600; }
+nav a { margin-top: 2rem; text-decoration: none; color: #113969; font-size: 2rem; font-family: "Raleway", sans-serif; font-weight: 600; }
 
-nav a:hover { color: #B97F24; text-decoration: underline; }
+nav a:hover { color: #113969; text-decoration: underline; }
 
-@media only screen and (max-width: 790px) { nav { width: 100%; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; background: #020E2D; }
+@media only screen and (max-width: 790px) { nav { width: 100%; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; background: #113969; }
   nav img { display: none; }
-  nav a { font-size: 1.5rem; margin: 1rem .5rem 0 0; color: #B97F24; } }
+  nav a { font-size: 1.5rem; margin: 1rem .5rem 0 0; color: #113969; } }
 
 .d-flex { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
@@ -33,39 +33,39 @@ nav a:hover { color: #B97F24; text-decoration: underline; }
 
 .space-between { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-.main-header { font-family: "Megrim", sans-serif; font-size: 4rem; color: #B97F24; margin: 1rem 0; font-weight: 600; }
+.main-header { font-family: "Raleway", sans-serif; font-size: 4rem; color: #113969; margin: 1rem 0; font-weight: 600; }
 
 @media only screen and (max-width: 790px) { .main-header { font-size: 2.5rem; } }
 
-.frame-text { background: #264288; padding: 1.5rem; border-radius: 10px; color: whitesmoke; }
+.frame-text { background: #D09E36; padding: 1.5rem; border-radius: 10px; color: whitesmoke; }
 
 @media only screen and (max-width: 790px) { .frame-text { padding: .5rem; } }
 
-.btn { padding: 1rem; margin: 1rem 0; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; outline: none; color: whitesmoke; background: #020E2D; border-radius: 7px; border: none; font-family: "Megrim", sans-serif; font-weight: 600; }
+.btn { padding: 1rem; margin: 1rem 0; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; outline: none; color: whitesmoke; background: #113969; border-radius: 7px; border: none; font-family: "Raleway", sans-serif; font-weight: 600; }
 
 @media only screen and (max-width: 790px) { .btn { padding: .5rem; margin: .5rem 0; } }
 
-#intro { position: relative; height: 100vh; background: #020E2D; border-radius: 0 0 0 85%; }
+#intro { position: relative; height: 100vh; background: #113969; border-radius: 0 0 0 85%; }
 
 @media only screen and (max-width: 790px) { #intro { margin: 40px 0 0 0; } }
 
 .intro-wrap { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; color: whitesmoke; }
 
-.intro-wrap h1 { font-size: 5.5rem; font-weight: 400; font-family: "Megrim", sans-serif; }
+.intro-wrap h1 { font-size: 5.5rem; font-weight: 400; font-family: "Raleway", sans-serif; }
 
 @media only screen and (max-width: 790px) { .intro-wrap h1 { font-size: 2.5rem; } }
 
-.intro-wrap h3 { font-family: "Raleway", sans-serif; font-size: 3rem; }
+.intro-wrap h3 { font-family: "Roboto Mono", sans-serif; font-size: 3rem; }
 
 @media only screen and (max-width: 790px) { .intro-wrap h3 { font-size: 1.5rem; } }
 
-.intro-wrap p { background: #264288; width: 90%; padding: 2rem; border-radius: 5px; font-family: "Raleway", sans-serif; }
+.intro-wrap p { background: #D09E36; width: 90%; padding: 2rem; border-radius: 5px; font-family: "Roboto Mono", sans-serif; }
 
 @media only screen and (max-width: 790px) { .intro-wrap p { padding: 1rem; } }
 
 .intro-wrap a { color: white; }
 
-.intro-wrap a:hover { color: #B97F24; }
+.intro-wrap a:hover { color: #113969; }
 
 .intro-wrap div { padding: 0 3rem; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
 
@@ -73,19 +73,19 @@ nav a:hover { color: #B97F24; text-decoration: underline; }
 
 .intro-wrap div i { margin: 0 1rem; }
 
-.intro-ani { background: #BF9553; position: fixed; top: 0; right: 0; width: 100%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; z-index: 99; }
+.intro-ani { background: #154384; position: fixed; top: 0; right: 0; width: 100%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; z-index: 99; }
 
-.intro-ani h1 { font-size: 10rem; font-weight: 400; font-family: "Megrim", sans-serif; }
+.intro-ani h1 { font-size: 10rem; font-weight: 400; font-family: "Raleway", sans-serif; }
 
 @media only screen and (max-width: 790px) { .intro-ani h1 { font-size: 5rem; } }
 
-.intro-text { color: #0f0f0f; font-family: "Raleway", sans-serif; font-size: 3.5rem; }
+.intro-text { color: #0f0f0f; font-family: "Roboto Mono", sans-serif; font-size: 3.5rem; }
 
-.hide { background: #BF9553; overflow: hidden; }
+.hide { background: #154384; overflow: hidden; }
 
 .hide span { -webkit-transform: translateY(100%); transform: translateY(100%); display: inline-block; }
 
-.slider { background: #264288; position: fixed; top: 0; right: 0; width: 100%; height: 100%; -webkit-transform: translateY(100%); transform: translateY(100%); z-index: 99; }
+.slider { background: #D09E36; position: fixed; top: 0; right: 0; width: 100%; height: 100%; -webkit-transform: translateY(100%); transform: translateY(100%); z-index: 99; }
 
 #projects { margin-top: 3rem; }
 
@@ -99,13 +99,13 @@ nav a:hover { color: #B97F24; text-decoration: underline; }
 
 .sec-info { padding: 1rem; display: none; color: white; }
 
-.sec-info i { text-shadow: 4px 5px 15px #264288; padding: 0 1.5rem; }
+.sec-info i { text-shadow: 4px 5px 15px #D09E36; padding: 0 1.5rem; }
 
 @media only screen and (max-width: 790px) { .sec-info i { padding: 0 .5rem; } }
 
 .sec-info button { font-size: 1.1rem; margin: 1.5rem 0 0 1rem; }
 
-.card-title { font-size: 2rem; font-family: "Megrim", sans-serif; font-weight: 400; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; color: white; background: #020E2D; border-radius: 10px; padding: 0 .5rem; margin: 0 .5rem; }
+.card-title { font-size: 2rem; font-family: "Raleway", sans-serif; font-weight: 400; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; color: white; background: #113969; border-radius: 10px; padding: 0 .5rem; margin: 0 .5rem; }
 
 .t-bot { background-image: url("../Images/whistle_bot/tweet_bot.png"); background-position: center; background-size: cover; }
 
@@ -122,7 +122,7 @@ nav a:hover { color: #B97F24; text-decoration: underline; }
 .modal { display: none; /* Hidden by default */ position: fixed; /* Stay in place */ z-index: 1; /* Sit on top */ left: 0; top: 0; width: 100%; /* Full width */ height: 100%; /* Full height */ overflow: auto; /* Enable scroll if needed */ background-color: black; /* Fallback color */ background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */ }
 
 /* Modal Content/Box */
-.modal-content { background-color: #d2d8db; margin: 2% auto; /* 15% from the top and centered */ padding: 20px; border: 1px solid #888; border-radius: 10px; width: 85%; /* Could be more or less, depending on screen size */ font-family: "Raleway", sans-serif; }
+.modal-content { background-color: #f5f5f5; margin: 2% auto; /* 15% from the top and centered */ padding: 20px; border: 1px solid #888; border-radius: 10px; width: 85%; /* Could be more or less, depending on screen size */ font-family: "Roboto Mono", sans-serif; }
 
 @media only screen and (max-width: 790px) { .modal-content { padding: 2rem; } }
 
@@ -130,9 +130,9 @@ nav a:hover { color: #B97F24; text-decoration: underline; }
 
 .modal-info .i-cont { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap; width: 70%; }
 
-.modal-info i { padding: .5rem .6rem; color: #020E2D; }
+.modal-info i { padding: .5rem .6rem; color: #113969; }
 
-.modal-info h3 { color: #020E2D; }
+.modal-info h3 { color: #113969; }
 
 .modal-info p { padding: 0 2rem; text-align: justify; width: 80%; }
 
@@ -159,7 +159,7 @@ nav a:hover { color: #B97F24; text-decoration: underline; }
 
 @media only screen and (max-width: 790px) { .t-botSlides img, .csmSlides img, .ittcSlides img, .invadersSlides img, .etniasSlides img, .viandaSlides img { height: 15em; } }
 
-.t-botSlides h3, .csmSlides h3, .ittcSlides h3, .invadersSlides h3, .etniasSlides h3, .viandaSlides h3 { position: absolute; top: 30px; right: 100px; color: white; background: #020E2D; z-index: 3; padding: 1rem; font-size: 1.5rem; border-radius: 5px; font-family: "Megrim", sans-serif; }
+.t-botSlides h3, .csmSlides h3, .ittcSlides h3, .invadersSlides h3, .etniasSlides h3, .viandaSlides h3 { position: absolute; top: 30px; right: 100px; color: white; background: #113969; z-index: 3; padding: 1rem; font-size: 1.5rem; border-radius: 5px; font-family: "Raleway", sans-serif; }
 
 @media only screen and (max-width: 790px) { .t-botSlides h3, .csmSlides h3, .ittcSlides h3, .invadersSlides h3, .etniasSlides h3, .viandaSlides h3 { top: 10px; font-size: 1rem; } }
 
@@ -187,11 +187,11 @@ nav a:hover { color: #B97F24; text-decoration: underline; }
 @media only screen and (max-width: 790px) { .t-bot-dot, .csm-dot, .ittc-dot, .invaders-dot, .etnias-dot, .vianda-dot { height: 3rem; width: 3rem; } }
 
 /* Add a background color to the active dot/circle */
-.active, .t-bot-dot:hover, .csm-dot:hover, .ittc-dot:hover, .invaders-dot:hover, .etnias-dot:hover, .vianda-dot:hover { border: 2px solid #B97F24; }
+.active, .t-bot-dot:hover, .csm-dot:hover, .ittc-dot:hover, .invaders-dot:hover, .etnias-dot:hover, .vianda-dot:hover { border: 2px solid #113969; }
 
 #about { margin-top: 3rem; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; }
 
-.about-wrap { padding: 1rem; font-family: "Raleway", sans-serif; }
+.about-wrap { padding: 1rem; font-family: "Roboto Mono", sans-serif; }
 
 .about-wrap > div { padding: 0 5rem; }
 
@@ -205,9 +205,9 @@ nav a:hover { color: #B97F24; text-decoration: underline; }
 
 @media only screen and (max-width: 790px) { .about-wrap a { margin: 1rem 0; } }
 
-.skill-wrap { text-align: center; width: 25%; height: 25em; padding: 1rem; margin: 2rem 0; color: whitesmoke; background: #264288; border-radius: 10px; font-family: "Raleway", sans-serif; }
+.skill-wrap { text-align: center; width: 25%; height: 25em; padding: 1rem; margin: 2rem 0; color: whitesmoke; background: #D09E36; border-radius: 10px; font-family: "Roboto Mono", sans-serif; }
 
-.skill-wrap h3 { font-family: "Megrim", sans-serif; color: #B97F24; margin-bottom: 1rem; font-size: 2rem; }
+.skill-wrap h3 { font-family: "Raleway", sans-serif; margin-bottom: 1rem; font-size: 1.5rem; }
 
 .skill-wrap p { margin: .7rem .1rem; font-size: 1.2rem; }
 
@@ -215,23 +215,23 @@ nav a:hover { color: #B97F24; text-decoration: underline; }
   .skill-wrap h3 { font-size: 1rem; }
   .skill-wrap p { font-size: .9rem; } }
 
-#contact { margin-top: 3rem; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; border-radius: 100% 0 0 0; background: #020E2D; }
+#contact { margin-top: 3rem; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; border-radius: 100% 0 0 0; background: #113969; }
 
 #contact h1 { margin: 1rem 0; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; }
 
 #contact .form-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 50%; margin: 2rem 0 0 0; }
 
-#contact form { -webkit-box-align: center; -ms-flex-align: center; align-items: center; color: white; font-family: "Raleway", sans-serif; }
+#contact form { -webkit-box-align: center; -ms-flex-align: center; align-items: center; color: white; font-family: "Roboto Mono", sans-serif; }
 
 #contact form label { margin: .4rem; }
 
-#contact form input, #contact form select { font-family: "Raleway", sans-serif; margin: .4rem; padding: .2rem; width: 26em; height: 2rem; outline: none; border: none; border-radius: 5px; }
+#contact form input, #contact form select { font-family: "Roboto Mono", sans-serif; margin: .4rem; padding: .2rem; width: 26em; height: 2rem; outline: none; border: none; border-radius: 5px; }
 
-#contact form textarea { font-family: "Raleway", sans-serif; margin: .4rem; padding: .2rem; width: 26em; height: 7em; border: none; border-radius: 5px; }
+#contact form textarea { font-family: "Roboto Mono", sans-serif; margin: .4rem; padding: .2rem; width: 26em; height: 7em; border: none; border-radius: 5px; }
 
 #contact form textarea:active, #contact form textarea:focus { outline: none; border: none; }
 
-#contact form button { background: #264288; font-size: 1.4rem; }
+#contact form button { background: #D09E36; font-size: 1.4rem; }
 
 @media only screen and (max-width: 790px) { #contact { margin-top: 1.5rem; }
   #contact .form-wrap { margin: 1rem 0 0 0; width: 100%; }
@@ -241,7 +241,7 @@ nav a:hover { color: #B97F24; text-decoration: underline; }
 
 .ani-wrap { width: 50%; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; margin: .5rem 1rem 0 0; }
 
-.ani-wrap .form-square { background: transparent; border: solid 1px #B97F24; width: 2.5rem; height: 2.5rem; position: absolute; }
+.ani-wrap .form-square { background: transparent; border: solid 1px #113969; width: 2.5rem; height: 2.5rem; position: absolute; }
 
 @media only screen and (max-width: 790px) { .ani-wrap { width: 90%; margin: .5rem auto; }
   .ani-wrap .form-square { width: 1rem; height: 1rem; } }

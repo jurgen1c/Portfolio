@@ -16,7 +16,7 @@ main{
 
 section {
   width: 83%;
-  @include responsive {
+  @include responsive(phone) {
     width: 100%;
   }
 }
@@ -44,6 +44,7 @@ nav {
   img{
     border-radius: 50%;
     width: 7rem;
+    height: 9rem;
   }
   a{
     margin-top: 2rem;
@@ -57,7 +58,7 @@ nav {
       text-decoration: underline;
     }
   }
-  @include responsive {
+  @include responsive(phone) {
     width: 100%;
     flex-direction: row;
     background: $main-color;
@@ -74,7 +75,7 @@ nav {
 
 .d-flex{
   display: flex;
-  @include responsive {
+  @include responsive(phone) {
     flex-direction: column;
   }
 }
@@ -95,7 +96,7 @@ nav {
   color: $header-color;
   margin: 1rem 0;
   font-weight: 600;
-  @include responsive {
+  @include responsive(phone) {
     font-size: 2.5rem;
   }
 }
@@ -105,7 +106,7 @@ nav {
   padding: 1.5rem;
   border-radius: 10px;
   color: whitesmoke;
-  @include responsive {
+  @include responsive(phone) {
     padding: .5rem;
   }
 }
@@ -122,7 +123,7 @@ nav {
   border: none;
   font-family: $main-font;
   font-weight: 600;
-  @include responsive {
+  @include responsive(phone) {
     padding: .5rem;
     margin: .5rem 0;
   }

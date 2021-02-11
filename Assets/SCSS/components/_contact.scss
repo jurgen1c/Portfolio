@@ -49,7 +49,7 @@
       font-size: 1.4rem;
     }
   }
-  @include responsive {
+  @include responsive(phone) {
     margin-top: 1.5rem;
     .form-wrap{
       margin: 1rem 0 0 0;
@@ -82,7 +82,7 @@
     height: 2.5rem;
     position: absolute;
   }
-  @include responsive{
+  @include responsive(phone) {
     width: 90%;
     margin: .5rem auto;
     .form-square{
