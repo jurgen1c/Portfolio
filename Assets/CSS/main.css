@@ -300,10 +300,10 @@ nav a:hover { color: #D09E36; text-decoration: underline; }
 #contact form button { background: #D09E36; font-size: 1.4rem; }
 
 @media only screen and (max-width: 690px) { #contact { width: 100%; margin-top: 1.5rem; }
-  #contact .form-wrap { margin: 1rem 0 0 0; width: 100%; }
-  #contact form { width: 100%; margin: 0; padding: 0; }
-  #contact form input, #contact form select { border: 1px solid #D09E36; width: 30em; margin: 0; padding: .2rem; }
-  #contact form textarea { border: 1px solid #D09E36; width: 30em; height: 3em; margin: 0; padding: .2rem; }
+  #contact .form-wrap { margin: 1rem 0 0 0; width: 90%; }
+  #contact form { width: 100%; margin: 0; padding: 0 0 0 2rem; }
+  #contact form input, #contact form select { border: 1px solid #D09E36; width: 20em; margin: 0; padding: .2rem; }
+  #contact form textarea { border: 1px solid #D09E36; width: 20em; height: 3em; margin: 0; padding: .2rem; }
   #contact form button { font-size: .8rem; margin: 1rem 0; } }
 
 @media only screen and (min-width: 691px) and (max-width: 1000px) { #contact { width: 100%; margin-top: 1.5rem; }

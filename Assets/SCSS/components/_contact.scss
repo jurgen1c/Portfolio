@@ -56,22 +56,22 @@
     margin-top: 1.5rem;
     .form-wrap{
       margin: 1rem 0 0 0;
-      width: 100%;
+      width: 90%;
     }
     form{
       width: 100%;
       margin: 0;
-      padding: 0;
+      padding: 0 0 0 2rem;
       input, 
       select{
         border: 1px solid $main-light;
-        width: 30em;
+        width: 20em;
         margin: 0;
         padding: .2rem;
       }
       textarea{
         border: 1px solid $main-light;
-        width: 30em;
+        width: 20em;
         height: 3em;
         margin: 0;
         padding: .2rem;
